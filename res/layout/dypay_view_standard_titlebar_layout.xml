@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/dy_pay_titlebar_layout" android:background="@color/dypay_white" android:layout_width="match_parent" android:layout_height="44.0dp"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/dy_pay_back_view" android:padding="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:src="@drawable/dypay_icon_titlebar_left_arrow" android:scaleType="centerCrop" android:layout_centerVertical="true" android:contentDescription="@string/dypay_close_text" />
-    <TextView android:textSize="17.0sp" android:textStyle="bold" android:id="@id/dy_pay_title_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
-    <ImageView android:id="@id/dy_pay_right_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dp" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-    <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/dy_pay_right_text_view" android:paddingLeft="6.0dp" android:paddingRight="12.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-</RelativeLayout>

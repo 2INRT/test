@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="180.0dp"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ProgressBar android:id="@id/restrict_area_on_loading" android:layout_width="44.0dp" android:layout_height="44.0dp" android:layout_marginTop="54.0dp" android:indeterminateDrawable="@drawable/restricted_area_frament_loading" android:layout_centerHorizontal="true" />
-    <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_3" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.5dp" android:layout_marginBottom="54.0dp" android:text="@string/report_loading" android:layout_below="@id/restrict_area_on_loading" android:layout_centerHorizontal="true" />
-</RelativeLayout>

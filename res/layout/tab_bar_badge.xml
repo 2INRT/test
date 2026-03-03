@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<View android:id="@id/tab_badge" android:background="@drawable/bg_tab_bar_badge" android:visibility="invisible" android:layout_width="4.5dp" android:layout_height="4.5dp" android:layout_marginTop="2.0dp" android:layout_alignParentTop="true" android:layout_marginStart="-8.0dp"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:background="@drawable/vp_video_header_view_bg" android:layout_width="match_parent" android:layout_height="40.0dp"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center_vertical" android:id="@id/vp_video_fullScreen_back" android:background="@drawable/vp_fullscreen_back" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:paddingStart="5.0dp" android:paddingEnd="5.0dp" android:layout_marginStart="5.0dp" />
-    <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@id/vp_video_title" android:paddingRight="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:maxLines="2" android:paddingEnd="5.0dp" android:layout_marginStart="5.0dp" />
-</merge>

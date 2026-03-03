@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/hidden_control_guide_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.airbnb.lottie.lite.LottieAnimationView android:gravity="right" android:layout_gravity="right" android:id="@id/hotspot_lottie" android:visibility="gone" android:layout_width="200.0dp" android:layout_height="match_parent" android:scaleType="fitEnd" />
-    <com.airbnb.lottie.lite.LottieAnimationView android:gravity="right" android:layout_gravity="right" android:id="@id/white_point_lottie" android:visibility="gone" android:layout_width="200.0dp" android:layout_height="match_parent" android:scaleType="fitEnd" />
-    <com.airbnb.lottie.lite.LottieAnimationView android:id="@id/follow_finger_lottie" android:visibility="gone" android:layout_width="400.0dp" android:layout_height="400.0dp" android:scaleType="fitCenter" />
-    <com.airbnb.lottie.lite.LottieAnimationView android:gravity="right" android:layout_gravity="right" android:id="@id/guide_lottie" android:visibility="gone" android:layout_width="200.0dp" android:layout_height="match_parent" android:scaleType="fitEnd" />
-</FrameLayout>

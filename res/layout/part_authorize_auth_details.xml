@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/AU_SPACE4" android:layout_marginRight="@dimen/AU_SPACE4" />
-    <LinearLayout android:orientation="vertical" android:id="@id/auth_ll_auth_details" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/AU_SPACE4" android:layout_marginTop="@dimen/AU_SPACE17" android:layout_marginRight="@dimen/AU_SPACE4" android:layout_marginBottom="@dimen/AU_SPACE17" />
-</LinearLayout>

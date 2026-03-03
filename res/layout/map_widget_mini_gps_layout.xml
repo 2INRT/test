@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.amap.bundle.commonui.designtoken.view.viewgroup.DtFrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include android:layout_gravity="center" android:id="@id/common_view_bg" android:layout_width="@dimen/map_widget_WH_s" android:layout_height="@dimen/map_widget_WH_s" layout="@layout/map_widget_layout_bg_white_s" />
-    <com.airbnb.lottie.lite.LottieAnimationView android:layout_gravity="center" android:id="@id/map_widget_common_icon" android:layout_width="28.0dp" android:layout_height="28.0dp" />
-</com.amap.bundle.commonui.designtoken.view.viewgroup.DtFrameLayout>

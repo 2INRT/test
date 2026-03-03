@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<appwidget-provider android:minWidth="@dimen/vivo_widget_common_width" android:minHeight="@dimen/vivo_widget_common_height" android:updatePeriodMillis="3600000" android:initialLayout="@layout/vivo_initial_layout" android:previewImage="@drawable/vivo_desktop_widget_preview_img" android:resizeMode="none"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

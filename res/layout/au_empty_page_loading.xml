@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.alipay.mobile.antui.lottie.AULottieLayout android:id="@id/loading_animation" android:layout_width="22.0dp" android:layout_height="22.0dp" />
-    <com.alipay.mobile.antui.basic.AUTextView android:textSize="13.0dp" android:textColor="@color/AU_COLOR_ANT_LOADING" android:gravity="center_horizontal" android:id="@id/empty_page_tips" android:paddingLeft="@dimen/AU_SPACE6" android:paddingRight="@dimen/AU_SPACE6" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/loading_v2" />
-</merge>

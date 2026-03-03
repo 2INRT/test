@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.alipay.mobile.antui.basic.AURelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aui="http://schemas.android.com/apk/res-auto">
-    <com.alipay.mobile.antui.iconfont.AUIconView android:id="@id/item_icon" android:layout_width="@dimen/AU_SPACE4" android:layout_height="@dimen/AU_SPACE4" android:layout_marginLeft="@dimen/AU_SPACE17" android:layout_marginTop="@dimen/AU_SPACE4" android:scaleType="centerInside" aui:iconfontColor="#ffffff" aui:iconfontSize="@dimen/AU_SPACE4" />
-    <com.alipay.mobile.antui.basic.AUTextView android:textSize="@dimen/AU_TEXTSIZE3" android:textColor="#ffffff" android:id="@id/item_name" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/AU_SPACE2" android:layout_marginTop="@dimen/AU_TEXTSIZE3" android:singleLine="true" android:layout_toRightOf="@id/item_icon" />
-    <com.alipay.mobile.antui.basic.AURelativeLayout android:layout_width="@dimen/AU_SPACE22" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/AU_SPACE1" android:layout_marginTop="@dimen/AU_SPACE25" android:layout_toRightOf="@id/item_name">
-        <com.alipay.mobile.antui.badge.AUBadgeView android:id="@id/red_point" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    </com.alipay.mobile.antui.basic.AURelativeLayout>
-</com.alipay.mobile.antui.basic.AURelativeLayout>

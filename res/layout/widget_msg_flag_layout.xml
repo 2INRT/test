@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.alipay.mobile.antui.basic.AUImageView android:layout_gravity="center" android:id="@id/widgetMsgBg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shock_point_large" android:scaleType="center" />
-    <com.alipay.mobile.antui.basic.AUTextView android:textSize="10.0dp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/widgetMsgText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
-</merge>

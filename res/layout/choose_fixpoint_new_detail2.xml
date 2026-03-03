@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/choose_point_layout" android:background="@drawable/poi_detail_bg" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/choose_point_detail_list_new_item2" />
-    <View android:id="@id/bottom_placer" android:layout_width="match_parent" android:layout_height="0.0dp" />
-</LinearLayout>

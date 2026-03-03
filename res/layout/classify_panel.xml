@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_classify_panel" android:layout_width="match_parent" android:layout_height="match_parent">
-        <com.autonavi.minimap.searchlist.search.components.classify.view.OperationFilterLabel android:id="@id/operation_filter_label" android:layout_width="match_parent" android:layout_height="wrap_content" />
-        <TextView android:textSize="30.0sp" android:gravity="center" android:background="@android:color/holo_blue_bright" android:layout_width="match_parent" android:layout_height="300.0dp" android:text="面板" />
-    </LinearLayout>
-</merge>

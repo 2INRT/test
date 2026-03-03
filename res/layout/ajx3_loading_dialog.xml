@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:background="@drawable/ajx3_title_background" android:paddingLeft="30.0dp" android:paddingTop="22.0dp" android:paddingRight="30.0dp" android:paddingBottom="22.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ProgressBar android:layout_gravity="center_vertical" android:id="@id/progressbar" android:layout_width="20.0dp" android:layout_height="20.0dp" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/ajx3_common_progressbar" android:indeterminateDuration="1000" android:indeterminateBehavior="repeat" />
-    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp">
-        <com.amap.bundle.utils.language.view.AmapLocaleTextView android:textSize="16.0dp" android:textColor="#000000" android:id="@id/msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/O1518_4" />
-    </LinearLayout>
-</LinearLayout>

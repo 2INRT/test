@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/fl_bee_player_view_container" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@id/fl_player_container" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent" />
-    <com.alipay.mobile.beehive.video.h5.PlayerPosterView android:id="@id/rl_player_poster" android:layout_width="match_parent" android:layout_height="match_parent" />
-    <com.alipay.mobile.beehive.video.h5.PlayerDownGradeView android:id="@id/rl_player_downgrade" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
-</FrameLayout>

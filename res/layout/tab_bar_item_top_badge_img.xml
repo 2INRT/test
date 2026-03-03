@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.amap.bundle.commonui.designtoken.view.DtImageView android:id="@id/tab_badge_img" android:visibility="invisible" android:layout_width="20.0dp" android:layout_height="20.0dp"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

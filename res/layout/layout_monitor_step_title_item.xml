@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:background="@drawable/vui_bg_monitor_title" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginLeft="1.0dp" android:layout_marginTop="4.0dp" android:layout_marginRight="2.0dp" android:layout_marginBottom="4.0dp"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@id/label" android:background="#dced47" android:layout_width="5.0dp" android:layout_height="25.0dp" android:layout_marginLeft="10.0dp" android:layout_centerVertical="true" />
-    <TextView android:textSize="20.0dp" android:textColor="#333333" android:gravity="center_vertical" android:id="@id/tv_title" android:paddingLeft="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="1111111111" android:layout_toRightOf="@id/label" android:layout_centerVertical="true" />
-</RelativeLayout>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.alipay.mobile.commonui.widget.APRelativeLayout android:background="#ffffff" android:paddingBottom="23.0dp" android:layout_width="wrap_content" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.alipay.mobile.beehive.compositeui.popup.GridViewWithoutScroll android:id="@id/filter_grid" android:layout_width="match_parent" android:layout_height="wrap_content" android:horizontalSpacing="10.0dp" android:verticalSpacing="10.0dp" android:stretchMode="columnWidth" android:numColumns="3" />
-</com.alipay.mobile.commonui.widget.APRelativeLayout>

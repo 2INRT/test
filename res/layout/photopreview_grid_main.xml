@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include android:id="@id/include" layout="@layout/title_view_layout" />
-    <GridView android:id="@id/gridView" android:background="@color/image_grid_background" android:paddingLeft="@dimen/image_thumbnail_spacing" android:paddingRight="@dimen/image_thumbnail_spacing" android:paddingBottom="@dimen/image_thumbnail_spacing" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:horizontalSpacing="@dimen/image_thumbnail_spacing" android:verticalSpacing="@dimen/image_thumbnail_spacing" android:stretchMode="columnWidth" android:numColumns="2" android:layout_below="@id/include" style="@style/PhotoGridLayout" />
-</RelativeLayout>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.alipay.mobile.antui.basic.AUCircleImageView android:layout_gravity="center_vertical" android:id="@id/bank_circle_image" android:visibility="gone" android:layout_width="@dimen/AU_ICONSIZE8" android:layout_height="@dimen/AU_ICONSIZE8" android:layout_marginRight="@dimen/AU_SPACE3" />
-    <com.alipay.mobile.antui.basic.AULinearLayout android:gravity="left" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <com.alipay.mobile.antui.basic.AUEmptyGoneTextView android:id="@id/bank_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/listTitleTextStyle" />
-        <com.alipay.mobile.antui.basic.AUEmptyGoneTextView android:id="@id/bank_number" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/listContentTextStyle" />
-    </com.alipay.mobile.antui.basic.AULinearLayout>
-</merge>

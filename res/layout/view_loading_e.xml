@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.amap.bundle.commonui.designtoken.view.DtProgressView android:id="@id/progress" android:layout_width="16.0dp" android:layout_height="16.0dp" app:bgCircleColor="#f0f2f6" app:draw_bg_circle="true" app:dt_bgCircleColor="Color_Loading_L1" app:dt_progress_Color="Color_Loading_L2" app:progressType="progress_c" app:progress_Color="#415886" app:progress_strokeWidth="2.2999878dp"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

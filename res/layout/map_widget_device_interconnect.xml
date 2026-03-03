@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.amap.bundle.commonui.designtoken.view.viewgroup.DtRelativeLayout android:layout_width="wrap_content" android:layout_height="50.0dp" android:contentDescription="@string/ctdes_text_device_interconnect"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.autonavi.bundle.uitemplate.mapwidget.common.MessageTipView android:id="@id/device_interconnect_tip_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dp" android:layout_marginLeft="10.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
-    <com.autonavi.bundle.uitemplate.mapwidget.widget.deviceinterconnect.DeviceInterconnectEntranceView android:id="@id/device_interconnect_entrance_view" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_alignParentLeft="true" app:dt_backgroundDrawable="map_widget_press_white_new" />
-    <com.autonavi.bundle.uitemplate.mapwidget.widget.deviceinterconnect.DeviceInterconnectLottieView android:id="@id/device_interconnect_lottie" android:visibility="gone" android:layout_width="150.0dp" android:layout_height="40.0dp" android:layout_marginLeft="5.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
-</com.amap.bundle.commonui.designtoken.view.viewgroup.DtRelativeLayout>

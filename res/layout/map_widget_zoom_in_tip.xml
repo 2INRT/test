@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout android:gravity="center" android:background="@drawable/zoom_tip_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.amap.bundle.commonui.designtoken.view.textview.DtTextView android:textSize="14.0dp" android:id="@id/tv_zoom_in_tip" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v4_zoom_tip_street" app:dt_textColor="Color_Hue210_L6" />
-</com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="50.0dp" android:layout_height="50.0dp"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.amap.bundle.commonui.designtoken.view.DtImageView android:layout_gravity="center" android:id="@id/device_interconnect_send_img" android:layout_width="24.0dp" android:layout_height="24.0dp" />
-    <com.amap.bundle.commonui.designtoken.view.textview.DtTextView android:textSize="9.0dp" android:textStyle="bold" android:ellipsize="end" android:id="@id/device_interconnect_send_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.0dp" android:maxLines="1" />
-</merge>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/item_wrapper" android:clipChildren="false" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginEnd="6.0dp"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/iv_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
-    <ImageView android:layout_gravity="end|bottom" android:id="@id/iv_checked_icon" android:visibility="gone" android:layout_width="8.0dp" android:layout_height="8.0dp" android:src="@drawable/checked_miniportal" />
-    <View android:layout_gravity="end|top" android:id="@id/view_hot_dot" android:background="@drawable/new_red" android:visibility="gone" android:layout_width="13.0dp" android:layout_height="13.0dp" android:layout_marginTop="-4.0dp" />
-</FrameLayout>

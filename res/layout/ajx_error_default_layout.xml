@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/status_retry" />
-    <com.amap.bundle.utils.language.view.AmapLocaleTextView android:textSize="15.0dp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/O106_3" />
-    <com.amap.bundle.utils.language.view.AmapLocaleTextView android:textSize="15.0dp" android:textColor="@color/black" android:id="@id/retry_btn" android:background="@drawable/common_choose_btn" android:padding="10.0dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="@string/O106_8" />
-</LinearLayout>

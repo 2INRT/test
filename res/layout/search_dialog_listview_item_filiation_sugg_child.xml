@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.autonavi.minimap.widget.EllipsizedChildrenPoiView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:ellipsize="middle" android:gravity="center" android:id="@id/child_poi_view" android:background="@drawable/poi_child_bg" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="match_parent" android:layout_height="26.0dp" android:singleLine="true" android:layout_weight="1.0" app:dt_backgroundDrawable="poi_child_bg" />
-</com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout>

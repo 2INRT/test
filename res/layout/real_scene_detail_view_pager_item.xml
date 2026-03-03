@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/real_scene_detail_pager_item_layout" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.autonavi.widget.photoview.PhotoView android:id="@id/scene_image_item_detail" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
-    <ProgressBar android:id="@id/real_scene_image_progressBar" android:layout_width="14.0dp" android:layout_height="14.0dp" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/common_progressbar" android:indeterminateDuration="1000" android:indeterminateBehavior="repeat" android:layout_centerInParent="true" />
-</RelativeLayout>

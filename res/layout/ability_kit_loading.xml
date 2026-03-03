@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:layout_gravity="center" android:background="@drawable/ability_kit_progress_bg" android:layout_width="100.0dp" android:layout_height="100.0dp">
-        <ProgressBar android:id="@id/mega_pb_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:indeterminate="false" android:layout_centerHorizontal="true" style="@android:style/Widget.Holo.ProgressBar" />
-        <TextView android:textSize="14.0dp" android:textColor="#ff999999" android:ellipsize="end" android:gravity="center" android:id="@id/mega_loading_text" android:layout_width="90.0dp" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/app_loading_progress" android:singleLine="true" android:layout_below="@id/mega_pb_progress" android:layout_centerHorizontal="true" />
-    </RelativeLayout>
-</FrameLayout>

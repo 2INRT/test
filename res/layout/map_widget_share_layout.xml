@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.amap.bundle.commonui.designtoken.view.viewgroup.DtRelativeLayout android:gravity="center" android:background="@drawable/map_widget_press_white_new" android:layout_width="58.0dp" android:layout_height="58.0dp" android:contentDescription="@string/ctdes_text_share" app:dt_backgroundDrawable="map_widget_press_white_new"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="40.0dp" android:layout_height="40.0dp">
-        <com.amap.bundle.commonui.designtoken.view.DtImageView android:id="@id/route_line_icon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_share" android:contentDescription="@null" app:dt_src="ic_share" />
-        <com.amap.bundle.commonui.designtoken.view.textview.DtTextView android:textSize="9.0dp" android:textColor="#1a1a1a" android:id="@id/route_line_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dp" android:text="@string/O3542_20" app:dt_textColor="Color_Ink_L7" />
-    </com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout>
-</com.amap.bundle.commonui.designtoken.view.viewgroup.DtRelativeLayout>

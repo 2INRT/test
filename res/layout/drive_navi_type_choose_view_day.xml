@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout android:orientation="vertical" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.amap.bundle.commonui.designtoken.view.viewgroup.DtFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dp">
-        <com.amap.bundle.commonui.designtoken.view.textview.DtTextView android:textSize="@dimen/f_s_24" android:textStyle="bold" android:textColor="@color/f_c_1" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/navi_type_choose_content" android:maxLines="1" app:dt_textColor="Color_Text_Highlight" />
-    </com.amap.bundle.commonui.designtoken.view.viewgroup.DtFrameLayout>
-    <com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout android:orientation="horizontal" android:id="@id/bottom_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" />
-</com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout>

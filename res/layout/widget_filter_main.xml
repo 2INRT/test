@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@drawable/widget_filter_main_itembg_selector" android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="45.0dp"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="horizontal" android:id="@id/secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/name" android:layout_alignParentRight="true" android:layout_centerVertical="true">
-        <TextView android:textSize="15.0dp" android:textColor="@color/gray" android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
-        <ImageView android:gravity="bottom" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:src="@drawable/more_setting" android:contentDescription="@null" />
-    </LinearLayout>
-    <TextView android:textSize="16.0dp" android:textColor="@color/black" android:gravity="bottom" android:id="@id/name" android:paddingLeft="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/secondary" android:layout_centerVertical="true" />
-</RelativeLayout>

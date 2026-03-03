@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="60.0dp"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/child_icon_view" android:layout_width="27.0dp" android:layout_height="27.0dp" android:src="@drawable/sugg_child_default_icon" android:scaleType="center" />
-    <TextView android:textSize="11.0dp" android:textColor="@color/f_c_3" android:id="@id/child_name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:singleLine="true" />
-</LinearLayout>

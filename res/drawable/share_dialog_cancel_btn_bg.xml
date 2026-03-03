@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="rectangle"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/c_1" />
-    <stroke android:width="0.5dp" android:color="@color/f_c_4" />
-    <corners android:topLeftRadius="@dimen/share_dialog_cancel_btn_corner" android:topRightRadius="@dimen/share_dialog_cancel_btn_corner" android:bottomLeftRadius="@dimen/share_dialog_cancel_btn_corner" android:bottomRightRadius="@dimen/share_dialog_cancel_btn_corner" />
-</shape>

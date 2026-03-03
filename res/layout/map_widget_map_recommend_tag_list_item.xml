@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout android:gravity="center" android:id="@id/item_bg" android:background="@drawable/map_widget_recommend_tag_bg" android:paddingLeft="13.0dp" android:paddingRight="13.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
-        <com.amap.bundle.commonui.designtoken.view.DtImageView android:id="@id/item_image" android:clickable="false" android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@drawable/ic_map_home_filter_default_black" />
-        <com.airbnb.lottie.lite.LottieAnimationView android:id="@id/item_lottie" android:visibility="gone" android:layout_width="15.0dp" android:layout_height="15.0dp" />
-    </FrameLayout>
-    <com.amap.bundle.commonui.designtoken.view.textview.DtTextView android:textSize="13.0dp" android:id="@id/item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:lines="1" app:dt_textColor="#FFFFFF" />
-</com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout>

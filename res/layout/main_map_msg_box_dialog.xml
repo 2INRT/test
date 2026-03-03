@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_gravity="center" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:layout_gravity="center" android:id="@id/rlayout_all" android:layout_width="wrap_content" android:layout_height="wrap_content">
-        <ImageView android:id="@id/main_map_msg_dialog_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:contentDescription="@string/O337_50" />
-        <ImageButton android:id="@id/main_map_msg_dialog_close" android:background="@drawable/main_map_msg_dialog_close" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="20.0dp" android:layout_below="@id/main_map_msg_dialog_iv" android:layout_centerHorizontal="true" android:contentDescription="@string/O337_39" />
-    </RelativeLayout>
-</ScrollView>

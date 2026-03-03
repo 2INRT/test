@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.amap.bundle.commonui.designtoken.view.viewgroup.DtRelativeLayout android:background="@drawable/bg_notification_statusbar" android:layout_width="match_parent" android:layout_height="46.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" app:dt_backgroundDrawable="bg_notification_statusbar"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.amap.bundle.commonui.designtoken.view.DtImageView android:id="@id/id_left_icon" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="8.0dp" android:layout_centerVertical="true" />
-    <com.amap.bundle.commonui.designtoken.view.DtImageView android:id="@id/id_right_icon" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="8.0dp" android:src="@drawable/rs_status_bar_arrow_ic" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:dt_src="mainmap_status_bar_arrow_ic" />
-    <com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="46.0dp" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp" android:layout_toLeftOf="@id/id_right_icon" android:layout_toRightOf="@id/id_left_icon" android:layout_centerVertical="true">
-        <com.amap.bundle.commonui.designtoken.view.textview.DtTextView android:textSize="14.0dp" android:ellipsize="end" android:id="@id/id_left_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
-    </com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout>
-</com.amap.bundle.commonui.designtoken.view.viewgroup.DtRelativeLayout>

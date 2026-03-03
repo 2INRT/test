@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <FrameLayout android:layout_width="66.0dp" android:layout_height="66.0dp">
-        <com.autonavi.widget.ui.GifMovieView android:layout_gravity="center" android:id="@id/gif_view" android:layout_width="28.0dp" android:layout_height="28.0dp" app:gif_src="@drawable/loading_d_dark" />
-    </FrameLayout>
-    <com.amap.bundle.utils.language.view.AmapLocaleTextView android:textSize="@dimen/f_s_14" android:textColor="#e6ffffff" android:gravity="center" android:id="@id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading_a" />
-</LinearLayout>

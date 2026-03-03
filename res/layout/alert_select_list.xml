@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.amap.bundle.commonui.designtoken.view.viewgroup.DtListView android:id="@id/alert_select_listview" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5.0px" android:listSelector="@drawable/alert_button_selector" android:cacheColorHint="@null" android:divider="#00000000" android:dividerHeight="0.0dp" android:overScrollMode="ifContentScrolls"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

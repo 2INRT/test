@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout android:layout_width="match_parent" android:layout_height="match_parent" app:dt_backgroundColor="Color_BG_L1(FF)"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:eagle="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout android:orientation="vertical" android:background="@drawable/amaphome_searchpage_search_bg" android:layout_width="match_parent" android:layout_height="119.0dp" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" app:dt_backgroundDrawable="amaphome_searchpage_search_bg">
-        <com.amap.bundle.commonui.designtoken.view.DtView android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" />
-        <com.amap.bundle.commonui.designtoken.view.DtView android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="12.0dp" app:dt_backgroundColor="Color_Gray_06" />
-    </com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout>
-</com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout>

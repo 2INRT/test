@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/nebulax_root_view" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:layout_gravity="center" android:id="@id/nebulax_wrapper_view" android:layout_width="match_parent" android:layout_height="match_parent">
-        <RelativeLayout android:id="@id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/tab_container" />
-        <RelativeLayout android:id="@id/tab_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
-        <RelativeLayout android:id="@id/splash_container" android:layout_width="match_parent" android:layout_height="match_parent" />
-    </RelativeLayout>
-</FrameLayout>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/container" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/tip_icon" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_centerVertical="true" android:layout_marginStart="12.0dp" />
-    <RelativeLayout android:layout_width="match_parent" android:layout_height="37.0dp" android:layout_marginStart="8.0dp" android:layout_marginEnd="12.0dp" android:layout_toEndOf="@id/tip_icon">
-        <ImageView android:id="@id/tip_close_img" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
-        <com.autonavi.nebulax.ui.tipview.TipTextView android:ellipsize="marquee" android:id="@id/tip_tv" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" android:layout_marginEnd="8.0dp" android:layout_toStartOf="@id/tip_close_img" />
-    </RelativeLayout>
-</RelativeLayout>

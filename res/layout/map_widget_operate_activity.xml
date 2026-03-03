@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.amap.bundle.commonui.designtoken.view.viewgroup.DtFrameLayout android:paddingLeft="5.0dp" android:layout_width="wrap_content" android:layout_height="@dimen/map_widget_WH_n"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

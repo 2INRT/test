@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/miniapp_vmap_floor_widget_cell_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@id/floor_item_bg" android:background="@drawable/minimap_vmap_floor_item_text_bg_selector" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_centerInParent="true" />
-    <TextView android:textSize="14.0dp" android:textColor="@drawable/miniapp_vmap_floor_item_text_color_selector" android:id="@id/floor_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
-</RelativeLayout>

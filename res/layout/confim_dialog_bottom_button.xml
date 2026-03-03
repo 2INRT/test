@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:paddingTop="@dimen/AU_SPACE3" android:paddingRight="@dimen/AU_SPACE3" android:paddingBottom="@dimen/AU_SPACE3" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.alipay.mobile.antui.basic.AUButton android:id="@id/date_dialog_cancle" android:text="取消" android:layout_toLeftOf="@id/date_dialog_confirm" style="@style/textSubButtonStyle" />
-    <com.alipay.mobile.antui.basic.AUButton android:id="@id/date_dialog_confirm" android:text="确定" android:layout_alignParentRight="true" style="@style/textButtonStyle" />
-</RelativeLayout>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.autonavi.minimap.widget.ImmersiveTitleCompatRelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.amap.bundle.webview.widget.ExtendedWebView android:id="@id/poi_photo_webview" android:layout_width="match_parent" android:layout_height="match_parent" />
-</com.autonavi.minimap.widget.ImmersiveTitleCompatRelativeLayout>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.amap.bundle.utils.language.view.AmapLocaleTextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/vp_error_text_bg" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/O1518_11" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
-</LinearLayout>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:eagle="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:orientation="vertical" android:id="@id/mapTopInteractiveView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
-        <com.autonavi.widget.ui.TitleBar android:id="@id/tbTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" eagle:action_text="@string/add_photo_screenshot" eagle:title="@string/feedback_map_screenshot" eagle:title_style="title_c" />
-    </LinearLayout>
-</com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout>

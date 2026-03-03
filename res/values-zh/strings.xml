@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="alipay_standard_sdk_loading">正在加载</string>
-    <string name="alipay_standard_sdk_loading_go_auth">去支付宝授权</string>
-    <string name="alipay_standard_sdk_loading_go_pay">去支付宝付款</string>
-</resources>

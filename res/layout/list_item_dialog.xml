@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aui="http://schemas.android.com/apk/res-auto">
-    <com.alipay.mobile.antui.iconfont.AUIconView android:id="@id/item_icon" android:visibility="gone" android:layout_width="@dimen/AU_SPACE6" android:layout_height="@dimen/AU_SPACE6" android:layout_marginRight="@dimen/AU_SPACE3" aui:iconfontColor="#797979" aui:iconfontSize="@dimen/AU_SPACE6" />
-    <com.alipay.mobile.antui.basic.AUTextView android:textSize="@dimen/AU_TEXTSIZE4" android:textColor="@color/AU_COLOR_MAIN_CONTENT" android:ellipsize="end" android:gravity="left" android:id="@id/item_name" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/item_icon" android:layout_centerVertical="true" />
-    <com.alipay.mobile.antui.badge.AUBadgeView android:id="@id/item_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/AU_SPACE2" android:layout_toRightOf="@id/item_name" />
-</merge>

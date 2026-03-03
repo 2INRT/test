@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<inset android:insetLeft="@dimen/AU_DIVIDER_SPACE3" android:insetRight="@dimen/AU_DIVIDER_SPACE3" android:insetTop="@dimen/AU_DIVIDER_SPACE3"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <shape android:shape="rectangle">
-        <stroke android:width="@dimen/AU_DIVIDER_SPACE1" android:color="@color/AU_COLOR_DIALOG_DIVIDER_COLOR" />
-        <solid android:color="@android:color/transparent" />
-    </shape>
-</inset>

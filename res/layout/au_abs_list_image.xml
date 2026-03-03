@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aui="http://schemas.android.com/apk/res-auto">
-    <com.alipay.mobile.antui.basic.AURoundImageView android:layout_gravity="center_vertical" android:id="@id/list_item_icon" android:visibility="gone" android:layout_width="@dimen/au_single_image_size" android:layout_height="@dimen/au_single_image_size" android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL" android:scaleType="fitXY" aui:hasMask="false" aui:roundHeight="2.0dp" aui:roundWidth="2.0dp" />
-</merge>

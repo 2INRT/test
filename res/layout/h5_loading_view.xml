@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@color/h5_transparent" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/h5_loading_view_bg" android:paddingLeft="14.0dp" android:paddingTop="6.0dp" android:paddingRight="14.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_centerInParent="true">
-        <ProgressBar android:id="@id/h5_loading_progress" android:padding="4.0dp" android:layout_width="36.0dp" android:layout_height="36.0dp" android:indeterminateDrawable="@drawable/h5_title_bar_progress_white" />
-        <TextView android:textSize="12.0dp" android:textColor="#ffffff" android:id="@id/h5_loading_message" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    </LinearLayout>
-</RelativeLayout>

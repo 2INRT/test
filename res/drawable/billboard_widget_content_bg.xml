@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="rectangle"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <corners android:bottomLeftRadius="@dimen/desktop_widget_billboard_radius" android:bottomRightRadius="@dimen/desktop_widget_billboard_radius" />
-    <gradient android:startColor="#5f230f" android:endColor="#683f2d" android:angle="135.0" />
-</shape>

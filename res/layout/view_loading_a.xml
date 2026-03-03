@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.amap.bundle.commonui.designtoken.view.viewgroup.DtFrameLayout android:layout_width="66.0dp" android:layout_height="66.0dp">
-        <com.amap.bundle.commonui.designtoken.view.DtGifMovieView android:layout_gravity="center" android:id="@id/gif_view" android:layout_width="28.0dp" android:layout_height="28.0dp" app:dt_gif_src="@drawable/loading_d" app:gif_src="@drawable/loading_d" />
-    </com.amap.bundle.commonui.designtoken.view.viewgroup.DtFrameLayout>
-    <com.amap.bundle.commonui.designtoken.view.textview.DtTextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_4" android:gravity="center" android:id="@id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading_a" app:dt_textColor="Color_Text_Highlight(99)" />
-</com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout>

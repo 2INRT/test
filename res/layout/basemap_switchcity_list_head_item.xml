@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:id="@id/basemap_switchcity_indicator" android:background="@color/default_bg_color_a" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/default_font_size_t28" android:textColor="@color/f_c_3" android:gravity="left|center" android:id="@id/basemap_switchcity_indicator_text" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginLeft="12.0dp" android:text="" />
-</LinearLayout>

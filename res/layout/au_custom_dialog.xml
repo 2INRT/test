@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.alipay.mobile.antui.basic.AURelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aui="http://schemas.android.com/apk/res-auto">
-    <com.alipay.mobile.antui.iconfont.AUIconView android:id="@id/dialog_close" android:visibility="gone" android:layout_width="@dimen/AU_HOTSPACE4" android:layout_height="@dimen/AU_HOTSPACE4" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/cancel" aui:iconfontColor="#888888" aui:iconfontSize="@dimen/AU_HEIGHT1" aui:iconfontUnicode="@string/iconfont_cancel" />
-</com.alipay.mobile.antui.basic.AURelativeLayout>

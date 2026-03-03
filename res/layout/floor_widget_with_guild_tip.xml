@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="13.0dp" android:textColor="#ffffff" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/map_indoor_guide" android:background="@drawable/layer_tip_kuang" android:paddingLeft="@dimen/floor_widget_tip_padding_left" android:paddingRight="@dimen/floor_widget_tip_padding_right" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/map_indoor_guide" android:layout_toLeftOf="@id/floor_widget_view_layout" android:layout_centerVertical="true" />
-    <com.autonavi.map.suspend.refactor.floor.FloorWidgetLayoutWithLocationTip android:id="@id/floor_widget_view_layout" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
-</RelativeLayout>

@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.autonavi.widget.ui.ProgressView android:id="@id/progress" android:layout_width="16.0dp" android:layout_height="16.0dp" app:bgCircleColor="#666666" app:draw_bg_circle="true" app:progressType="progress_c" app:progress_Color="#ffffff" app:progress_strokeWidth="2.2999878dp"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

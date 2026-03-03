@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="13.0dp" android:textColor="#ffffff" android:id="@id/tv_mobile_network_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_using_mobile_network" />
-</RelativeLayout>

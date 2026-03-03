@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.alipay.mobile.antui.basic.AUFrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.alipay.mobile.antui.basic.AULinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/container" android:background="@drawable/au_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <com.alipay.mobile.antui.basic.AUTextView android:textSize="@dimen/AU_TEXTSIZE5" android:textStyle="bold" android:textColor="@color/AU_COLOR5" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22.5dp" android:layout_marginStart="@dimen/AU_SPACE5" android:layout_marginEnd="@dimen/AU_SPACE5" />
-        <com.alipay.mobile.antui.basic.AUTextView android:textSize="@dimen/AU_TEXTSIZE13" android:textColor="@color/AU_COLOR5" android:id="@id/message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7.5dp" android:layout_marginBottom="21.5dp" android:layout_marginStart="@dimen/AU_SPACE5" android:layout_marginEnd="@dimen/AU_SPACE5" />
-    </com.alipay.mobile.antui.basic.AULinearLayout>
-</com.alipay.mobile.antui.basic.AUFrameLayout>
