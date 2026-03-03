@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="photo_main_photo_height">260.0dp</dimen>
+    <dimen name="rd_camera_payment_item_content_text_margin_right">100.0dp</dimen>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aui="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="@dimen/AU_SPACE10">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/tabs" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="@dimen/AU_SPACE10" android:layout_weight="1.0" />
+        <com.alipay.mobile.antui.iconfont.AUIconView android:gravity="center" android:id="@id/addIcon" android:background="#fff" android:visibility="gone" android:layout_width="@dimen/au_segment_add_width" android:layout_height="match_parent" android:layout_weight="0.0" aui:iconfontColor="@color/AU_COLOR_TITLE" aui:iconfontSize="@dimen/AU_TEXTSIZE4" aui:iconfontUnicode="@string/iconfont_add" />
+    </LinearLayout>
+    <View android:id="@id/bottomLine" android:background="@color/switch_tab_buttom_line_color" android:layout_width="match_parent" android:layout_height="@dimen/AU_DIVIDER_SPACE1" android:layout_alignParentBottom="true" />
+    <com.alipay.mobile.antui.basic.AUImageView android:id="@id/tabLine" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/switch_tab_line_height" android:scaleType="matrix" android:layout_alignParentBottom="true" android:contentDescription="@null" />
+</merge>

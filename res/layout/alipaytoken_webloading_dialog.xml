@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.autonavi.minimap.widget.GifMovieView android:id="@id/view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:gif="@drawable/loading_a" app:paused="false"
+      xmlns:app="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

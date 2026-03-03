@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/id_flip_container" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textColor="@color/shake_guide_color" android:id="@id/id_flip_title1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/O3507_flip_guide" android:shadowColor="@color/shake_guide_shadow_color" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+        <TextView android:textStyle="bold" android:textColor="@color/shake_guide_color" android:id="@id/id_flip_title2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/O3507_flip_tip" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/id_progress_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

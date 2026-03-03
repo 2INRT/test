@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aui="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.alipay.mobile.antui.iconfont.AUIconView android:layout_gravity="center_vertical" android:id="@id/logo_button_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" aui:iconfontSize="22.0dp" aui:imagerSize="22.0dp" />
+        <com.alipay.mobile.antui.basic.AUTextView android:layout_gravity="center_vertical" android:id="@id/logo_button_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@android:id/background" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/billboard_widget_parent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/billboard_widget_title_bg" android:paddingLeft="18.339996dp" android:paddingTop="18.339996dp" android:paddingRight="18.339996dp" android:paddingBottom="9.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/title_img" android:layout_width="50.0dp" android:layout_height="18.0dp" android:src="@drawable/ic_billboard_widget_logo" />
+            <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/title_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" android:text="" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/title_skeleton_tv" android:background="@drawable/billboard_widget_bus_line_name_bg" android:layout_width="wrap_content" android:layout_height="17.0dp" android:layout_marginLeft="8.0dp" android:layout_marginRight="136.0dp" android:text="" android:singleLine="true" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/refresh_iv" android:layout_width="13.339996dp" android:layout_height="13.339996dp" android:layout_marginRight="2.669983dp" android:src="@drawable/ic_widget_billboard_refresh" />
+                <TextView android:textSize="12.0dp" android:textColor="#99fffffe" android:layout_gravity="center" android:id="@id/refresh_time_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0.5dp" android:text="@string/billboard_updating_text" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_detail_parent" android:background="@drawable/billboard_widget_content_bg" android:paddingLeft="18.339996dp" android:paddingRight="18.339996dp" android:paddingBottom="16.339996dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_detail_1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <include layout="@layout/billboard_widget_item_skeleton_layout" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_detail_2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <include layout="@layout/billboard_widget_item_skeleton_layout" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_detail_3" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <include layout="@layout/billboard_widget_item_skeleton_layout" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_detail_empty_msg_parent" android:background="@drawable/billboard_widget_content_bg" android:paddingLeft="13.0dp" android:paddingRight="13.0dp" android:paddingBottom="13.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/empty_msg_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+            <TextView android:textSize="12.0dp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/empty_msg_btn_tv" android:background="@drawable/billboard_widget_btn_bg" android:paddingLeft="21.299988dp" android:paddingTop="6.299988dp" android:paddingRight="21.299988dp" android:paddingBottom="6.299988dp" android:layout_width="wrap_content" android:layout_height="29.299988dp" android:layout_marginTop="13.299988dp" android:text="" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

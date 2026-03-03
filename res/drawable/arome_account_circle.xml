@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:topRightRadius="26.0dp" android:bottomRightRadius="26.0dp" />
+            <padding android:left="0.0dp" android:top="1.0dp" android:right="1.0dp" android:bottom="1.0dp" />
+            <solid android:color="#06000000" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:topRightRadius="26.0dp" android:bottomRightRadius="26.0dp" />
+            <padding android:left="0.0dp" android:top="1.0dp" android:right="1.0dp" android:bottom="1.0dp" />
+            <solid android:color="#08000000" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:topRightRadius="26.0dp" android:bottomRightRadius="26.0dp" />
+            <padding android:left="0.0dp" android:top="1.0dp" android:right="1.0dp" android:bottom="1.0dp" />
+            <solid android:color="#10000000" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:topRightRadius="26.0dp" android:bottomRightRadius="26.0dp" />
+            <padding android:left="0.0dp" android:top="1.0dp" android:right="1.0dp" android:bottom="1.0dp" />
+            <solid android:color="#10eeeeee" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding android:left="1.0dp" android:top="1.0dp" android:right="1.0dp" android:bottom="1.0dp" />
+            <solid android:color="#dcffffff" />
+            <stroke android:width="1.0dp" android:color="#ffffffff" />
+            <corners android:topRightRadius="@dimen/arome_float_photo_radius" android:bottomRightRadius="@dimen/arome_float_photo_radius" />
+        </shape>
+    </item>
+</layer-list>

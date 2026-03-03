@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/base_container" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aui="http://schemas.android.com/apk/res-auto">
+    <com.alipay.mobile.antui.basic.AULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/leftImageContainer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <com.alipay.mobile.antui.basic.AULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/listContainer" android:paddingRight="@dimen/AU_MARGIN_UNIVERSAL" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL" android:layout_toRightOf="@id/leftImageContainer" android:layout_centerVertical="true">
+        <com.alipay.mobile.antui.basic.AULinearLayout android:id="@id/list_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/au_list_min_height" android:layout_weight="1.0" />
+        <com.alipay.mobile.antui.iconfont.AUIconView android:id="@id/list_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/AU_SPACE17" android:maxWidth="@dimen/AU_ICONSIZE3" aui:iconfontColor="@color/table_arrow_color" aui:iconfontSize="@dimen/AU_TEXTSIZE4" aui:imageresid="@drawable/table_arrow" />
+    </com.alipay.mobile.antui.basic.AULinearLayout>
+</merge>

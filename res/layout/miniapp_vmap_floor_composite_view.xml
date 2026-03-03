@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/floor_composite_root" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.autonavi.miniapp.plugin.map.newindoor.MiniAppVMapFloorWidgetView android:layout_gravity="center" android:id="@id/floor_widget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dp" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@android:id/background" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/desktop_widget_bg" android:padding="@dimen/desktop_widget_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:orientation="horizontal" android:id="@id/layout_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <ImageView android:layout_width="14.799988dp" android:layout_height="14.799988dp" android:src="@drawable/icon_desktop_widget_logo" />
+            <TextView android:textSize="11.099976dp" android:textColor="@color/desktop_logo_text_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.699982dp" android:text="@string/desktop_widget_label" />
+            <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/layout_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="10.0dp" android:textColor="@color/blue_a" android:id="@id/refresh_time_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/refresh_iv" android:layout_width="13.0dp" android:layout_height="13.0dp" android:layout_marginLeft="3.0dp" android:src="@drawable/ic_widget_refresh" />
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/action_btn" android:layout_below="@id/layout_title">
+            <TextView android:textSize="16.699982dp" android:textColor="@color/common_card_layout_title_text_color" android:gravity="center_horizontal" android:id="@id/title_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" />
+            <TextView android:textSize="13.299988dp" android:textColor="@color/common_card_layout_desc_text_color" android:id="@id/des_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+        </LinearLayout>
+        <TextView android:textSize="13.0dp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/action_btn" android:background="@drawable/desktop_widget_btn_bg" android:layout_width="109.599976dp" android:layout_height="26.0dp" android:text="@string/desktop_widget_open_amap_btn" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

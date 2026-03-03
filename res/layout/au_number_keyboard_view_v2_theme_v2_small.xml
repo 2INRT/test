@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aui="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/topDividerLine" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <FrameLayout android:id="@id/topLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/topBar" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dp" android:minHeight="30.0dp" android:contentDescription="@string/close">
+            <com.alipay.mobile.antui.iconfont.AUIconView android:layout_gravity="center" android:id="@id/au_key_close" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" aui:iconfontColor="@color/au_button_textcolor_gray" aui:iconfontSize="18.0dp" aui:iconfontUnicode="@string/iconfont_ad_down" />
+        </FrameLayout>
+    </FrameLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.alipay.mobile.antui.basic.AULinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="1.0dp" android:layout_toLeftOf="@id/au_key_confirm_contain" android:layout_alignParentLeft="true">
+            <com.alipay.mobile.antui.basic.AULinearLayout android:orientation="horizontal" android:paddingBottom="1.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.alipay.mobile.antui.basic.AUTextView android:id="@id/au_num_1" android:background="@drawable/drawable_bg_keyboard_v2_small" android:text="1" style="@style/numberKeyboardStyleV2Small" />
+                <com.alipay.mobile.antui.basic.AUTextView android:id="@id/au_num_2" android:background="@drawable/drawable_bg_keyboard_v2_small" android:text="2" style="@style/numberKeyboardStyleV2Small" />
+                <com.alipay.mobile.antui.basic.AUTextView android:id="@id/au_num_3" android:background="@drawable/drawable_bg_keyboard_v2_small" android:text="3" style="@style/numberKeyboardStyleV2Small" />
+            </com.alipay.mobile.antui.basic.AULinearLayout>
+            <com.alipay.mobile.antui.basic.AULinearLayout android:orientation="horizontal" android:paddingBottom="1.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.alipay.mobile.antui.basic.AUTextView android:id="@id/au_num_4" android:background="@drawable/drawable_bg_keyboard_v2_small" android:text="4" style="@style/numberKeyboardStyleV2Small" />
+                <com.alipay.mobile.antui.basic.AUTextView android:id="@id/au_num_5" android:background="@drawable/drawable_bg_keyboard_v2_small" android:text="5" style="@style/numberKeyboardStyleV2Small" />
+                <com.alipay.mobile.antui.basic.AUTextView android:id="@id/au_num_6" android:background="@drawable/drawable_bg_keyboard_v2_small" android:text="6" style="@style/numberKeyboardStyleV2Small" />
+            </com.alipay.mobile.antui.basic.AULinearLayout>
+            <com.alipay.mobile.antui.basic.AULinearLayout android:orientation="horizontal" android:paddingBottom="1.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.alipay.mobile.antui.basic.AUTextView android:id="@id/au_num_7" android:background="@drawable/drawable_bg_keyboard_v2_small" android:text="7" style="@style/numberKeyboardStyleV2Small" />
+                <com.alipay.mobile.antui.basic.AUTextView android:id="@id/au_num_8" android:background="@drawable/drawable_bg_keyboard_v2_small" android:text="8" style="@style/numberKeyboardStyleV2Small" />
+                <com.alipay.mobile.antui.basic.AUTextView android:id="@id/au_num_9" android:background="@drawable/drawable_bg_keyboard_v2_small" android:text="9" style="@style/numberKeyboardStyleV2Small" />
+            </com.alipay.mobile.antui.basic.AULinearLayout>
+            <com.alipay.mobile.antui.basic.AULinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.alipay.mobile.antui.basic.AUTextView android:id="@id/au_num_0" android:background="@drawable/drawable_bg_keyboard_v2_small" android:text="0" android:layout_weight="1.0" style="@style/numberKeyboardStyleV2Small" />
+                <com.alipay.mobile.antui.basic.AUTextView android:textSize="20.0dp" android:id="@id/au_num_style" android:background="@drawable/drawable_bg_keyboard_v2_small" android:text="." android:layout_weight="2.0" style="@style/numberKeyboardStyleV2Small" />
+            </com.alipay.mobile.antui.basic.AULinearLayout>
+        </com.alipay.mobile.antui.basic.AULinearLayout>
+        <com.alipay.mobile.antui.basic.AULinearLayout android:orientation="vertical" android:id="@id/au_key_confirm_contain" android:layout_width="@dimen/keyboard_v2_confirm_btn_width" android:layout_height="160.29999dp" android:layout_alignParentRight="true">
+            <com.alipay.mobile.antui.basic.AUFrameLayout android:id="@id/au_key_delete" android:background="@drawable/drawable_bg_keyboard_v2_small" android:layout_marginLeft="0.0dp" android:layout_marginBottom="1.0dp" android:contentDescription="@string/delete" style="@style/numberKeyboardStyleV2Small">
+                <com.alipay.mobile.antui.iconfont.AUIconView android:layout_width="match_parent" android:layout_height="match_parent" aui:iconfontColor="@drawable/drawable_bg_keyboard_v2_text_color" aui:iconfontSize="23.5dp" aui:iconfontUnicode="@string/iconfont_textdelete" />
+            </com.alipay.mobile.antui.basic.AUFrameLayout>
+            <Button android:textColor="@drawable/au_button_bg_for_keyboard_text_color" android:gravity="center" android:id="@id/au_key_confirm" android:background="@drawable/au_button_bg_for_keyboard_small" android:layout_width="match_parent" android:layout_height="120.0dp" android:text="@string/keyboard_confirm" android:singleLine="false" style="@style/mainButtonStyle" />
+        </com.alipay.mobile.antui.basic.AULinearLayout>
+    </RelativeLayout>
+</merge>

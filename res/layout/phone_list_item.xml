@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dp" android:textColor="@color/f_c_6" android:gravity="center" android:id="@id/phone" android:background="@drawable/tel_list_item_btn_selector" android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginBottom="12.0dp" />
+</LinearLayout>

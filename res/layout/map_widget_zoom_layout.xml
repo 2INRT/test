@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/map_zoom_tip_layout" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <include android:id="@id/zoomInTip" android:visibility="gone" android:layout_width="58.0dp" android:layout_height="@dimen/map_container_btn_size" android:layout_marginTop="5.0dp" layout="@layout/map_widget_zoom_in_tip" />
+        <com.amap.bundle.commonui.designtoken.view.DtView android:layout_gravity="center" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="0.5dp" app:dt_backgroundColor="Color_Black(1A)" />
+        <include android:id="@id/zoomOutTip" android:visibility="gone" android:layout_width="58.0dp" android:layout_height="@dimen/map_container_btn_size" layout="@layout/map_widget_zoom_out_tip" />
+    </com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout>
+    <com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/map_widget_zoom_bg" android:layout_width="50.0dp" android:layout_height="90.5dp" app:dt_backgroundDrawable="map_widget_zoom_bg">
+        <com.autonavi.bundle.uitemplate.mapwidget.widget.zoom.ZoomWidgetLayout android:gravity="center" android:id="@id/zoom_in_container" android:background="@drawable/map_widget_zoom_in" android:layout_width="match_parent" android:layout_height="40.0dp" android:contentDescription="@string/zoom_in" app:dt_backgroundDrawable="map_widget_zoom_in">
+            <com.amap.bundle.commonui.designtoken.view.DtImageView android:id="@id/zoom_in" android:layout_width="28.0dp" android:layout_height="28.0dp" app:dt_backgroundDrawable="map_widget_zoom_in_icon" />
+        </com.autonavi.bundle.uitemplate.mapwidget.widget.zoom.ZoomWidgetLayout>
+        <com.amap.bundle.commonui.designtoken.view.DtView android:layout_gravity="center" android:id="@id/zoom_out_line" android:layout_width="24.0dp" android:layout_height="0.5dp" app:dt_backgroundColor="Color_Black(1A)" />
+        <com.autonavi.bundle.uitemplate.mapwidget.widget.zoom.ZoomWidgetLayout android:gravity="center" android:id="@id/zoom_out_container" android:background="@drawable/map_widget_zoom_out" android:layout_width="match_parent" android:layout_height="40.0dp" android:contentDescription="@string/zoom_out" app:dt_backgroundDrawable="map_widget_zoom_out">
+            <com.amap.bundle.commonui.designtoken.view.DtImageView android:id="@id/zoom_out" android:layout_width="28.0dp" android:layout_height="28.0dp" app:dt_backgroundDrawable="map_widget_zoom_out_icon" />
+        </com.autonavi.bundle.uitemplate.mapwidget.widget.zoom.ZoomWidgetLayout>
+    </com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout>
+</com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout>

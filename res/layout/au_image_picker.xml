@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AURelativeLayout android:orientation="vertical" android:background="@color/AU_COLOR_UNIVERSAL_BG" android:padding="@dimen/AU_MARGIN_UNIVERSAL" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alipay.mobile.antui.basic.AURelativeLayout android:id="@id/picker_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/AU_MARGIN_UNIVERSAL">
+        <com.alipay.mobile.antui.basic.AUTextView android:textSize="@dimen/AU_SINGLE_LINE_TITLE_TEXTSIZE" android:textColor="@color/AU_COLOR_TITLE" android:id="@id/picker_title_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请提供相关问题的截图或照片" />
+        <com.alipay.mobile.antui.basic.AUTextView android:textSize="@dimen/AU_SINGLE_LINE_TITLE_TEXTSIZE" android:textColor="@color/AU_COLOR_SUB_CONTENT" android:id="@id/picker_title_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1/6" android:layout_alignParentRight="true" />
+    </com.alipay.mobile.antui.basic.AURelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/picker_title" />
+</com.alipay.mobile.antui.basic.AURelativeLayout>

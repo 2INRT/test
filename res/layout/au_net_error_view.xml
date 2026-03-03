@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.alipay.mobile.antui.lottie.AULottieLayout android:layout_gravity="center" android:id="@id/icon_lottie" android:layout_width="@dimen/au_net_error_icon_size" android:layout_height="@dimen/au_net_error_icon_size" />
+        <com.alipay.mobile.antui.basic.AUImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="200.0dp" android:layout_height="200.0dp" />
+    </FrameLayout>
+    <com.alipay.mobile.antui.basic.AUTextView android:textSize="@dimen/net_error_tip_text_size" android:textColor="@color/AU_COLOR_MAIN_CONTENT" android:gravity="center_horizontal" android:id="@id/tips" android:paddingLeft="@dimen/AU_SPACE6" android:paddingRight="@dimen/AU_SPACE6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/AU_SPACE5" />
+    <com.alipay.mobile.antui.basic.AUTextView android:textSize="@dimen/net_error_subtip_text_size" android:textColor="@color/AU_COLOR_SUB_CONTENT" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/sub_tips" android:paddingLeft="@dimen/AU_SPACE6" android:paddingRight="@dimen/AU_SPACE6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/au_net_error_subtitle_top" />
+    <com.alipay.mobile.antui.basic.AULinearLayout android:gravity="center|top" android:orientation="horizontal" android:id="@id/button" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.alipay.mobile.antui.basic.AUButton android:id="@id/sub_action" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/AU_SPACE5" android:layout_marginRight="@dimen/au_v2_margin_universal" style="@style/capsuleButtonOutlineStyleMiddle" />
+        <com.alipay.mobile.antui.basic.AUButton android:id="@id/action" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/AU_SPACE5" style="@style/capsuleButtonOutlineStyleMiddle" />
+    </com.alipay.mobile.antui.basic.AULinearLayout>
+</merge>

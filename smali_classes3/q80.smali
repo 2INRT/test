@@ -1,0 +1,42 @@
+.class public final Lq80;
+.super Ls80;
+.source "SourceFile"
+
+
+# instance fields
+.field public final k:Ljava/lang/String;
+
+.field public final l:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(SLjava/lang/String;Ljava/lang/String;)V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ls80;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 v0, 0x6
+
+    .line 5
+    iput v0, p0, Ls80;->b:I
+
+    .line 6
+    .line 7
+    iput-short p1, p0, Ly90;->mOwnerId:S
+
+    .line 8
+    .line 9
+    iput-object p2, p0, Lq80;->k:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    iput-object p3, p0, Lq80;->l:Ljava/lang/String;
+
+    .line 12
+    .line 13
+    return-void
+.end method

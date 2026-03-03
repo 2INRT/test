@@ -1,0 +1,1417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:installLocation="auto" package="com.autonavi.minimap" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:name="android.permission.ZTE_HEARTYSERVICE_MANAGEMENT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SUBSCRIBE_TO_KEYGUARD_LOCKED_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="com.android.permission.SEND_BEIDOU_SMS"/>
+    <uses-permission android:name="com.android.permission.RECEIVE_BEIDOU_SMS"/>
+    <uses-permission android:name="com.android.permission.SEND_TIANTONG_SMS"/>
+    <uses-permission android:name="com.android.permission.RECEIVE_TIANTONG_SMS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.autonavi.permission.ACCESS_LOCATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.meizu.flyme.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.google.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.google.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.google.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_FIND_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.authentication.HW_ACCESS_AUTH_SERVICE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.huawei.lbs.permission.ACCESS_BIND_LBSSERVICE"/>
+    <uses-permission android:name="com.huawei.launcher3.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.launcher3.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.huawei.launcher2.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.launcher2.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.ucar.permission.UCAR_SERVICE"/>
+    <permission android:name="com.ucar.permission.UCAR_APP_SERVICE"/>
+    <permission android:name="com.amap.sdk.protected_provider.ACCESS_DATA" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.amap.sdk.protected_provider.ACCESS_DATA"/>
+    <permission android:name="com.autonavi.minimap.permission.RECV_MESSAGE" android:protectionLevel="normal"/>
+    <permission android:name="com.autonavi.minimap.permission.ACCESS_DATA_SERVICE" android:protectionLevel="normal"/>
+    <uses-permission android:name="com.autonavi.minimap.permission.ACCESS_DATA_SERVICE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+    <uses-permission android:name="Manifest.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION"/>
+    <uses-permission android:name="com.huawei.hicar.HICAR_PERMISSION"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION"/>
+    <uses-permission android:name="com.autonavi.minimap.permission.PREFERENCES_COOKIE_SYNC"/>
+    <permission android:name="com.autonavi.minimap.permission.PREFERENCES_COOKIE_SYNC" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="com.android.permission.GET_INSTALLED_APPS"/>
+    <uses-permission android:name="com.hihonor.permission.SATELLITE_BUSINESS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE"/>
+    <uses-permission android:name="intelligent.permission.SHARE_INTENT"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
+    <queries>
+        <intent>
+            <action android:name="com.hihonor.push.action.BIND_PUSH_SERVICE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="image/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+        </intent>
+        <package android:name="com.tencent.mobileqq"/>
+        <package android:name="com.tencent.mm"/>
+        <package android:name="com.alibaba.android.rimet"/>
+        <package android:name="com.huawei.health"/>
+        <package android:name="com.huawei.wearengine.service.WearEngineService"/>
+        <package android:name="com.eg.android.AlipayGphone"/>
+        <package android:name="com.eg.android.AlipayGphoneRC"/>
+        <package android:name="hk.alipay.wallet"/>
+        <package android:name="com.huawei.arengine.service"/>
+        <package android:name="com.huawei.hicar"/>
+        <package android:name="com.sh.paipai"/>
+        <package android:name="com.autonavi.gxdtaojin"/>
+        <package android:name="com.sina.weibo"/>
+        <package android:name="com.qunar"/>
+        <package android:name="com.huawei.systemmanager"/>
+        <package android:name="com.miui.securitycenter"/>
+        <package android:name="com.coloros.safecenter"/>
+        <package android:name="com.oppo.safe"/>
+        <package android:name="com.vivo.permissionmanager"/>
+        <package android:name="com.iqoo.secure"/>
+        <package android:name="com.meizu.safe"/>
+        <package android:name="com.samsung.android.sm_cn"/>
+        <package android:name="com.samsung.android.sm"/>
+        <package android:name="com.oneplus.security"/>
+        <package android:name="com.zui.safecenter"/>
+        <package android:name="com.letv.android.letvsafe"/>
+        <package android:name="com.smartisanos.security"/>
+        <package android:name="com.htc.pitroad"/>
+        <package android:name="com.yulong.android.coolsafe"/>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.HOME"/>
+        </intent>
+        <package android:name="com.unionpay"/>
+        <package android:name="com.unionpay.tsmservice"/>
+        <package android:name="com.unionpay.tsmservice.mi"/>
+        <package android:name="com.huawei.wallet"/>
+        <package android:name="com.cmbc.cc.mbank"/>
+        <package android:name="cn.com.cmbc.newmbank"/>
+        <package android:name="cn.com.spdb.mobilebank.per"/>
+        <package android:name="com.spdbccc.app"/>
+        <package android:name="com.ecitic.bank.mobile"/>
+        <provider android:authorities="IntelligentIntent"/>
+        <provider android:authorities="com.oplus.privacysandbox.provider"/>
+        <provider android:authorities="com.oplus.securepay.SampleProvider"/>
+        <package android:name="com.coloros.speechassist"/>
+        <package android:name="com.coloros.speechassist.engine"/>
+        <package android:name="com.miui.voiceassist"/>
+        <package android:name="com.huawei.vassistant"/>
+        <package android:name="com.vivo.agent"/>
+        <package android:name="com.android.systemui"/>
+        <package android:name="com.oneplus.speechassist"/>
+        <package android:name="com.xiaomi.xiaoailite"/>
+        <package android:name="com.heytap.speechassist"/>
+        <package android:name="com.lenovo.menu_assistant"/>
+        <package android:name="com.hihonor.vassistant"/>
+        <package android:name="com.nearme.instant.platform"/>
+        <package android:name="com.autonavi.xmgd.navigator"/>
+        <intent>
+            <action android:name="com.hihonor.id.HnOaIdService"/>
+        </intent>
+        <package android:name="com.tencent.qqmusic"/>
+        <package android:name="com.hihonor.id"/>
+        <package android:name="com.ximalaya.ting.android"/>
+        <package android:name="com.heytap.market"/>
+        <package android:name="com.coloros.assistantscreen"/>
+        <package android:name="com.ss.android.ugc.aweme"/>
+        <package android:name="com.ss.android.ugc.aweme.lite"/>
+        <package android:name="com.ss.android.ugc.live"/>
+        <intent>
+            <action android:name="*"/>
+            <data android:scheme="tbopen"/>
+        </intent>
+        <package android:name="hk.alipay.walletRC"/>
+        <package android:name="com.sina.weibog3"/>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:host="*" android:scheme="smsto"/>
+        </intent>
+        <package android:name="com.bankcomm"/>
+        <package android:name="com.bankcomm.Bankcomm"/>
+        <package android:name="com.android.phone"/>
+        <package android:name="com.xianyu.gaotong"/>
+        <package android:name="virtual.camera.app"/>
+        <package android:name="com.example.vcam"/>
+        <package android:name="com.wangyiheng.vcamsx"/>
+        <package android:name="com.telegram.a1064"/>
+        <package android:name="com.pedia.vcamsx"/>
+        <package android:name="com.paint.yssh"/>
+        <package android:name="com.youdao.youdaomath"/>
+        <package android:name="com.yztc.studio.plugin"/>
+        <package android:name="com.variable.apkhook"/>
+        <package android:name="cn.porsche.app"/>
+        <package android:name="com.tsng.hidemyapplist"/>
+        <package android:name="me.weishu.kernelsu"/>
+        <package android:name="com.topjohnwu.magisk"/>
+        <package android:name="me.bmax.apatch"/>
+        <package android:name="io.github.huskydg.magisk"/>
+        <package android:name="com.rifsxd.ksunext"/>
+        <package android:name="com.sukisu.ultra"/>
+        <package android:name="me.garfieldhan.apatch.next"/>
+        <package android:name="icu.nullptr.nativetest"/>
+        <package android:name="io.github.vvb2060.mahoshojo"/>
+        <package android:name="com.byxiaorun.detector"/>
+        <package android:name="com.netease.cloudmusic"/>
+        <package android:name="com.andorid.music"/>
+        <package android:name="com.android.music"/>
+        <package android:name="com.kugou.android"/>
+        <package android:name="com.hihonor.auto"/>
+        <intent>
+            <action android:name="ucar.service.MAP_SERVICE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <package android:name="org.hapjs.debugger"/>
+    </queries>
+    <uses-permission android:name="com.vivo.assistant.permission.CPMAP"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <permission android:name="com.amap.android.plugin.qqmusic.WNS_PUSH_BROADCAST" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <permission android:name="com.amap.android.plugin.googleid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.amap.android.plugin.googleid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <meta-data android:name="miui.focusNotificationVersion" android:value="1"/>
+    <permission android:name="com.autonavi.minimap.permission.NAVIGATION_SERVICE" android:protectionLevel="normal"/>
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="miui.permission.READ_STEPS"/>
+    <uses-permission android:name="com.zui.uhealth.permission.READ_PROVIDER"/>
+    <uses-permission android:name="com.hihonor.auto.permission.READ_CAR_STATE"/>
+    <uses-permission android:name="com.amap.ams.permission.ACCESS_AMS_SERVICE"/>
+    <uses-permission android:name="com.vivo.permission.location.GARAGE_RESULT_ACCESS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="vivo.intent.action.CAR_CONNECT_BROADCAST"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="com.hihonor.security.permission.ACCESS_THREAT_DETECTION"/>
+    <uses-permission android:name="com.xiaomi.security.permission.ACCESS_XSOF"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="cn.cyberidentity.certification.AUTH"/>
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS"/>
+    <uses-permission android:name="com.oplus.flashback.permission.FLASH_VIEWS_SERVICE"/>
+    <uses-permission android:name="com.hihonor.brain.permission.KIT_SERVICE_ACCESS"/>
+    <uses-permission android:name="com.vivo.assistant.permission.access.provider"/>
+    <uses-permission android:name="com.vivo.assistant.permission.sport.broadcast"/>
+    <uses-permission android:name="com.vivo.assistant.StepProvider"/>
+    <uses-permission android:name="com.hihonor.auto.permission.BIND_CAR_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:name="com.autonavi.minimap.permission.MIPUSH_RECEIVE"/>
+    <permission android:name="com.autonavi.minimap.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    <uses-permission android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    <uses-permission android:name="com.vivo.notification.permission.BADGE_ICON"/>
+    <permission android:name="com.autonavi.minimap.hihonor.permission.PROCESS_PUSH_MSG" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO"/>
+    <application android:allowBackup="false" android:allowNativeHeapPointerTagging="false" android:appComponentFactory="com.amap.bundle.pluginframework.components.AMapComponentFactory" android:extractNativeLibs="true" android:hardwareAccelerated="true" android:icon="@drawable/v3_icon" android:label="@string/amap_app_name" android:largeHeap="true" android:name="com.autonavi.minimap.lite.NewMapApplication" android:networkSecurityConfig="@xml/network_security_config" android:preserveLegacyExternalStorage="true" android:requestLegacyExternalStorage="true" android:resizeableActivity="false" android:roundIcon="@drawable/v3_icon" android:supportsRtl="true" android:theme="@style/Theme.NoBackground" android:usesNonSdkApi="true">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="UCSDKAppKey" android:value="DyEvqkMe8TZMqqBvccHKCbe07YRBHXT9Po4hJ2Vi3K0j47Jl9XvxTqWNaj6vw4VjiOxJjiKNbtgZcF46Tc3cTA=="/>
+        <meta-data android:name="appkey" android:value="23699722"/>
+        <service android:exported="false" android:name="anetwork.channel.aidl.NetworkService">
+            <intent-filter>
+                <action android:name="anetwork.channel.aidl.IRemoteNetworkGetter"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.autonavi.minimap.ajx3.Ajx3DebugService"/>
+        <meta-data android:name="com.oplus.ocs.satellite.AUTH_CODE" android:value="ATBEAiBEekk0i/xhxal1SidfRif+V2PlSaMH8wTACe/QQopEKwIgC9Ei8zQG+p2f8++mRRLpJcSc/ol8PoToxmyi+gAmRM9wychL+AAAAA=="/>
+        <receiver android:exported="false" android:name="com.autonavi.bundle.routecommute.receiver.BasemapCommuteTypeReceiver">
+            <intent-filter>
+                <action android:name="com.autonavi.minimap.action.TRIP_TOOL_SELECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:label="@string/desktop_widget_route_commute_label_new" android:name="com.autonavi.bundle.routecommute.desktopwidget.RouteCommuteWidgetProvider" android:process=":widgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE_OPTIONS"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.autonavi.bundle.routecommute.desktopwidget.RouteCommuteWidgetProvider.dataUpdate"/>
+                <action android:name="com.autonavi.bundle.routecommute.desktopwidget.RouteCommuteWidgetProvider.dataUpdate_click"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/routecommute_widget_info"/>
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="60000"/>
+            <meta-data android:name="miuiWidget" android:value="true"/>
+            <meta-data android:name="com.hihonor.widget.type" android:value="honorcard"/>
+            <meta-data android:name="vivo_widget" android:value="true"/>
+            <meta-data android:name="vivoWidgetVersion" android:value="2"/>
+            <meta-data android:name="vivo.widget.description" android:resource="@string/desktop_widget_route_commute_desc"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:label="@string/realtime_bus_widget_label_new" android:name="com.autonavi.minimap.route.bus.realtimebus.desktopwidget.RealTimeBusWidgetProvider" android:process=":widgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE_OPTIONS"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.autonavi.bundle.realtimebus.desktopwidget.RealTimeBusWidgetProvider.dataUpdate"/>
+                <action android:name="com.autonavi.bundle.realtimebus.desktopwidget.RealTimeBusWidgetProvider.dataUpdate_click"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/realtime_bus_widget_info_v2"/>
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="60000"/>
+            <meta-data android:name="miuiWidget" android:value="true"/>
+            <meta-data android:name="com.hihonor.widget.type" android:value="honorcard"/>
+            <meta-data android:name="vivo_widget" android:value="true"/>
+            <meta-data android:name="vivoWidgetVersion" android:value="2"/>
+            <meta-data android:name="vivo.widget.description" android:resource="@string/realtime_bus_widget_desc"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:label="@string/desktopwidget_dynamic_action_sports_health_label" android:name="com.autonavi.bundle.sportshealth.widgetprovider.SportWidgetProvider" android:process=":widgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE_OPTIONS"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="desktopwidget_dynamic_action_sports_health"/>
+                <action android:name="desktopwidget_dynamic_action_sports_health_click"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/sportshealth_widget_info"/>
+            <meta-data android:name="com.hihonor.widget.type" android:value="honorcard"/>
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="180000"/>
+            <meta-data android:name="miuiWidget" android:value="true"/>
+            <meta-data android:name="vivo_widget" android:value="true"/>
+            <meta-data android:name="vivoWidgetVersion" android:value="2"/>
+            <meta-data android:name="vivo.widget.description" android:resource="@string/desktopwidget_dynamic_action_sports_health_desc"/>
+        </receiver>
+        <meta-data android:name="com.huawei.hms.client.service.name:arenginesdk" android:value="arenginesdk:4.0.0.5"/>
+        <meta-data android:name="com.huawei.hicar.supportCardWindow" android:value="V1.5"/>
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <meta-data android:name="notch.config" android:value="portrait|landscape"/>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="appid=1020911"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="cae7519568c0961203f0ac4180433076"/>
+        <meta-data android:name="APP_ID" android:value="fd6d7b6f19cbe680"/>
+        <meta-data android:name="android.max_aspect" android:value="2.5"/>
+        <meta-data android:name="android.min_aspect" android:value="1.0"/>
+        <meta-data android:name="com.huawei.cardsde.capability" android:value="nav"/>
+        <meta-data android:name="com.google.ar.core" android:value="optional"/>
+        <meta-data android:name="com.google.ar.core.min_apk_version" android:value="242590000"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.google.ar.core.InstallActivity" android:theme="@android:style/Theme.Material.Light.Dialog.Alert"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:label="@string/amap_app_name" android:name="com.amap.bundle.tools.datafreecheck.DataFreeLowActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Splash"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:label="@string/amap_app_name" android:name="com.autonavi.map.activity.ErrorActivity" android:process=":installerror" android:screenOrientation="portrait" android:theme="@style/Theme.Splash"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:label="@string/amap_app_name" android:name="com.autonavi.map.activity.CpuArchErrorActivity" android:process=":installerror" android:screenOrientation="portrait" android:theme="@style/Theme.Splash"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|layoutDirection" android:excludeFromRecents="true" android:exported="true" android:label="@string/amap_app_name" android:launchMode="singleTask" android:name="com.autonavi.map.activity.HicarSplashActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="amapurihicar"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="huawei.intent.action.hicar.MAP"/>
+                <category android:name="huawei.intent.category.hicar.MAP"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|layoutDirection" android:excludeFromRecents="true" android:exported="false" android:label="@string/amap_app_name" android:name="com.autonavi.map.activity.NewHicarSplashActivity" android:noHistory="false" android:screenOrientation="portrait" android:theme="@style/Theme.Splash.FullScreen"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="com.autonavi.map.activity.HicarMapActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:theme="@style/Theme.CarProjection.FullScreen" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale" android:excludeFromRecents="true" android:exported="true" android:label="@string/amap_app_name" android:name="com.autonavi.map.activity.UcarSplashActivity" android:noHistory="false" android:taskAffinity="com.autonavi.ucar.splash" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.ucar.intent.action.UCAR"/>
+                <category android:name="com.ucar.intent.category.UCAR"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ucar.intent.action.UCAR"/>
+                <category android:name="com.ucar.intent.category.UCAR"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="amapuriucar"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ucar.intent.action.UCAR"/>
+                <category android:name="com.ucar.intent.category.MAP_PREVIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ucar.intent.action.UCAR"/>
+                <category android:name="com.ucar.intent.category.MAP_PREVIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="amapuriucar"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="samsung.intent.action.carlink.kit"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|layoutDirection" android:exported="true" android:label="@string/amap_app_name" android:name="com.autonavi.map.activity.MagicTextSplashActivity" android:noHistory="false" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.autonavi.intent.action.MAGIC"/>
+                <category android:name="com.autonavi.intent.category.MAGIC"/>
+            </intent-filter>
+        </activity>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.autonavi.map.activity.UcarMapActivity" android:resizeableActivity="true" android:taskAffinity="com.autonavi.ucar.map" android:theme="@style/Theme.CarProjection.FullScreen" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|layoutDirection" android:exported="true" android:label="@string/amap_app_name" android:launchMode="singleTask" android:name="com.autonavi.map.activity.QuickSplashActivity" android:noHistory="false" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:theme="@style/Theme.Splash.FullScreen.Quick">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="workInAmap" android:scheme="amapquickuri"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|colorMode|fontScale" android:exported="true" android:launchMode="singleTask" android:name="com.autonavi.map.activity.SchemeHandleActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Splash.FullScreen" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="amapuri"/>
+                <data android:scheme="scme2017122201358023c49cf2"/>
+                <data android:scheme="scme20171218009637581187f3"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ut.21792629"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="navi" android:scheme="androidamap"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="openFeature" android:scheme="androidamap"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="poi" android:scheme="androidamap"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.autonavi.minimap.ACTION"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:scheme="geo"/>
+                <data android:scheme="pois"/>
+                <data android:scheme="wechatnav"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.autonavi.minimap.ACTION"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="maps.google.com" android:scheme="http"/>
+                <data android:host="maps.google.cn" android:scheme="http"/>
+                <data android:host="ditu.google.cn" android:scheme="http"/>
+                <data android:host="10.2.134.117" android:scheme="http"/>
+                <data android:host="ditu.google.com" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="wb.amap.com" android:scheme="http"/>
+                <data android:host="wb.amap.com" android:scheme="https"/>
+                <data android:host="amap.com" android:scheme="http"/>
+                <data android:host="amap.com" android:scheme="https"/>
+                <data android:host="mo.amap.com" android:scheme="http"/>
+                <data android:host="mo.amap.com" android:scheme="https"/>
+                <data android:host="dypx.amap.com" android:scheme="http"/>
+                <data android:host="dypx.amap.com" android:scheme="https"/>
+                <data android:host="surl.test.myamap.com" android:scheme="http"/>
+                <data android:host="surl.test.myamap.com" android:scheme="https"/>
+                <data android:host="f.amap.com" android:scheme="http"/>
+                <data android:host="f.amap.com" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="showTraffic" android:scheme="androidamap"/>
+                <data android:host="viewMap" android:scheme="androidamap"/>
+                <data android:host="indoorMap" android:scheme="androidamap"/>
+                <data android:host="myLocation" android:scheme="androidamap"/>
+                <data android:host="bus" android:scheme="androidamap"/>
+                <data android:host="arroundpoi" android:scheme="androidamap"/>
+                <data android:host="route" android:scheme="androidamap"/>
+                <data android:host="keywordNavi" android:scheme="androidamap"/>
+                <data android:host="viewReGeo" android:scheme="androidamap"/>
+                <data android:host="viewGeo" android:scheme="androidamap"/>
+                <data android:host="viewPOIDetail" android:scheme="androidamap"/>
+                <data android:host="shorturl" android:scheme="androidamap"/>
+                <data android:host="discovery" android:scheme="androidamap"/>
+                <data android:host="hotelList" android:scheme="androidamap"/>
+                <data android:host="groupbuyList" android:scheme="androidamap"/>
+                <data android:host="movieList" android:scheme="androidamap"/>
+                <data android:host="movieDetail" android:scheme="androidamap"/>
+                <data android:host="groupbuyDetail" android:scheme="androidamap"/>
+                <data android:host="navi2SpecialDest" android:scheme="androidamap"/>
+                <data android:host="rootmap" android:scheme="androidamap"/>
+                <data android:host="multiPointShow" android:scheme="androidamap"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="amap.onelink.me" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.autonavi.minimap.ACTION"/>
+                <data android:scheme="navi"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.autonavi.minimap.lite.EmptyActivity"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|colorMode|fontScale" android:exported="true" android:launchMode="singleTask" android:name="com.autonavi.map.activity.NewMapActivity" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:theme="@style/Theme.Splash.FullScreen" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="INTENT_ACTION_TAXISHORT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|colorMode|fontScale" android:exported="true" android:label="@string/amap_app_name" android:name="com.autonavi.map.activity.SplashActivity" android:noHistory="false" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:targetActivity="com.autonavi.map.activity.NewMapActivity" android:theme="@style/Theme.Splash.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="com.bbk.launcher2.DEEP_SHORTCUT"/>
+            </intent-filter>
+            <meta-data android:name="vivo_flip_ex_screen_show" android:value="1"/>
+        </activity-alias>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.autonavi.minimap.MiPushActivity" android:theme="@style/Theme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.autonavi.minimap" android:path="/thirdpush" android:scheme="agoo"/>
+            </intent-filter>
+        </activity>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="supportStyle" android:value="scene|voip"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize|fontScale" android:name="com.autonavi.gdtaojin.camera.CameraActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.amap.bundle.qaplugin.QABug.BugActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="true" android:label=" " android:launchMode="singleTask" android:name="com.autonavi.minimap.wxapi.WXEntryActivity" android:screenOrientation="user" android:taskAffinity="com.autonavi.minimap" android:theme="@style/Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="true" android:label=" " android:launchMode="singleInstance" android:name="com.autonavi.minimap.ddshare.DDShareActivity" android:screenOrientation="user" android:theme="@style/Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|colorMode|fontScale" android:exported="false" android:launchMode="singleTask" android:name="com.autonavi.map.activity.SafeModeActivity" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:theme="@style/Theme.Splash.FullScreen" android:windowSoftInputMode="adjustPan"/>
+        <service android:enabled="true" android:exported="true" android:name="com.autonavi.tasktransfer.service.AMapTaskTransferService" android:permission="com.huawei.hicar.HICAR_PERMISSION">
+            <intent-filter>
+                <action android:name="com.huawei.aa.action.FLOW_TASK_SERVICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="com.autonavi.carhandoff.service.AMapCarHandOffCarService" android:protectionLevel="privileged">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.vivo.car.connectsdk.VIVO_CAR_HANDOFF_SERVICE"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.autonavi.minimap.basemap.errorback.DoorAddressUpload" android:screenOrientation="user" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.tencent.connect.common.AssistActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent100571486"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="com.q.m.QS"/>
+        <receiver android:exported="false" android:name="com.autonavi.minimap.intent.AmapActionBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.autonavi.minimap.Intent.Action"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.amap.api.service.AMapService" android:process=":locationservice"/>
+        <service android:enabled="true" android:exported="false" android:name="com.amap.bundle.location.subprocess.AmapLocationSubService" android:process=":locationservice"/>
+        <service android:name="com.autonavi.common.impl.BackgroundService"/>
+        <service android:name="com.alipay.android.app.MspService"/>
+        <service android:name="com.autonavi.minimap.route.bus.navi.BusRideRemindService"/>
+        <service android:name="com.autonavi.minimap.route.foot.footnavi.FootNaviService" android:priority="1000"/>
+        <service android:name="com.autonavi.navigation.service.CarNaviService"/>
+        <service android:name="com.autonavi.minimap.alc.service.ALCManagerService"/>
+        <service android:foregroundServiceType="location|microphone" android:name="com.autonavi.bundle.amaphome.compat.service.NotifyServiceImpl"/>
+        <service android:foregroundServiceType="location" android:name="com.autonavi.bundle.routecommon.service.ExtraScreenNotifyServiceImpl"/>
+        <service android:foregroundServiceType="location" android:name="com.autonavi.bundle.sharetrip.service.SharetripExtraScreenNotifyServiceImpl"/>
+        <service android:foregroundServiceType="mediaProjection" android:name="com.amap.bundle.screenrecorder.api.ScreenRecorderFGService"/>
+        <activity android:name="com.autonavi.minimap.route.common.presenter.RouteFragment">
+            <meta-data android:name="action" android:value="plugin.minimap.RouteFragment"/>
+        </activity>
+        <activity android:name="com.autonavi.minimap.drive.search.fragment.SearchCallbackFragment">
+            <meta-data android:name="action" android:value="plugin.search.SearchCallbackFragment"/>
+        </activity>
+        <receiver android:exported="true" android:name="com.autonavi.minimap.app.WakeupReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.autonavi.minimap.drive.car.navi.naviwidget.AutoNaviFloatViewWidgetService"/>
+        <service android:name="com.shenma.speechrecognition.ShenmaRecognitionService"/>
+        <service android:exported="true" android:name="com.yunos.carkitservice.CarKitService" android:process="com.yunos.carkitservice.CarKitService">
+            <intent-filter>
+                <action android:name="com.yunos.carkitservice.remoteservice"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.autonavi.minimap.offline.koala.internal.KoalaDownloadService"/>
+        <provider android:authorities="com.amap.takephoto.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <service android:exported="false" android:name="com.amap.bundle.lotuspool.internal.LotusPoolService" android:process=":locationservice"/>
+        <service android:exported="false" android:name="com.amap.bundle.lotuspool.internal.remote.LotusPoolProxyService"/>
+        <service android:exported="true" android:name="com.taobao.accs.ChannelService" android:process=":locationservice">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.taobao.accs.ChannelService$KernelService" android:process=":locationservice"/>
+        <service android:exported="true" android:name="com.taobao.accs.data.MsgDistributeService">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.taobao.accs.ServiceReceiver" android:process=":locationservice">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.COMMAND"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.START_FROM_AGOO"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.amap.bundle.network.channel.AmapAccsService">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.autonavi.minimap:channel" android:exported="true" android:name="com.taobao.accs.AccsIPCProvider" android:process=":locationservice"/>
+        <service android:exported="false" android:name="com.autonavi.minimap.controller.PushAidlService">
+            <intent-filter>
+                <action android:name="com.autonavi.minimap.controller.PushAidlService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="org.android.agoo.accs.AgooService" android:process=":locationservice">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.autonavi.minimap.TaobaoIntentService" android:process=":locationservice">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.taobao.agoo.AgooCommondReceiver" android:process=":locationservice">
+            <intent-filter>
+                <action android:name="com.autonavi.minimap.intent.action.COMMAND"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.taobao.agoo.TaobaoMessageIntentReceiverService" android:process=":locationservice">
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.autonavi.minimap.adiuprovider" android:exported="false" android:name="com.autonavi.minimap.adiu.storage.AdiuContentProvider" android:process=":locationservice"/>
+        <provider android:authorities="com.autonavi.minimap.mpsharedpreferences" android:exported="false" android:name="com.amap.bundle.mapstorage.MPSharedPreferences"/>
+        <activity android:name="com.autonavi.profile.QATestInfo.ScreenShotActivity" android:theme="@android:style/Theme.Dialog"/>
+        <meta-data android:name="com.vivo.push.api_key" android:value="b722871f-49e7-416b-a7a0-cde266d0754b"/>
+        <meta-data android:name="com.vivo.push.app_id" android:value="10135"/>
+        <meta-data android:name="HasAdaptedLockScreenNavigation-HuaWei" android:value="true"/>
+        <meta-data android:name="com.huawei.hicar.map.capability" android:value="cruiseMode,asrVoice"/>
+        <meta-data android:name="com.hihonor.push.app_id" android:value="220710471"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.unionpay.UPPayWapActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <provider android:authorities="com.autonavi.minimap.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <receiver android:enabled="true" android:exported="true" android:label="@string/desktop_widget_toolbox_label_new" android:name="com.autonavi.bundle.amaphome.desktopwidget.ToolboxWidgetProvider" android:process=":widgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.autonavi.bundle.amaphome.desktopwidget.ToolboxWidgetProvider.dataUpdate"/>
+                <action android:name="com.autonavi.bundle.amaphome.desktopwidget.ToolboxWidgetProvider.click"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/toolbox_widget_info"/>
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="3600000"/>
+            <meta-data android:name="miuiWidget" android:value="true"/>
+            <meta-data android:name="com.hihonor.widget.type" android:value="honorcard"/>
+            <meta-data android:name="vivo_widget" android:value="true"/>
+            <meta-data android:name="vivoWidgetVersion" android:value="2"/>
+            <meta-data android:name="vivo.widget.description" android:resource="@string/desktop_widget_toolbox_desc"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:label="@string/travel_assistant_desktop_widget_name" android:name="com.autonavi.bundle.amaphome.desktopwidget.vivo.VivoWidgetProvider" android:process=":widgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.autonavi.bundle.amaphome.desktopwidget.vivo.VivoWidgetProvider.dataUpdate"/>
+                <action android:name="com.autonavi.bundle.amaphome.desktopwidget.vivo.VivoWidgetProvider.click"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/vivo_toolbox_widget_info"/>
+            <meta-data android:name="vivo_widget" android:value="true"/>
+            <meta-data android:name="vivo_update_period" android:value="180000"/>
+            <meta-data android:name="widget_link_launcher_version_phone" android:value="140001120"/>
+            <meta-data android:name="widget_link_launcher_version_fold" android:value="140501120"/>
+        </receiver>
+        <activity android:enabled="true" android:exported="false" android:name="com.autonavi.nebulax.ui.photo.ajx.PhotoActivity" android:theme="@style/photoTheme"/>
+        <activity android:enabled="true" android:exported="false" android:name="com.autonavi.nebulax.ui.pdfviewer.PdfViewerActivity"/>
+        <service android:enabled="true" android:exported="false" android:name="com.autonavi.miniapp.monitor.biz.logmonitor.ClientMonitorService"/>
+        <meta-data android:name="mobilegw.appid" android:value="ALIPAY_INSIDE_AMAP_AND"/>
+        <meta-data android:name="mobilegw.rpcVersion" android:value="V2"/>
+        <meta-data android:name="logging.gateway" android:value="https://mdap.alipay.com"/>
+        <meta-data android:name="setting.logging.encryption.pubkey" android:value="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCpffOiYcozIfgIiaOPWsmfktv7Sl/9Af3mIgYz7vkTXoGq4iMN+t5BLV6KjddVEI/9oLtAYV8qx7FhFrUoi3smcYfX35ETPUiHi1gLizeXKVSRYhIm2kiDF5lGfDgcS7uJZvmKjbdYy/RphnH+WQvQyeEH+4rjYSkdhIRE2W52BwIDAQAB"/>
+        <meta-data android:name="client_signature" android:value=""/>
+        <meta-data android:name="agent.commonservice.load" android:value="com.alipay.mobile.framework.service.ClientServicesLoader"/>
+        <meta-data android:name="use_nebula_mng" android:value="yes"/>
+        <meta-data android:name="nebulamng_bundleid" android:value="com.amap.app"/>
+        <meta-data android:name="nebulamng_env" android:value="production"/>
+        <meta-data android:name="nebulamng_channel" android:value="offical"/>
+        <meta-data android:name="ariver_manifest" android:value="com.autonavi.nebulax.manifest.AmapManifest"/>
+        <provider android:authorities="com.autonavi.minimap.inside.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.alipay.mobile.nebulax.inside.InsideFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/inside_fileprovider_path"/>
+        </provider>
+        <receiver android:enabled="true" android:exported="false" android:label="@string/billboard_widget_label" android:name="com.autonavi.minimap.bundle.favorites.desktopwidget.BillboardWidgetProvider" android:process=":widgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.autonavi.minimap.bundle.favorites.desktopwidget.BillboardWidgetProvider.dataUpdate"/>
+                <action android:name="com.autonavi.minimap.bundle.favorites.desktopwidget.BillboardWidgetProvider.click"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/billboard_widget_info"/>
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="300000"/>
+            <meta-data android:name="miuiWidget" android:value="true"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:label="@string/subscribe_widget_label_1" android:name="com.autonavi.minimap.bundle.favorites.hoteldesktopwidget.SubscribeWidgetProvider" android:process=":widgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.autonavi.minimap.bundle.favorites.desktopwidget.SubscribeProvider.dataUpdate"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/subscribe_widget_info"/>
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="600000"/>
+            <meta-data android:name="miuiWidget" android:value="true"/>
+        </receiver>
+        <service android:exported="false" android:foregroundServiceType="location" android:name="com.amap.bundle.perfopt.enhanced.foregroundservice.MainAliveForegroundService"/>
+        <service android:exported="false" android:foregroundServiceType="location" android:name="com.amap.bundle.perfopt.enhanced.foregroundservice.LocationAliveForegroundService" android:process=":locationservice"/>
+        <service android:exported="false" android:name="com.amap.bundle.perfopt.PerfMonitorFloatingWindowsService"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|layoutDirection" android:excludeFromRecents="true" android:exported="true" android:label="@string/O337_12" android:launchMode="singleTask" android:name="com.autonavi.bundle.routecommon.cruise.RouteCruiseActivity" android:noHistory="false" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="amapuricruise"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:foregroundServiceType="location" android:name="com.autonavi.bundle.routecommon.cruise.BackgroundCruiseService">
+            <intent-filter>
+                <action android:name="com.autonavi.minimap.action.TRAFFIC_LIGHT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:foregroundServiceType="location" android:name="com.autonavi.bundle.routecommon.trafficlight.TrafficLightNewService">
+            <intent-filter>
+                <action android:name="com.autonavi.minimap.action.TRAFFIC_LIGHT_NEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.tencent.qqmusic.qplayer.logininfo.LoginHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="login" android:scheme="opisdk"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.qqmusic.qplayer.logininfo.OpiQRCodeActivity"/>
+        <activity android:name="com.tencent.qqmusic.qplayer.logininfo.PhoneLoginQRCodeActivity"/>
+        <provider android:authorities="com.autonavi.minimap.PlayerProcessInitProvider" android:exported="false" android:name="com.tencent.qqmusic.openapisdk.core.provider.PlayerProcessInitProvider_HOST" android:process=":QQPlayerProcess"/>
+        <provider android:authorities="com.autonavi.minimap.MainProcessEdgeProvider" android:exported="false" android:name="com.tencent.qqmusic.openapisdk.core.provider.MainProcessEdgeProvider_HOST"/>
+        <receiver android:exported="false" android:name="com.tencent.qqmusicsdk.player.listener.MediaButtonReceiver" android:process=":QQPlayerProcess">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+                <action android:name="android.intent.action.HEADSET_PLUG"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.tencent.qqmusicplayerprocess.service.QQPlayerServiceNew" android:process=":QQPlayerProcess"/>
+        <service android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.tencent.qqmusic.openapisdk.player_impl.OpenApiPlayerService" android:process=":QQPlayerProcess"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:enabled="true" android:exported="true" android:name="com.autonavi.data.service.AmapService">
+            <intent-filter>
+                <action android:name="com.autonavi.minimap.action.voice"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.autonavi.minimap.wxapi.WXPayEntryActivity" android:taskAffinity="net.sourceforge.simcpux" android:theme="@style/TranslucentTheme"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|density|layoutDirection|fontScale" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <service android:exported="false" android:foregroundServiceType="location" android:name="com.amap.bundle.watchfamily.service.WatchmenService" android:process=":locationservice">
+            <intent-filter>
+                <action android:name="com.autonavi.minimap.watchfamily"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:name="com.autonavi.bundle.account.AccountActivity" android:theme="@style/Theme.Account">
+            <intent-filter>
+                <action android:name="com.autonavi.minimap.bundle.account.Main"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder">
+            <meta-data android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY" android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.HiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.hihonor.mcs.client.appid" android:value="220710471"/>
+        <meta-data android:name="IntelligentIntentConfig" android:value="assets/intelligent_intent_config.json"/>
+        <service android:enabled="true" android:exported="true" android:name="com.amap.bundle.wearable.connect.glass.AmapLinkService">
+            <intent-filter>
+                <action android:name="com.autonavi.minimap.service.NAVIGATION_SERVICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="com.autonavi.amapcartransfer.service.AMapCarTransferService">
+            <intent-filter>
+                <action android:name="com.autonavi.minimap.car.transfer.action"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="com.amap.bundle.drive.magictext.AMapMagicTextService">
+            <intent-filter>
+                <action android:name="com.autonavi.minimap.magic.text.action"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="com.amap.bundle.drive.carprojection.protocol.ucar.platform.hihonor.HiHonorAutoOperationService" android:permission="com.hihonor.auto.permission.BIND_CAR_SERVICE">
+            <intent-filter>
+                <action android:name="com.hihonor.auto.action.EVENT_CALLBACK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="com.amap.bundle.drive.carprojection.protocol.ucar.platform.ovm.UCarMapAppService" android:permission="com.ucar.permission.UCAR_APP_SERVICE">
+            <intent-filter>
+                <action android:name="ucar.service.MAP_APP_SERVICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:enabled="true" android:exported="true" android:name="com.amap.bundle.drive.carprojection.protocol.hicar.ongoing.HicarOperationService" android:permission="com.huawei.hicar.HICAR_PERMISSION">
+            <intent-filter>
+                <action android:name="com.huawei.hicar.CALLBACK_HICAR_STARTED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.huawei.hicar.CALLBACK_HICAR_STOPPED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.huawei.hicar.CALLBACK_REMOVECARD"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.huawei.hicar.CALLBACK_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:foregroundServiceType="location" android:name="com.amap.bundle.systementry.quickapp.channel.AmapChannelService">
+            <intent-filter>
+                <action android:name="org.hapjs.features.channel.action.BIND"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.autonavi.minimap.deaktopwidgetmpsp" android:enabled="true" android:exported="false" android:name="com.amap.bundle.desktopwidget.service.store.DwMultiProcessSp" android:process=":widgetProvider"/>
+        <meta-data android:name="com.oplus.ocs.card.AUTH_CODE" android:value="ADBFAiAXMytbHlMAwOwzPDIZMtJq13BmWCS9K3HR51hSoc7MYgIhANwqiueoPhUkc2l3uLEkebK+l37FY2aSZSVFi/n5y7lvazS4MA=="/>
+        <provider android:authorities="com.autonavi.minimap.hiboardcardprovider" android:enabled="true" android:exported="true" android:name="com.amap.bundle.desktopwidget.hiboard.HiBoardCardProvider" android:process=":widgetProvider">
+            <intent-filter>
+                <action android:name="android.appcard.action.APPCARD_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.card.provider.array" android:resource="@array/hibocard_card_array"/>
+            <meta-data android:name="android.card.provider1" android:resource="@xml/hiboard_toolbox_provider"/>
+            <meta-data android:name="android.card.provider2" android:resource="@xml/hiboard_square_toolbox_provider"/>
+            <meta-data android:name="android.card.provider3" android:resource="@xml/hiboard_routecommute_provider"/>
+            <meta-data android:name="android.card.provider4" android:resource="@xml/hiboard_realtimebus_provider"/>
+            <meta-data android:name="android.card.provider5" android:resource="@xml/hiboard_content_recommend_provider"/>
+        </provider>
+        <provider android:authorities="com.autonavi.minimap.hibocardimageprovider" android:enabled="true" android:exported="false" android:grantUriPermissions="true" android:name="com.amap.bundle.desktopwidget.hiboard.file.HiBoardFileProvider" android:process=":widgetProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/hiboard_file_path"/>
+        </provider>
+        <receiver android:enabled="true" android:exported="true" android:label="@string/desktopwidget_dynamic_widget_member_label" android:name="com.amap.bundle.desktopwidget_dynamic.business.member.MemberWidgetProvider" android:process=":widgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="desktop_widget_dynamic_action_member"/>
+                <action android:name="desktop_widget_dynamic_action_member_click"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/member_widget_info"/>
+            <meta-data android:name="com.hihonor.widget.type" android:value="honorcard"/>
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="180000"/>
+            <meta-data android:name="miuiWidget" android:value="true"/>
+            <meta-data android:name="vivo_widget" android:value="true"/>
+            <meta-data android:name="vivoWidgetVersion" android:value="5"/>
+            <meta-data android:name="vivo.widget.description" android:resource="@string/desktopwidget_dynamic_widget_member_desc"/>
+        </receiver>
+        <receiver android:exported="true" android:label="@string/desktopwidget_dynamic_widget_custom_tool_name" android:name="com.amap.bundle.desktopwidget_dynamic.business.toolbox.CustomToolTwoProvider" android:process=":widgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE_OPTIONS"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="desktop_widget_dynamic_action_custom_tool_two_dataUpdate"/>
+                <action android:name="desktop_widget_dynamic_action_custom_tool_two_dataUpdate_click"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/custom_tool_widget_info"/>
+            <meta-data android:name="vivo_widget" android:value="true"/>
+            <meta-data android:name="vivoWidgetVersion" android:value="1"/>
+            <meta-data android:name="vivo.widget.description" android:resource="@string/desktopwidget_dynamic_widget_custom_tool_desc"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:label="@string/desktopwidget_dynamic_widget_footprint_label" android:name="com.amap.bundle.desktopwidget_dynamic.business.footprint.FootprintWidgetProvider" android:process=":widgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE_OPTIONS"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="desktopwidget_dynamic_action_footprint"/>
+                <action android:name="desktopwidget_dynamic_action_footprint_click"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/footprint_widget_info"/>
+            <meta-data android:name="com.hihonor.widget.type" android:value="honorcard"/>
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="180000"/>
+            <meta-data android:name="miuiWidget" android:value="true"/>
+            <meta-data android:name="vivo_widget" android:value="true"/>
+            <meta-data android:name="vivoWidgetVersion" android:value="2"/>
+            <meta-data android:name="vivo.widget.description" android:resource="@string/desktopwidget_dynamic_widget_footprint_desc"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:label="@string/desktopwidget_dynamic_widget_taxi_label" android:name="com.amap.bundle.desktopwidget_dynamic.business.taxi.TaxiWidgetProvider" android:process=":widgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE_OPTIONS"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="desktop_widget_dynamic_action_taxi_dataUpdate"/>
+                <action android:name="desktop_widget_dynamic_action_taxi_dataUpdate_click"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/taxi_widget_info"/>
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="1800000"/>
+            <meta-data android:name="miuiWidget" android:value="true"/>
+            <meta-data android:name="com.hihonor.widget.type" android:value="honorcard"/>
+            <meta-data android:name="vivo_widget" android:value="true"/>
+            <meta-data android:name="vivoWidgetVersion" android:value="2"/>
+            <meta-data android:name="vivo.widget.description" android:resource="@string/desktopwidget_dynamic_widget_taxi_desc"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:label="@string/desktopwidget_dynamic_widget_gas_station" android:name="com.amap.bundle.desktopwidget_dynamic.business.gasstation.GasStationWidgetProvider" android:process=":widgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE_OPTIONS"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="desktop_widget_dynamic_action_gas_station_dataUpdate"/>
+                <action android:name="desktop_widget_dynamic_action_gas_station_dataUpdate_click"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/gas_station_widget_info"/>
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="1800000"/>
+            <meta-data android:name="miuiWidget" android:value="true"/>
+            <meta-data android:name="com.hihonor.widget.type" android:value="honorcard"/>
+            <meta-data android:name="vivo_widget" android:value="true"/>
+            <meta-data android:name="vivoWidgetVersion" android:value="2"/>
+            <meta-data android:name="vivo.widget.description" android:resource="@string/desktopwidget_dynamic_widget_gas_station_desc"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:label="@string/desktopwidget_dynamic_widget_charge_station" android:name="com.amap.bundle.desktopwidget_dynamic.business.charge.ChargeWidgetProvider" android:process=":widgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE_OPTIONS"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="desktop_widget_dynamic_action_charge_station_dataUpdate"/>
+                <action android:name="desktop_widget_dynamic_action_charge_station_dataUpdate_click"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/charge_station_widget_info"/>
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="1800000"/>
+            <meta-data android:name="miuiWidget" android:value="true"/>
+            <meta-data android:name="com.hihonor.widget.type" android:value="honorcard"/>
+            <meta-data android:name="vivo_widget" android:value="true"/>
+            <meta-data android:name="vivoWidgetVersion" android:value="2"/>
+            <meta-data android:name="vivo.widget.description" android:resource="@string/desktopwidget_dynamic_widget_charge_station_desc"/>
+        </receiver>
+        <receiver android:authorities="com.autonavi.minimap.shortcutprovider" android:enabled="true" android:exported="false" android:name="com.amap.bundle.desktopwidget.shortcut.AmapShortCutProvider" android:process=":widgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.amap.bundle.desktopwidget.shortcut.createSuccess"/>
+                <action android:name="com.amap.bundle.desktopwidget.shortcut.AmapShortCutProvider.click"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/shortcut_widget"/>
+        </receiver>
+        <service android:foregroundServiceType="location" android:name="com.amap.bundle.desktopwidget.service.DesktopWidgetService" android:process=":widgetProvider"/>
+        <meta-data android:name="miuiWidgetVersion" android:value="7"/>
+        <meta-data android:name="org.android.agoo.xiaomi.app_id" android:value="appid=2882303761517465546"/>
+        <meta-data android:name="org.android.agoo.xiaomi.app_key" android:value="appkey=5831746549546"/>
+        <meta-data android:name="org.android.agoo.oppo.app_key" android:value="jmUAJQDkKWjn1guyqYnVA6XX"/>
+        <meta-data android:name="org.android.agoo.oppo.app_secret" android:value="2ioX0e7lsNUBDSRa28xl9LMC"/>
+        <provider android:authorities="com.amap.bundle.systementry.quickapp.contentprovider.HonorContentProvider" android:exported="true" android:name="com.amap.bundle.systementry.quickapp.contentprovider.HonorContentProvider"/>
+        <provider android:authorities="com.autonavi.minimap.instantShared" android:exported="true" android:name="com.amap.bundle.systementry.quickapp.contentprovider.OppoContentProvider"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.ss.android.dypay.activity.DyPayInstallGuideActivity" android:screenOrientation="behind" android:theme="@style/Theme.DyPay"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.ss.android.dypay.activity.DyPayEntranceActivity" android:screenOrientation="behind" android:theme="@style/Theme.DyPay.Translucent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.ss.android.dypay.activity.DyPayH5Activity" android:screenOrientation="portrait" android:theme="@style/Theme.DyPay"/>
+        <activity android:exported="false" android:name="com.huawei.hms.hihealth.activity.HealthKitMainActivity" android:theme="@style/healthkit_transparent"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:health" android:value="health:6.10.0.301"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:hihealth-base:hihealth" android:value="17"/>
+        <activity android:configChanges="uiMode|fontScale" android:excludeFromRecents="true" android:exported="false" android:name="com.huawei.hms.hwid.internal.ui.activity.HwIdSignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.huawei.hms.account.internal.ui.activity.AccountSignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:hwid" android:value="hwid:6.1.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:hwid:hwid" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:hwid:account" android:value="13"/>
+        <activity android:configChanges="locale|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:name="com.huawei.hms.activity.BridgeActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.huawei.hms.activity.EnableServiceActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <service android:exported="false" android:name="com.autonavi.crash.dumpcrash.service.DumpCrashService" android:process=":dumpcrashservice"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.mobile.beehive.compositeui.multilevel.MultilevelSelectActivity_" android:theme="@style/Transparent" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <meta-data android:name="com.alipay.mobile.beehive.com_alipay_mobile_beehive_FrameworkMetaInfo" android:value="v1.mpaas.meta.info.framework"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.mobile.scansdk.activity.ToolsCaptureActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <meta-data android:name="com.alipay.android.phone.scancode.export.com_alipay_android_phone_scancode_export_FrameworkMetaInfo" android:value="v1.mpaas.meta.info.framework"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulacore.ui.H5Activity" android:screenOrientation="portrait" android:theme="@style/tablauncher_theme" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulacore.ui.H5TransActivity" android:theme="@style/h5_transparent" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:name="com.alipay.mobile.nebulacore.ui.H5FileChooserActivity" android:theme="@style/h5_transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulacore.ui.H5NetworkCheckActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|fontScale" android:exported="false" android:name="com.alipay.mobile.nebulacore.dev.ui.H5BugMeSettingsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulacore.ui.H5Activity$H5Activity1" android:process=":lite1" android:screenOrientation="portrait" android:taskAffinity=":lite1" android:theme="@style/tablauncher_theme" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulacore.ui.H5Activity$H5Activity2" android:process=":lite2" android:screenOrientation="portrait" android:taskAffinity=":lite2" android:theme="@style/tablauncher_theme" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulacore.ui.H5Activity$H5Activity3" android:process=":lite3" android:screenOrientation="portrait" android:taskAffinity=":lite3" android:theme="@style/tablauncher_theme" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulacore.ui.H5Activity$H5Activity4" android:process=":lite4" android:screenOrientation="portrait" android:taskAffinity=":lite4" android:theme="@style/tablauncher_theme" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulacore.ui.H5Activity$H5Activity5" android:process=":lite5" android:screenOrientation="portrait" android:taskAffinity=":lite5" android:theme="@style/tablauncher_theme" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulacore.ui.H5TransActivity$H5TransActivity0" android:taskAffinity=":lite1" android:theme="@style/h5_transparent" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulacore.ui.H5TransActivity$H5TransActivity1" android:process=":lite1" android:taskAffinity=":lite1" android:theme="@style/h5_transparent" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulacore.ui.H5TransActivity$H5TransActivity2" android:process=":lite2" android:taskAffinity=":lite2" android:theme="@style/h5_transparent" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulacore.ui.H5TransActivity$H5TransActivity3" android:process=":lite3" android:taskAffinity=":lite3" android:theme="@style/h5_transparent" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulacore.ui.H5TransActivity$H5TransActivity4" android:process=":lite4" android:taskAffinity=":lite4" android:theme="@style/h5_transparent" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulacore.ui.H5TransActivity$H5TransActivity5" android:process=":lite5" android:taskAffinity=":lite5" android:theme="@style/h5_transparent" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.mobile.nebulacore.ui.H5NebulaAppActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulacore.ui.H5TransLandscapeActivity" android:theme="@style/h5_transparent" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebula.appcenter.apphandler.loadingview.H5LoadingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <meta-data android:name="com.alipay.mobile.nebula.com_alipay_mobile_nebula_FrameworkMetaInfo" android:value="v1.mpaas.meta.info.framework"/>
+        <meta-data android:name="com.alipay.mobile.nebulaconfig.com_alipay_mobile_nebulaconfig_FrameworkMetaInfo" android:value="v1.mpaas.meta.info.framework"/>
+        <activity android:exported="false" android:name="com.alipay.mobile.nebulax.inside.contact.H5ContactTransparentActivity"/>
+        <activity android:exported="false" android:name="com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaRestoreActivity" android:noHistory="true"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenLayout|smallestScreenSize" android:exported="false" android:name="com.alipay.mobile.nebulaappproxy.activity.MiniProgramOpenSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|smallestScreenSize|fontScale" android:exported="false" android:name="com.alipay.mobile.nebulaappproxy.ipc.H5ProcessTransActivity" android:theme="@style/TransparentNoAnimationTheme" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|uiMode|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Lite1" android:process=":lite1" android:screenOrientation="portrait" android:taskAffinity=":lite1" android:theme="@style/tablauncher_theme" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|uiMode|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Lite2" android:process=":lite2" android:screenOrientation="portrait" android:taskAffinity=":lite2" android:theme="@style/tablauncher_theme" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|uiMode|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Lite3" android:process=":lite3" android:screenOrientation="portrait" android:taskAffinity=":lite3" android:theme="@style/tablauncher_theme" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|uiMode|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Lite4" android:process=":lite4" android:screenOrientation="portrait" android:taskAffinity=":lite4" android:theme="@style/tablauncher_theme" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|uiMode|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Lite5" android:process=":lite5" android:screenOrientation="portrait" android:taskAffinity=":lite5" android:theme="@style/tablauncher_theme" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main" android:screenOrientation="portrait" android:theme="@style/tablauncher_theme" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$AppInsideMain" android:screenOrientation="portrait" android:taskAffinity=":app_inside" android:theme="@style/tablauncher_theme" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|uiMode|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaTransActivity$Lite5" android:process=":lite5" android:taskAffinity=":lite5" android:theme="@style/h5_transparent" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|uiMode|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaTransActivity$Lite4" android:process=":lite4" android:taskAffinity=":lite4" android:theme="@style/h5_transparent" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|uiMode|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaTransActivity$Lite3" android:process=":lite3" android:taskAffinity=":lite3" android:theme="@style/h5_transparent" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|uiMode|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaTransActivity$Lite2" android:process=":lite2" android:taskAffinity=":lite2" android:theme="@style/h5_transparent" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|uiMode|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaTransActivity$Lite1" android:process=":lite1" android:taskAffinity=":lite1" android:theme="@style/h5_transparent" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaTransActivity$Main" android:theme="@style/h5_transparent" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.alipay.mobile.nebulaappproxy.view.IntegrationSettingActivity_" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.alipay.mobile.nebulaintegration.com_alipay_mobile_nebulaintegration_FrameworkMetaInfo" android:value="v1.mpaas.meta.info.framework"/>
+        <service android:exported="false" android:name="com.alipay.mobile.common.fgbg.FgBgMonitorService"/>
+        <service android:exported="true" android:name="com.alipay.mobile.common.job.JobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.alipay.mobile.common.job.JobTriggerReceiver">
+            <intent-filter>
+                <action android:name="com.alipay.mobile.common.job.Trigger"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.alipay.android.phone.mobilesdk.commonbizservice.com_alipay_android_phone_mobilesdk_commonbizservice_FrameworkMetaInfo" android:value="v1.mpaas.meta.info.framework"/>
+        <meta-data android:name="com.alipay.mobile.common.service.com_alipay_mobile_common_service_FrameworkMetaInfo" android:value="v1.mpaas.meta.info.framework"/>
+        <activity android:exported="false" android:name="com.alipay.mobile.core.loading.impl.LoadingPage"/>
+        <activity android:exported="false" android:name="com.alipay.mobile.core.region.ui.ChangeRegionActivity"/>
+        <service android:exported="false" android:name="com.alipay.mobile.liteprocess.LiteProcessService$LiteProcessService1" android:process=":lite1"/>
+        <service android:exported="false" android:name="com.alipay.mobile.liteprocess.LiteProcessService$LiteProcessService2" android:process=":lite2"/>
+        <service android:exported="false" android:name="com.alipay.mobile.liteprocess.LiteProcessService$LiteProcessService3" android:process=":lite3"/>
+        <service android:exported="false" android:name="com.alipay.mobile.liteprocess.LiteProcessService$LiteProcessService4" android:process=":lite4"/>
+        <service android:exported="false" android:name="com.alipay.mobile.liteprocess.LiteProcessService$LiteProcessService5" android:process=":lite5"/>
+        <activity android:name="com.alipay.mobile.liteprocess.LiteProcessActivity$LiteProcessActivity1" android:noHistory="true" android:process=":lite1" android:taskAffinity=":lite1" android:theme="@style/Transparent"/>
+        <activity android:name="com.alipay.mobile.liteprocess.LiteProcessActivity$LiteProcessActivity2" android:noHistory="true" android:process=":lite2" android:taskAffinity=":lite2" android:theme="@style/Transparent"/>
+        <activity android:name="com.alipay.mobile.liteprocess.LiteProcessActivity$LiteProcessActivity3" android:noHistory="true" android:process=":lite3" android:taskAffinity=":lite3" android:theme="@style/Transparent"/>
+        <activity android:name="com.alipay.mobile.liteprocess.LiteProcessActivity$LiteProcessActivity4" android:noHistory="true" android:process=":lite4" android:taskAffinity=":lite4" android:theme="@style/Transparent"/>
+        <activity android:name="com.alipay.mobile.liteprocess.LiteProcessActivity$LiteProcessActivity5" android:noHistory="true" android:process=":lite5" android:taskAffinity=":lite5" android:theme="@style/Transparent"/>
+        <service android:exported="false" android:name="com.alipay.mobile.liteprocess.ipc.IpcMsgServer"/>
+        <meta-data android:name="com.alipay.android.liteprocess.com_alipay_android_liteprocess_FrameworkMetaInfo" android:value="v1.mpaas.meta.info.framework"/>
+        <service android:enabled="true" android:exported="false" android:name="com.alipay.mobile.common.logging.process.LogServiceInlite1" android:process=":lite1"/>
+        <service android:enabled="true" android:exported="false" android:name="com.alipay.mobile.common.logging.process.LogServiceInlite2" android:process=":lite2"/>
+        <service android:enabled="true" android:exported="false" android:name="com.alipay.mobile.common.logging.process.LogServiceInlite3" android:process=":lite3"/>
+        <service android:enabled="true" android:exported="false" android:name="com.alipay.mobile.common.logging.process.LogServiceInlite4" android:process=":lite4"/>
+        <service android:enabled="true" android:exported="false" android:name="com.alipay.mobile.common.logging.process.LogServiceInlite5" android:process=":lite5"/>
+        <service android:enabled="true" android:exported="false" android:name="com.alipay.mobile.common.logging.process.LogServiceInMainProcess"/>
+        <service android:enabled="true" android:exported="false" android:name="com.alipay.mobile.common.logging.process.LogServiceInPushProcess"/>
+        <service android:enabled="true" android:exported="false" android:name="com.alipay.mobile.common.logging.process.LinkTransactionService"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.alipay.android.phone.mobilesdk.permission.guide.ui.PermissionGuideSysDialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:enabled="false" android:exported="false" android:name="com.alipay.android.phone.mobilesdk.permission.utils.FakeService"/>
+        <receiver android:enabled="false" android:exported="false" android:name="com.alipay.android.phone.mobilesdk.permission.utils.FakeReceiver"/>
+        <meta-data android:name="com.alipay.android.phone.mobilesdk.permission.NebulaBundle2AARMetaInfoConfigZZZ" android:value="v1.mpaas.meta.info.nebula"/>
+        <meta-data android:name="com.alipay.android.phone.mobilesdk.permission.com_alipay_android_phone_mobilesdk_permission_FrameworkMetaInfo" android:value="v1.mpaas.meta.info.framework"/>
+        <meta-data android:name="com.alipay.android.phone.mobilesdk.storage.com_alipay_android_phone_mobilesdk_storage_FrameworkMetaInfo" android:value="v1.mpaas.meta.info.framework"/>
+        <meta-data android:name="com.alipay.mobile.mascanengine.com_alipay_mobile_mascanengine_FrameworkMetaInfo" android:value="v1.mpaas.meta.info.framework"/>
+        <meta-data android:name="com.alipay.mobile.bqcscanservice.com_alipay_mobile_bqcscanservice_FrameworkMetaInfo" android:value="v1.mpaas.meta.info.framework"/>
+        <service android:exported="true" android:name="com.alibaba.ariver.commonability.device.jsapi.nfc.service.TinyAppHostApduService" android:permission="android.permission.BIND_NFC_SERVICE">
+            <intent-filter>
+                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="network_run_single_process" android:value="true"/>
+        <meta-data android:name="only_bifrost_std_h2_module" android:value="true"/>
+        <meta-data android:name="only_push_switch" android:value="true"/>
+        <meta-data android:name="use_amnet_service" android:value="true"/>
+        <meta-data android:name="use_amdc" android:value="true"/>
+        <meta-data android:name="amdc.dg" android:value="mqp"/>
+        <meta-data android:name="apnetwork.startup.listener" android:value="com.alipay.ariver.network.NetworkStartupListener"/>
+        <service android:enabled="true" android:exported="false" android:label="AmnetMainProcService" android:name="com.alipay.mobile.common.amnet.service.AmnetMainProcService"/>
+        <service android:exported="false" android:name="com.alibaba.ariver.ipc.RemoteCallService"/>
+        <meta-data android:name="com.alipay.mobile.base.commonbiz.com_alipay_mobile_base_commonbiz_FrameworkMetaInfo" android:value="v1.mpaas.meta.info.framework"/>
+        <meta-data android:name="com.alipay.android.phone.wallet.aompnetwork.NebulaBundle2AARMetaInfoConfigZZZ" android:value="v1.mpaas.meta.info.nebula"/>
+        <meta-data android:name="android.phone.mobilesdk.clipboard.android_phone_mobilesdk_clipboard_FrameworkMetaInfo" android:value="v1.mpaas.meta.info.framework"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.android.phone.mobilecommon.multimediabiz.biz.live.LiveDownloadActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:hardwareAccelerated="true" android:name="com.alipay.android.phone.mobilecommon.multimediabiz.biz.live.ARTVCModuleDownloadActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <meta-data android:name="com.alipay.android.phone.mobilecommon.multimediabiz.com_alipay_android_phone_mobilecommon_multimediabiz_FrameworkMetaInfo" android:value="v1.mpaas.meta.info.framework"/>
+        <meta-data android:name="com.alipay.multimedia.apxmmusic.com_alipay_multimedia_apxmmusic_FrameworkMetaInfo" android:value="v1.mpaas.meta.info.framework"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:launchMode="singleTask" android:name="com.alipay.mobile.beehive.audio.activity.GeneralAudioPlayActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <meta-data android:name="android.phone.wallet.beeaudio.android_phone_wallet_beeaudio_FrameworkMetaInfo" android:value="v1.mpaas.meta.info.framework"/>
+        <service android:exported="true" android:name="com.alipay.mobile.aompdevice.nfc.service.TinyAppHostApduService" android:permission="android.permission.BIND_NFC_SERVICE">
+            <intent-filter>
+                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.nfc.cardemulation.host_apdu_service" android:resource="@xml/tiny_app_apdu_service"/>
+        </service>
+        <meta-data android:name="com.alipay.mobile.aompdevice.NebulaBundle2AARMetaInfoConfigZZZ" android:value="v1.mpaas.meta.info.nebula"/>
+        <service android:name="org.altbeacon.beacon.service.ScanJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.alipay.android.phone.bluetoothsdk.NebulaBundle2AARMetaInfoConfigZZZ" android:value="v1.mpaas.meta.info.nebula"/>
+        <meta-data android:name="com.alipay.android.phone.bluetoothsdk.com_alipay_android_phone_bluetoothsdk_FrameworkMetaInfo" android:value="v1.mpaas.meta.info.framework"/>
+        <activity android:exported="false" android:name="com.alipay.mobile.aompfilemanager.pdf.PdfViewer" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.alipay.mobile.aompfilemanager.filepicker.FilePickerMainActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.alipay.mobile.aompfilemanager.com_alipay_mobile_aompfilemanager_FrameworkMetaInfo" android:value="v1.mpaas.meta.info.framework"/>
+        <meta-data android:name="com.alipay.mobile.aompfilemanager.NebulaBundle2AARMetaInfoConfigZZZ" android:value="v1.mpaas.meta.info.nebula"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.autonavi.minimap.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <service android:exported="false" android:name="com.alibaba.analytics.AnalyticsService" android:process=":locationservice"/>
+        <meta-data android:name="com.xiaomi.security.xsof.client.version" android:value="1"/>
+        <activity android:exported="false" android:name="com.alibaba.wireless.security.open.middletier.fc.ui.ContainerActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.alibaba.wireless.security.open.middletier.fc.ui.BXIntentResult4323"/>
+                <action android:name="com.alibaba.wireless.security.open.middletier.fc.ui.BXIntentCreate4323"/>
+                <action android:name="com.alibaba.wireless.security.open.middletier.fc.ui.BXIntentLog4323"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.alibaba-inc.check.login.status.resume" android:value="0"/>
+        </activity>
+        <activity android:exported="false" android:name="com.alibaba.wireless.security.open.middletier.fc.ui.ExtContainerActivity" android:theme="@android:style/Theme.Holo.Dialog.NoActionBar">
+            <intent-filter>
+                <action android:name="com.alibaba.wireless.security.open.middletier.fc.ui.BXIntentResult4323"/>
+                <action android:name="com.alibaba.wireless.security.open.middletier.fc.ui.BXIntentCreate4323"/>
+                <action android:name="com.alibaba.wireless.security.open.middletier.fc.ui.BXIntentLog4323"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.alibaba-inc.check.login.status.resume" android:value="0"/>
+        </activity>
+        <activity android:exported="false" android:name="com.alibaba.wireless.security.open.middletier.fc.ui.Ext2ContainerActivity" android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar">
+            <intent-filter>
+                <action android:name="com.alibaba.wireless.security.open.middletier.fc.ui.BXIntentResult4323"/>
+                <action android:name="com.alibaba.wireless.security.open.middletier.fc.ui.BXIntentCreate4323"/>
+                <action android:name="com.alibaba.wireless.security.open.middletier.fc.ui.BXIntentLog4323"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.alibaba-inc.check.login.status.resume" android:value="0"/>
+        </activity>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|density|layoutDirection|fontScale" android:exported="false" android:name="com.alipay.sdk.app.H5AuthActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|density|layoutDirection|fontScale" android:exported="true" android:launchMode="singleInstance" android:name="com.alipay.sdk.app.PayResultActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|density|layoutDirection|fontScale" android:exported="true" android:launchMode="singleTask" android:name="com.alipay.sdk.app.AlipayResultActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|density|layoutDirection|fontScale" android:exported="false" android:name="com.alipay.sdk.app.H5OpenAuthActivity" android:screenOrientation="behind" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|density|layoutDirection|fontScale" android:exported="false" android:name="com.alipay.sdk.app.APayEntranceActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.alipay.mobile.accountopenauth.ui.FastOpenAuthActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:launchMode="singleTask" android:name="com.alipay.mobile.accountopenauth.ui.MYLoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="com.alipay.mobile.securitycommon.taobaobind.AliuserBindActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="com.alipay.mobile.securitycommon.taobaobind.AliuserWaitingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.alipay.user.mobile.h5.SecurityH5Activity"/>
+        <activity android:exported="true" android:name="com.alipay.android.phone.inside.wallet.JumpAlipaySchemeCallback" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="com.alipay.android.phone.inside.JUMP_ALIPAY_SCHEME_CALLBACK"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:name="com.alipay.mobile.transfer.aidlservice.FetchLoginInfoService">
+            <intent-filter>
+                <action android:name="com.alipay.mobile.transfer.aidlservice.IFetchLoginInfoService"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.alipay.android.phone.inside.commonbiz.login.uniformity.AccountUniformityActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.alipay.android.phone.inside.commonbiz.login.expire.LoginExpireActivity" android:theme="@android:style/Theme.Translucent"/>
+        <service android:enabled="true" android:exported="false" android:name="com.alipay.android.phone.inside.InteractionService">
+            <intent-filter>
+                <action android:name="com.alipay.phone.inside.INSIDE_INTERACTION"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="org.android.agoo.honor.HonorPushMessageService">
+            <intent-filter>
+                <action android:name="com.hihonor.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="wbsdk_version_name" android:value="13.10.5"/>
+        <meta-data android:name="wbsdk_version_code" android:value="2310"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.sina.weibo.sdk.web.WebActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.sina.weibo.sdk.share.ShareTransActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.autonavi.minimap.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.sina.weibo.sdk.content.FileProviderV2">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/wbsdk_filepaths"/>
+        </provider>
+        <provider android:authorities="com.autonavi.minimap.wbsdk.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.sina.weibo.sdk.content.WeiboSDKFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/wbsdk_filepaths"/>
+        </provider>
+        <activity android:exported="false" android:name="com.oshield.security.identityverifysdk.core.ui.IdentityVerifyActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:multiprocess="true" android:name="com.alibaba.security.realidentity.ui.activity.RpLoadingActivity" android:theme="@style/RP_FullScreenTheme"/>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:multiprocess="true" android:name="com.alibaba.security.realidentity.ui.activity.ALBiometricsActivity" android:theme="@style/RP_FullScreenTheme"/>
+        <activity android:exported="false" android:multiprocess="true" android:name="com.alibaba.security.realidentity.ui.activity.RPWebViewActivity"/>
+        <activity android:exported="false" android:multiprocess="true" android:name="com.alibaba.security.realidentity.ui.activity.RPTakePhotoActivity"/>
+        <service android:exported="false" android:name="com.alibaba.security.rp.service.DynamicRPJsbridgeService">
+            <intent-filter>
+                <action android:name="RP"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.huawei.wearengine.sdk.api_level" android:value="12"/>
+        <activity android:configChanges="uiMode|fontScale" android:excludeFromRecents="true" android:exported="false" android:name="com.huawei.wearengine.ClientHubActivity" android:theme="@android:style/Theme.Light.Panel"/>
+        <meta-data android:name="com.hihonor.intelligence.suggestion-kit.enableFlag" android:value="true"/>
+        <meta-data android:name="com.huawei.carBaseKit.version" android:value="12.0.2.420"/>
+        <activity android:exported="false" android:name="com.ali.user.open.core.webview.BaseWebViewActivity" android:screenOrientation="portrait" android:theme="@style/AliMember.Base.AppTheme"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.dtf.face.ui.ToygerLandActivity" android:resizeableActivity="false" android:screenOrientation="landscape" android:theme="@style/DtfToygerAppTheme"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.dtf.face.ui.ToygerPortActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/DtfToygerAppTheme"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.dtf.face.ui.PortFaceLoadingActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/DtfToygerLoadingAppTheme"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.dtf.face.ui.LandFaceLoadingActivity" android:resizeableActivity="false" android:screenOrientation="landscape" android:theme="@style/DtfToygerLoadingAppTheme"/>
+        <meta-data android:name="com.samsung.android.health.permission.read" android:value="com.samsung.health.step_count"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|layoutDirection" android:exported="false" android:name="com.taobao.android.preview.DXTemplatePreviewActivity" android:screenOrientation="sensor"/>
+        <activity android:name="com.alibaba.ability.impl.TransParentActivity" android:theme="@android:style/Theme.Translucent"/>
+        <meta-data android:name="cardwidget.support.client.version.code" android:value="10200"/>
+        <activity android:exported="false" android:name="org.webrtc.mozi.JavaScreenCapturer$ScreenCaptureAssistantActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:multiprocess="true" android:name="com.ali.user.open.oauth.ui.OauthActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <meta-data android:name="com.alibaba-inc.check.login.status.resume" android:value="0"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:multiprocess="true" android:name="com.ali.user.open.oauth.ui.OAuthWebViewActivity" android:screenOrientation="portrait" android:theme="@style/AliMember.Base.AppTheme">
+            <meta-data android:name="com.alibaba-inc.check.login.status.resume" android:value="0"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:multiprocess="true" android:name="com.ali.user.open.tbauth.ui.TbAuthWebViewActivity" android:screenOrientation="portrait" android:theme="@style/AliMember.Base.AppTheme">
+            <meta-data android:name="com.alibaba-inc.check.login.status.resume" android:value="0"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:multiprocess="true" android:name="com.ali.user.open.tbauth.ui.TbAuthActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <meta-data android:name="com.alibaba-inc.check.login.status.resume" android:value="0"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:multiprocess="true" android:name="com.ali.user.open.tbauth.ui.ICBUAuthActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <meta-data android:name="com.alibaba-inc.check.login.status.resume" android:value="0"/>
+        </activity>
+        <receiver android:exported="false" android:name="com.ali.user.open.receiver.SessionSyncReceiver">
+            <intent-filter>
+                <action android:name="aliuser_sync_session"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.ali.user.open.ucc.webview.UccWebViewActivity" android:screenOrientation="portrait" android:theme="@style/AliMember.Base.AppTheme">
+            <meta-data android:name="com.alibaba-inc.check.login.status.resume" android:value="0"/>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.ali.user.open.ucc.webview.WebViewDialogActivity" android:theme="@style/UccTranslucent">
+            <meta-data android:name="com.alibaba-inc.check.login.status.resume" android:value="0"/>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.ali.user.open.ucc.webview.WebViewTransparentActivity" android:theme="@style/UccTranslucent">
+            <meta-data android:name="com.alibaba-inc.check.login.status.resume" android:value="0"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:multiprocess="true" android:name="com.ali.user.open.ucc.ui.UccActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <meta-data android:name="com.alibaba-inc.check.login.status.resume" android:value="0"/>
+        </activity>
+        <meta-data android:name="com.alipay.mobile.canvas.extension.NebulaBundle2AARMetaInfoConfigZZZ" android:value="v1.mpaas.meta.info.nebula"/>
+        <activity android:name="com.ali.user.mobile.permission.PermissionActivity" android:theme="@style/Aliuser.Theme.Permission.Transparent"/>
+        <service android:enabled="true" android:name="com.xiaomi.push.service.XMPushService" android:process=":pushservice"/>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":pushservice"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService"/>
+        <receiver android:exported="true" android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="org.android.agoo.xiaomi.MiPushBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="true" android:name="com.huawei.hms.support.api.push.service.HmsMsgService" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.push.msg.NOTIFY_MSG"/>
+                <action android:name="com.huawei.push.msg.PASSBY_MSG"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="org.android.agoo.huawei.HuaweiRcvService">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.heytap.msp.push.service.CompatibleDataMessageCallbackService" android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE">
+            <intent-filter>
+                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.heytap.msp.push.service.DataMessageCallbackService" android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE">
+            <intent-filter>
+                <action android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE"/>
+                <action android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.vivo.push.sdk.service.CommandClientService"/>
+        <receiver android:exported="true" android:name="org.android.agoo.vivo.VivoReceiver">
+            <intent-filter>
+                <action android:name="com.vivo.pushclient.action.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="MIPUSH_SDK_VERSION_CODE" android:value="60001"/>
+        <meta-data android:name="MIPUSH_SDK_VERSION_NAME" android:value="6_0_1-C"/>
+        <receiver android:exported="true" android:name="com.hihonor.push.sdk.PushReceiver" android:permission="com.autonavi.minimap.hihonor.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.hihonor.push.action.REGISTRATION"/>
+                <action android:name="com.hihonor.push.action.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.hihonor.push.sdk_version" android:value="6.0.3.103"/>
+        <meta-data android:name="sdkVersion" android:value="3000"/>
+        <meta-data android:name="sdk_version_vivo" android:value="483"/>
+        <meta-data android:name="local_iv" android:value="MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI"/>
+    </application>
+</manifest>

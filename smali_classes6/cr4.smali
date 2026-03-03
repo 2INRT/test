@@ -1,0 +1,106 @@
+.class public final Lcr4;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/autonavi/minimap/route/bus/realtimebus/desktopwidget/data/RealTimeBusWidgetRepository$RequestDataCallback;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/autonavi/minimap/route/bus/realtimebus/desktopwidget/data/RealTimeBusWidgetRepository$RequestDataCallback<",
+        "Ljava/util/List<",
+        "Lbr4;",
+        ">;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lcom/autonavi/minimap/route/bus/realtimebus/desktopwidget/hiboard/c;
+
+.field public final synthetic b:Ldr4;
+
+
+# direct methods
+.method public constructor <init>(Ldr4;Lcom/autonavi/minimap/route/bus/realtimebus/desktopwidget/hiboard/c;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcr4;->b:Ldr4;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lcr4;->a:Lcom/autonavi/minimap/route/bus/realtimebus/desktopwidget/hiboard/c;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onFail(ILjava/lang/String;)V
+    .locals 0
+
+    .line 1
+    sget-boolean p2, Lyc1;->a:Z
+
+    .line 2
+    .line 3
+    new-instance p2, Lcr4$a;
+
+    .line 4
+    .line 5
+    invoke-direct {p2, p0, p1}, Lcr4$a;-><init>(Lcr4;I)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-static {p2}, Lcom/amap/bundle/utils/os/UiExecutor;->post(Ljava/lang/Runnable;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public final onSuccess(Ljava/lang/Object;)V
+    .locals 2
+
+    .line 1
+    check-cast p1, Ljava/util/List;
+
+    .line 2
+    .line 3
+    new-instance v0, Li31;
+
+    .line 4
+    .line 5
+    const/4 v1, 0x1
+
+    .line 6
+    invoke-direct {v0, p0, p1, v1}, Li31;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-static {v0}, Lcom/amap/bundle/utils/os/UiExecutor;->post(Ljava/lang/Runnable;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+.end method

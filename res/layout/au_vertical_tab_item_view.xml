@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="45.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alipay.mobile.antui.basic.AUTextView android:textSize="14.0dp" android:textColor="@color/AUT_COLOR_BRAND_1" android:gravity="center" android:id="@id/item_name" android:layout_width="match_parent" android:layout_height="45.0dp" />
+    <View android:layout_gravity="left" android:id="@id/item_line" android:background="@color/AUT_COLOR_BRAND_1" android:layout_width="3.0dp" android:layout_height="45.0dp" />
+</merge>

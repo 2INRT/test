@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alipay.mobile.antui.basic.AUSwitch android:id="@id/listItem_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.alipay.mobile.antui.basic.AUToggleButton android:id="@id/listItem_toggle" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/drawable_toggle_selector" android:textOn="" android:textOff="" android:minWidth="0.0px" />
+</FrameLayout>

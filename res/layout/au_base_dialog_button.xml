@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AULinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/baseDialogButtonDivider" android:background="@color/AUT_COLOR_FILL_GREY_LIGHT" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <com.alipay.mobile.antui.basic.AULinearLayout android:orientation="horizontal" android:id="@id/buttonView" android:layout_width="match_parent" android:layout_height="49.0dp">
+        <com.alipay.mobile.antui.basic.AUButton android:textSize="@dimen/AUT_MODAL_FOOTER_FONTSIZE" android:textColor="@color/au_base_dialog_button_text_color" android:gravity="center" android:id="@id/cancel" android:background="@drawable/au_dialog_left_button_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1.0" />
+        <View android:id="@id/dialogButtonDivider" android:background="@color/AUT_COLOR_FILL_GREY_LIGHT" android:visibility="gone" android:layout_width="1.0px" android:layout_height="match_parent" />
+        <com.alipay.mobile.antui.basic.AUButton android:textSize="@dimen/AUT_MODAL_FOOTER_FONTSIZE" android:textColor="@color/au_base_dialog_button_text_color" android:gravity="center" android:id="@id/ensure" android:background="@drawable/au_dialog_right_button_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/confirm" android:layout_weight="1.0" />
+    </com.alipay.mobile.antui.basic.AULinearLayout>
+</com.alipay.mobile.antui.basic.AULinearLayout>

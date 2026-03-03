@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AUFrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alipay.mobile.antui.basic.AURelativeLayout android:layout_gravity="center" android:id="@id/item_kernel" android:clickable="false" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.alipay.mobile.antui.basic.AUTextView android:textSize="@dimen/AU_TEXTSIZE4" android:gravity="center_vertical" android:id="@id/tv_menu_name" android:paddingLeft="@dimen/au_segment_text_padding" android:paddingRight="@dimen/au_segment_text_padding" android:clickable="false" android:layout_width="wrap_content" android:layout_height="match_parent" />
+    </com.alipay.mobile.antui.basic.AURelativeLayout>
+</com.alipay.mobile.antui.basic.AUFrameLayout>

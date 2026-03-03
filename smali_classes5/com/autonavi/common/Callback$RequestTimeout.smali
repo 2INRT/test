@@ -1,0 +1,22 @@
+.class public interface abstract Lcom/autonavi/common/Callback$RequestTimeout;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/autonavi/common/Callback;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "RequestTimeout"
+.end annotation
+
+
+# virtual methods
+.method public abstract getMaxRetryCount()I
+.end method
+
+.method public abstract getRequestTimeout()I
+.end method

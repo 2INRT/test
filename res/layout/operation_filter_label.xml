@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12.0dp" android:paddingEnd="12.0dp">
+        <View android:background="#f0f2f5" android:layout_width="match_parent" android:layout_height="6.0dp" />
+        <FrameLayout android:id="@id/box_layout" android:background="#f0f2f5" android:layout_width="match_parent" android:layout_height="36.0dp">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/scroller_body" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="12.0dp" android:paddingEnd="120.0dp" />
+            <FrameLayout android:layout_gravity="end" android:id="@id/other_filter_container" android:background="@drawable/bg_operation_filter_more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36.0dp" android:paddingStart="38.0dp" />
+        </FrameLayout>
+        <View android:layout_gravity="bottom" android:id="@id/divide_line" android:background="#0f000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    </LinearLayout>
+</merge>

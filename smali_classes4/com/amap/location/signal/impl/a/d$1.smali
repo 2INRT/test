@@ -1,0 +1,60 @@
+.class Lcom/amap/location/signal/impl/a/d$1;
+.super Landroid/database/ContentObserver;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/amap/location/signal/impl/a/d;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/amap/location/signal/impl/a/d;
+
+
+# direct methods
+.method public constructor <init>(Lcom/amap/location/signal/impl/a/d;Landroid/os/Handler;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/amap/location/signal/impl/a/d$1;->a:Lcom/amap/location/signal/impl/a/d;
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public onChange(Z)V
+    .locals 2
+
+    .line 1
+    iget-object p1, p0, Lcom/amap/location/signal/impl/a/d$1;->a:Lcom/amap/location/signal/impl/a/d;
+
+    .line 2
+    .line 3
+    const/4 v0, 0x7
+
+    .line 4
+    const/4 v1, 0x0
+
+    .line 5
+    invoke-static {p1, v0, v1}, Lcom/amap/location/signal/impl/a/d;->a(Lcom/amap/location/signal/impl/a/d;ILjava/lang/Object;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method

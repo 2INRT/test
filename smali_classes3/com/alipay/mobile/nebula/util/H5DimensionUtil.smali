@@ -1,0 +1,636 @@
+.class public Lcom/alipay/mobile/nebula/util/H5DimensionUtil;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field private static final TAG:Ljava/lang/String; = "H5DimensionUtil"
+
+.field private static sScale:F
+
+.field private static sScaledDensity:F
+
+.field private static sScreenHeight:I
+
+.field private static sScreenWidth:I
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static dip2px(Landroid/content/Context;F)I
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->initScale(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    sget p0, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->sScale:F
+
+    .line 5
+    .line 6
+    mul-float p1, p1, p0
+
+    .line 7
+    .line 8
+    const/high16 p0, 0x3f000000    # 0.5f
+
+    .line 9
+    .line 10
+    add-float/2addr p1, p0
+
+    .line 11
+    float-to-int p0, p1
+
+    .line 12
+    return p0
+.end method
+
+.method public static getFontSize(F)F
+    .locals 2
+
+    const/high16 v0, 0x3f600000    # 0.875f
+
+    cmpl-float v0, p0, v0
+
+    if-nez v0, :cond_0
+
+    const/high16 p0, 0x41600000    # 14.0f
+
+    return p0
+
+    :cond_0
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    const/high16 v1, 0x41800000    # 16.0f
+
+    cmpl-float v0, p0, v0
+
+    if-nez v0, :cond_1
+
+    return v1
+
+    :cond_1
+    const/high16 v0, 0x3f900000    # 1.125f
+
+    cmpl-float v0, p0, v0
+
+    if-nez v0, :cond_2
+
+    const/high16 p0, 0x41900000    # 18.0f
+
+    return p0
+
+    :cond_2
+    const/high16 v0, 0x3fa00000    # 1.25f
+
+    cmpl-float v0, p0, v0
+
+    if-nez v0, :cond_3
+
+    const/high16 p0, 0x41a00000    # 20.0f
+
+    return p0
+
+    :cond_3
+    const/high16 v0, 0x3fb00000    # 1.375f
+
+    cmpl-float p0, p0, v0
+
+    if-nez p0, :cond_4
+
+    const/high16 p0, 0x41b00000    # 22.0f
+
+    return p0
+
+    :cond_4
+    return v1
+.end method
+
+.method public static getRelativeLeft(Landroid/view/View;)I
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Landroid/view/View;->getId()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    const v1, 0x1020002
+
+    .line 6
+    .line 7
+    .line 8
+    if-ne v0, v1, :cond_0
+
+    .line 9
+    .line 10
+    invoke-virtual {p0}, Landroid/view/View;->getLeft()I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p0
+
+    .line 14
+    return p0
+
+    .line 15
+    :cond_0
+    invoke-virtual {p0}, Landroid/view/View;->getLeft()I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v0
+
+    .line 19
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p0
+
+    .line 23
+    check-cast p0, Landroid/view/View;
+
+    .line 24
+    .line 25
+    invoke-static {p0}, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->getRelativeLeft(Landroid/view/View;)I
+
+    .line 26
+    .line 27
+    .line 28
+    move-result p0
+
+    .line 29
+    add-int/2addr p0, v0
+
+    .line 30
+    return p0
+.end method
+
+.method public static getRelativeTop(Landroid/view/View;)I
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Landroid/view/View;->getId()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    const v1, 0x1020002
+
+    .line 6
+    .line 7
+    .line 8
+    if-ne v0, v1, :cond_0
+
+    .line 9
+    .line 10
+    invoke-virtual {p0}, Landroid/view/View;->getTop()I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p0
+
+    .line 14
+    return p0
+
+    .line 15
+    :cond_0
+    invoke-virtual {p0}, Landroid/view/View;->getTop()I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v0
+
+    .line 19
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p0
+
+    .line 23
+    check-cast p0, Landroid/view/View;
+
+    .line 24
+    .line 25
+    invoke-static {p0}, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->getRelativeTop(Landroid/view/View;)I
+
+    .line 26
+    .line 27
+    .line 28
+    move-result p0
+
+    .line 29
+    add-int/2addr p0, v0
+
+    .line 30
+    return p0
+.end method
+
+.method public static getScreenHeight(Landroid/content/Context;)I
+    .locals 1
+
+    .line 1
+    sget v0, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->sScreenHeight:I
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    return v0
+
+    .line 6
+    :cond_0
+    const-string/jumbo v0, "window"
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    check-cast p0, Landroid/view/WindowManager;
+
+    .line 14
+    .line 15
+    invoke-interface {p0}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p0
+
+    .line 19
+    invoke-virtual {p0}, Landroid/view/Display;->getHeight()I
+
+    .line 20
+    .line 21
+    .line 22
+    move-result p0
+
+    .line 23
+    sput p0, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->sScreenHeight:I
+
+    .line 24
+    .line 25
+    return p0
+.end method
+
+.method public static getScreenWidth(Landroid/content/Context;)I
+    .locals 1
+
+    .line 1
+    sget v0, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->sScreenWidth:I
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    return v0
+
+    .line 6
+    :cond_0
+    const-string/jumbo v0, "window"
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    check-cast p0, Landroid/view/WindowManager;
+
+    .line 14
+    .line 15
+    invoke-interface {p0}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p0
+
+    .line 19
+    invoke-virtual {p0}, Landroid/view/Display;->getWidth()I
+
+    .line 20
+    .line 21
+    .line 22
+    move-result p0
+
+    .line 23
+    sput p0, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->sScreenWidth:I
+
+    .line 24
+    .line 25
+    return p0
+.end method
+
+.method private static initScale(Landroid/content/Context;)V
+    .locals 2
+
+    .line 1
+    :try_start_0
+    sget v0, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->sScale:F
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    cmpl-float v0, v0, v1
+
+    .line 5
+    .line 6
+    if-nez v0, :cond_0
+
+    .line 7
+    .line 8
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p0
+
+    .line 12
+    invoke-virtual {p0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p0
+
+    .line 16
+    iget p0, p0, Landroid/util/DisplayMetrics;->density:F
+
+    .line 17
+    .line 18
+    sput p0, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->sScale:F
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :catchall_0
+    move-exception p0
+
+    .line 22
+    goto :goto_1
+
+    .line 23
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 24
+    :goto_1
+    const-string/jumbo v0, "H5DimensionUtil"
+
+    .line 25
+    .line 26
+    .line 27
+    invoke-static {v0, p0}, Lcom/alipay/mobile/nebula/util/H5Log;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 28
+    .line 29
+    return-void
+.end method
+
+.method private static initScaledDensity(Landroid/content/Context;)V
+    .locals 2
+
+    .line 1
+    :try_start_0
+    sget v0, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->sScaledDensity:F
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    cmpl-float v0, v0, v1
+
+    .line 5
+    .line 6
+    if-nez v0, :cond_0
+
+    .line 7
+    .line 8
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p0
+
+    .line 12
+    invoke-virtual {p0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p0
+
+    .line 16
+    iget p0, p0, Landroid/util/DisplayMetrics;->scaledDensity:F
+
+    .line 17
+    .line 18
+    sput p0, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->sScaledDensity:F
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :catchall_0
+    move-exception p0
+
+    .line 22
+    goto :goto_1
+
+    .line 23
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 24
+    :goto_1
+    const-string/jumbo v0, "H5DimensionUtil"
+
+    .line 25
+    .line 26
+    .line 27
+    invoke-static {v0, p0}, Lcom/alipay/mobile/nebula/util/H5Log;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 28
+    .line 29
+    return-void
+.end method
+
+.method public static isValueEqule(FF)Z
+    .locals 0
+
+    float-to-int p0, p0
+
+    float-to-int p1, p1
+
+    if-ne p0, p1, :cond_0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public static px2dip(Landroid/content/Context;F)I
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->initScale(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    sget p0, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->sScale:F
+
+    .line 5
+    .line 6
+    div-float/2addr p1, p0
+
+    .line 7
+    const/high16 p0, 0x3f000000    # 0.5f
+
+    .line 8
+    .line 9
+    add-float/2addr p1, p0
+
+    .line 10
+    float-to-int p0, p1
+
+    .line 11
+    return p0
+.end method
+
+.method public static px2sp(Landroid/content/Context;F)F
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->initScaledDensity(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    sget p0, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->sScaledDensity:F
+
+    .line 5
+    .line 6
+    div-float/2addr p1, p0
+
+    .line 7
+    return p1
+.end method
+
+.method public static resetDimensions()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    sput v0, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->sScreenWidth:I
+
+    .line 3
+    .line 4
+    sput v0, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->sScreenHeight:I
+
+    .line 5
+    .line 6
+    const/4 v0, 0x0
+
+    .line 7
+    sput v0, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->sScaledDensity:F
+
+    .line 8
+    .line 9
+    sput v0, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->sScale:F
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public static sp2px(Landroid/content/Context;F)I
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->initScaledDensity(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    sget p0, Lcom/alipay/mobile/nebula/util/H5DimensionUtil;->sScaledDensity:F
+
+    .line 5
+    .line 6
+    mul-float p1, p1, p0
+
+    .line 7
+    .line 8
+    const/high16 p0, 0x3f000000    # 0.5f
+
+    .line 9
+    .line 10
+    add-float/2addr p1, p0
+
+    .line 11
+    float-to-int p0, p1
+
+    .line 12
+    return p0
+.end method

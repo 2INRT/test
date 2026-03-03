@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AULinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aui="http://schemas.android.com/apk/res-auto">
+    <com.alipay.mobile.antui.iconfont.AUIconView android:layout_gravity="end" android:id="@id/dialog_close" android:paddingLeft="@dimen/AU_SPACE4" android:paddingBottom="@dimen/AU_SPACE4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/cancel" aui:iconfontColor="#b3ffffff" aui:iconfontSize="@dimen/AU_SPACE7" aui:iconfontUnicode="@string/iconfont_cross_circle_o" />
+    <com.alipay.mobile.antui.basic.AURelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/custom_container" android:paddingBottom="@dimen/AU_SPACE8" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.alipay.mobile.antui.basic.AULinearLayout>

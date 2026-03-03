@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<card-provider app:cardLoadingIcon="@drawable/hiboard_routecommute_loading" app:oplus_card_desc="@string/amap_app_name" app:oplus_card_name="@string/amap_app_name" app:oplus_card_protocol="JSON" app:oplus_card_size="two2four" app:oplus_card_type="103" app:previewImage="@drawable/hiboard_routecommute_preview"
+  xmlns:app="http://schemas.android.com/apk/res-auto" />

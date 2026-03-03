@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.amap.bundle.commonui.designtoken.view.viewgroup.DtFrameLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.amap.bundle.commonui.designtoken.view.DtProgressView android:id="@id/progress" android:layout_width="25.0dp" android:layout_height="25.0dp" app:bgCircleColor="#f0f2f6" app:draw_bg_circle="true" app:dt_bgCircleColor="Color_Loading_L1" app:dt_progress_Color="Color_Loading_L2" app:progressType="progress_b" app:progress_Color="#415886" app:progress_strokeWidth="3.5dp" />
+    </com.amap.bundle.commonui.designtoken.view.viewgroup.DtFrameLayout>
+    <com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/loading_extra" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp">
+        <com.amap.bundle.commonui.designtoken.view.textview.DtTextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_4" android:gravity="center" android:id="@id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" app:dt_textColor="Color_Text_Highlight(99)" />
+        <com.amap.bundle.commonui.designtoken.view.textview.DtTextView android:textSize="@dimen/f_s_12" android:textColor="@color/f_c_4" android:gravity="center" android:id="@id/loading_sub_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:dt_textColor="Color_Text_Highlight(99)" />
+    </com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout>
+</com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout>

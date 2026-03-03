@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amap.bundle.immersiverender.ui.IRHandDrawFeedCard android:id="@id/id_root_view" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.amap.bundle.immersiverender.ui.SafeImageView android:id="@id/id_thumb_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <RelativeLayout android:id="@id/id_container" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="550.0dp" android:layout_alignParentBottom="true">
+        <com.amap.bundle.immersiverender.ui.slide.IRHSlideParentView android:id="@id/slide_view_container" android:layout_width="match_parent" android:layout_height="90.0dp" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:id="@id/feed_card_right_panel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dp" android:layout_above="@id/slide_view_container">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/feed_card_operation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.5dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/id_share_root" android:layout_width="57.0dp" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/ic_bg" android:layout_width="32.0dp" android:layout_height="32.0dp" android:src="@drawable/ir_share" />
+                    <TextView android:textSize="10.0dp" android:textColor="#ffffffff" android:id="@id/id_share_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/O105246_73" />
+                </LinearLayout>
+                <com.amap.bundle.immersiverender.ui.like.IRFeedCardLikeView android:id="@id/id_feed_card_like_view" android:layout_width="57.0dp" android:layout_height="57.0dp" android:layout_marginTop="5.0dp" />
+            </LinearLayout>
+            <com.amap.bundle.immersiverender.ui.tip.IRFeedTipView android:id="@id/ir_feed_tip_view" android:background="@drawable/ir_feed_tip_bg" android:visibility="gone" android:layout_width="245.0dp" android:layout_height="28.0dp" android:layout_marginLeft="12.0dp" android:layout_marginBottom="14.0dp" android:layout_alignBottom="@id/feed_card_operation" android:layout_alignParentLeft="true" />
+            <com.amap.bundle.immersiverender.ui.IRFeedCardGestureBar android:id="@id/ir_feed_gesture_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/feed_card_operation" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.amap.bundle.immersiverender.ui.IRHandDrawFeedCard>

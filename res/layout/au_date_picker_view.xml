@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AULinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/container" android:paddingLeft="@dimen/AU_MARGIN_UNIVERSAL" android:paddingRight="@dimen/AU_MARGIN_UNIVERSAL" android:layout_width="match_parent" android:layout_height="200.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alipay.mobile.antui.picker.AUWheelView android:id="@id/years" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/AU_SPACE2" />
+    <com.alipay.mobile.antui.picker.AUWheelView android:id="@id/month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/AU_SPACE2" />
+    <com.alipay.mobile.antui.picker.AUWheelView android:id="@id/days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/AU_SPACE2" />
+    <com.alipay.mobile.antui.picker.AUWheelView android:id="@id/hours" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/AU_SPACE2" />
+    <com.alipay.mobile.antui.picker.AUWheelView android:id="@id/minutes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/AU_SPACE2" />
+</com.alipay.mobile.antui.basic.AULinearLayout>

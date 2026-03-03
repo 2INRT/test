@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#90000000" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/basemap_alertdialog_bg" android:layout_width="270.0dp" android:layout_height="wrap_content" android:minHeight="142.0dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/font_34" android:textStyle="bold" android:textColor="@color/f_c_2" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="14.0dp" android:text="@string/custom_navitts_save_voice" />
+        <RelativeLayout android:background="@drawable/bg_save_my_voice" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" android:layout_marginRight="14.0dp">
+            <EditText android:textSize="@dimen/font_32" android:textColor="@color/f_c_2" android:id="@id/input_package_name" android:background="@null" android:paddingLeft="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="40.0dp" android:minHeight="32.0dp" android:singleLine="true" android:inputType="text" />
+            <ImageButton android:id="@id/btn_clean" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:src="@drawable/search_input_clear_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/d_gray" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="14.0dp" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44.0dp" android:maxHeight="44.0dp">
+            <TextView android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_2" android:gravity="center" android:layout_gravity="center" android:id="@id/decision_cancel" android:background="@drawable/dlg_decision_selector_left" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/custom_navitts_operation_give_up" android:layout_weight="1.0" />
+            <View android:layout_gravity="center_horizontal" android:background="@color/d_gray" android:layout_width="0.5dp" android:layout_height="match_parent" />
+            <TextView android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_6" android:gravity="center" android:layout_gravity="center" android:id="@id/decision_confirm" android:background="@drawable/dlg_decision_selector_right" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/custom_navitts_operation_save" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AURelativeLayout android:background="@drawable/au_card_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/AU_SPACE2" android:layout_marginRight="@dimen/AU_SPACE2"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aui="http://schemas.android.com/apk/res-auto">
+    <com.alipay.mobile.antui.card.AUCouponsItem android:id="@id/coupons_card_container" android:layout_width="match_parent" android:layout_height="wrap_content" aui:listItemType="none" />
+    <View android:id="@id/dotted_line" android:background="@drawable/drawable_dotted_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/coupons_card_container" android:layerType="software" />
+    <com.alipay.mobile.antui.basic.AUEmptyGoneTextView android:textSize="@dimen/coupons_assist_text_size" android:textColor="@color/AU_COLOR_SUB_CONTENT" android:gravity="left|center" android:id="@id/coupons_assist_description" android:paddingLeft="@dimen/AU_MARGIN_UNIVERSAL" android:paddingRight="@dimen/AU_MARGIN_UNIVERSAL" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/coupons_assist_text_height" android:layout_below="@id/dotted_line" />
+</com.alipay.mobile.antui.basic.AURelativeLayout>

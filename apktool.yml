@@ -1,0 +1,60 @@
+version: 3.0.1
+apkFileName: com.autonavi.minimap.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 21
+  targetSdkVersion: 35
+versionInfo:
+  versionCode: 161000
+  versionName: 16.10.6.2020
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- gif
+- jpg
+- mp3
+- ogg
+- png
+- wav
+- assets/ajx.bundle/bundles.oajx
+- res/layout/custom_dialog_layout.xml
+- res/layout/layout_permission_page.xml
+- res/layout/maphome_page_searchbar.xml
+- res/layout/stub_mapview.xml
+- res/layout/v6_splash_guide.xml
+- res/raw/add_to_launcher_cb.js
+- res/raw/create_worker.html
+- res/raw/dom_size.js
+- res/raw/dom_structure.js
+- res/raw/h5_bizlog_pre.js
+- res/raw/h5_bridge.js
+- res/raw/h5_bugme_hookappx.js
+- res/raw/h5_debug_console_sw.js
+- res/raw/h5_dev_vorlon.js
+- res/raw/h5_jsinterface_bridge.js
+- res/raw/h5_keyboard.js
+- res/raw/h5_lottie_errorpage.html
+- res/raw/h5_newembedview.js
+- res/raw/h5_page_error.html
+- res/raw/h5_performance.js
+- res/raw/h5_scan.js
+- res/raw/h5_startparam.js
+- res/raw/h5_trans_page_error.html
+- res/raw/h5_whitescreen_errorpage.html
+- res/raw/h5location_min.js
+- res/raw/images.js
+- res/raw/keep.xml
+- res/raw/metronome.pcm
+- res/raw/redirect_link.html
+- res/raw/rvtools_inject_js.js
+- res/raw/security_link.html
+- res/raw/share_new_min.js
+- res/raw/single_image.js
+- res/raw/white_link.html
+- res/raw/worker.html
+- res/raw/workerjs.js
+- res/raw/workerjs_v8.js
+- res/raw/workerjs_worker.js

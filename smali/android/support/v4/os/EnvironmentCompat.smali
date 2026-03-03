@@ -1,0 +1,38 @@
+.class public Landroid/support/v4/os/EnvironmentCompat;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final MEDIA_UNKNOWN:Ljava/lang/String; = "unknown"
+
+.field private static final TAG:Ljava/lang/String; = "EnvironmentCompat"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static getStorageState(Ljava/io/File;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Landroid/os/Environment;->getStorageState(Ljava/io/File;)Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method

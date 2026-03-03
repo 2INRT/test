@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/id_feed_tip_click_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+        <TextView android:textSize="12.0dp" android:textColor="#2c72ff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/O105246_48" />
+        <ImageView android:layout_width="10.0dp" android:layout_height="10.0dp" android:layout_marginLeft="6.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/ir_right_arrow" />
+    </LinearLayout>
+    <TextView android:textSize="12.0dp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="left|center" android:id="@id/id_feed_tip_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" android:text="@string/O105246_89" android:maxLines="1" android:layout_toLeftOf="@id/id_feed_tip_click_view" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+</merge>

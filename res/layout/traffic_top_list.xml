@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/board_list_content_bg" android:paddingLeft="12.0dp" android:paddingTop="12.0dp" android:paddingRight="12.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:id="@id/traffic_top_list_number_layout" android:background="@drawable/red" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginTop="2.0dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <TextView android:textSize="12.0dp" android:textColor="@color/white" android:id="@id/traffic_top_list_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+        </LinearLayout>
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="16.0dp" android:textColor="@color/black" android:gravity="left" android:id="@id/traffic_top_list_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginRight="100.0dp" android:text="@string/traffic_top_list_tv1" android:singleLine="true" android:layout_toRightOf="@id/traffic_top_list_number_layout" android:layout_alignParentTop="true" />
+        <TextView android:textSize="14.0dp" android:gravity="center_vertical" android:id="@id/traffic_top_list_status" android:background="@drawable/traffic_yongdu" android:layout_width="wrap_content" android:layout_height="20.0dp" android:text="6.7" android:layout_alignTop="@id/traffic_top_list_name" android:layout_alignParentRight="true" />
+        <RelativeLayout android:background="@drawable/poi_deal_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_below="@id/traffic_top_list_description" android:layout_alignParentLeft="true">
+            <TextView android:textSize="12.0dp" android:textColor="@color/f_c_3" android:gravity="center_vertical" android:id="@id/traffic_top_list_jam" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="25.0dp" android:text="@string/traffic_top_list_jam" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/f_c_3" android:gravity="center_vertical" android:id="@id/traffic_top_list_speed" android:paddingLeft="16.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="25.0dp" android:text="@string/traffic_top_list_speed" android:layout_toRightOf="@id/traffic_top_list_jam" />
+        </RelativeLayout>
+        <TextView android:textSize="13.0dp" android:textColor="@color/f_c_3" android:id="@id/traffic_top_list_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/traffic_top_list_description" android:layout_below="@id/traffic_top_list_status" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</LinearLayout>

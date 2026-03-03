@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aui="http://schemas.android.com/apk/res-auto">
+    <com.alipay.mobile.antui.basic.AUFrameLayout android:id="@id/head_title_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <com.alipay.mobile.antui.basic.AUTextView android:textSize="@dimen/AU_TEXTSIZE4" android:textColor="@color/AU_COLOR_TITLE" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/AU_SPACE7" />
+        <com.alipay.mobile.antui.basic.AUImageView android:id="@id/title_logo" android:visibility="gone" android:layout_width="@dimen/AU_ICONSIZE3" android:layout_height="@dimen/AU_ICONSIZE3" android:layout_marginRight="@dimen/AU_SPACE3" android:scaleType="centerInside" />
+    </com.alipay.mobile.antui.basic.AUFrameLayout>
+    <com.alipay.mobile.antui.iconfont.AUIconView android:id="@id/head_arrow" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/AU_MARGIN_UNIVERSAL" android:maxWidth="@dimen/AU_ICONSIZE3" android:layout_alignParentRight="true" android:layout_centerVertical="true" aui:iconfontColor="@color/table_arrow_color" aui:imageresid="@drawable/table_arrow" />
+    <com.alipay.mobile.antui.basic.AURelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/head_arrow" android:layout_toRightOf="@id/head_title_container" android:layout_centerVertical="true">
+        <com.alipay.mobile.antui.basic.AUTextView android:textSize="@dimen/AU_TEXTSIZE4" android:textColor="@color/AU_COLOR_MAIN_CONTENT" android:id="@id/head_mainInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.alipay.mobile.antui.basic.AUTextView android:textSize="@dimen/AU_TEXTSIZE3" android:textColor="@color/AU_COLOR_SUB_CONTENT" android:id="@id/head_subInfo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/head_mainInfo" />
+        <com.alipay.mobile.antui.basic.AUTextView android:textSize="@dimen/AU_TEXTSIZE4" android:textColor="@color/AU_COLOR_SUB_CONTENT" android:id="@id/bankcard_mark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/AU_SPACE1" android:text="@string/bankcard_mark" android:layout_toRightOf="@id/head_mainInfo" />
+    </com.alipay.mobile.antui.basic.AURelativeLayout>
+    <View android:id="@id/head_divider" android:background="@color/AU_COLOR_LINE" android:layout_width="match_parent" android:layout_height="@dimen/AU_DIVIDER_SPACE1" android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL" android:layout_alignParentBottom="true" />
+</merge>

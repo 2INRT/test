@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="@dimen/desktop_widget_min_width" android:minHeight="110.0dp" android:updatePeriodMillis="43200000" android:initialLayout="@layout/vertical_list1_widget_layout" android:previewImage="@drawable/taxi_widget_img" android:resizeMode="none"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

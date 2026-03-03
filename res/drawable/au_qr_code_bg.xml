@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/AU_COLOR_UNIVERSAL_BG" />
+    <corners android:radius="@dimen/qr_code_bg_corner" />
+</shape>

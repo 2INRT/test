@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout android:orientation="horizontal" android:id="@id/message_page_splash_cell" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="72.0dp" app:dt_backgroundColor="Color_BG_L2"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amap.bundle.commonui.designtoken.view.DtImageView android:id="@id/message_page_splash_msg_icon" android:layout_width="48.0dp" android:layout_height="48.0dp" android:scaleType="centerCrop" android:adjustViewBounds="true" app:dt_backgroundColor="Color_BG_L1" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/message_page_splash_msg_wrap" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="12.0dp">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/message_page_splash_msg_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.amap.bundle.commonui.designtoken.view.textview.DtTextView android:id="@id/message_page_splash_msg_title" android:layout_width="96.0dp" android:layout_height="22.5dp" android:layout_alignParentStart="true" app:dt_backgroundColor="Color_BG_L1" />
+            <com.amap.bundle.commonui.designtoken.view.textview.DtButton android:id="@id/message_page_splash_msg_action" android:layout_width="53.0dp" android:layout_height="16.5dp" android:layout_alignParentEnd="true" app:dt_backgroundColor="Color_BG_L1" />
+        </RelativeLayout>
+        <com.amap.bundle.commonui.designtoken.view.textview.DtTextView android:id="@id/message_page_splash_msg_subTitle" android:layout_width="204.5dp" android:layout_height="14.5dp" android:layout_marginTop="4.0dp" app:dt_backgroundColor="Color_BG_L1" />
+    </LinearLayout>
+</com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout>

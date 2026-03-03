@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amap.bundle.commonui.designtoken.view.viewgroup.DtRelativeLayout android:background="@color/c_5_e" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/choose_view" android:layout="@layout/drive_navi_type_choose_view_day" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</com.amap.bundle.commonui.designtoken.view.viewgroup.DtRelativeLayout>

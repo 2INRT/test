@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/AU_SPACE6" android:paddingTop="@dimen/dialog_padding_top" android:paddingRight="@dimen/AU_SPACE6" android:paddingBottom="@dimen/AU_SPACE3" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/au_notice_dialog" />
+</LinearLayout>

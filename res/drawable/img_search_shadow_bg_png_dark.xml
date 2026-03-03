@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="-8.0dp" android:right="-8.0dp" android:bottom="16.0dp">
+        <shape>
+            <gradient android:startColor="#001f2228" android:endColor="#ff1f2228" android:angle="270.0" android:type="linear" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/qs_searchbar_bottom_shadows" />
+</layer-list>

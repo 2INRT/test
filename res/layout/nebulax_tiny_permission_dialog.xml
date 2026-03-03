@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/AU_SPACE5" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="16.0dp">
+        <RelativeLayout android:id="@id/tiny_permission_icon" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/h5_auth_logo" android:layout_centerVertical="true" />
+        <TextView android:textSize="17.0dp" android:textColor="#333333" android:id="@id/tiny_permission_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dp" android:layout_toRightOf="@id/tiny_permission_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginBottom="30.0dp">
+        <TextView android:textSize="18.0dp" android:textColor="#333333" android:gravity="center_vertical" android:id="@id/tiny_permission_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_alignParentTop="true" android:lineSpacingExtra="7.0dp" />
+    </RelativeLayout>
+    <com.alipay.mobile.antui.basic.AULinearLayout android:orientation="horizontal" android:id="@id/buttonContainer" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:paddingBottom="@dimen/AU_SPACE5" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.alipay.mobile.antui.basic.AUButton android:id="@id/tiny_permission_cancel" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp" android:layout_weight="1.0" style="@style/subButtonStyle" />
+        <com.alipay.mobile.antui.basic.AUButton android:id="@id/tiny_permission_ensure" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp" android:layout_weight="1.0" style="@style/mainButtonStyle" />
+    </com.alipay.mobile.antui.basic.AULinearLayout>
+    <com.alipay.mobile.antui.common.AUCheckIcon android:textSize="15.0sp" android:textColor="#333333" android:layout_gravity="center_horizontal" android:id="@id/tiny_permission_allow_retry" android:paddingLeft="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="@string/tiny_request_permission_repeat" />
+</LinearLayout>

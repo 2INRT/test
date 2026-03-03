@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="about_process_icon">false</bool>
+    <bool name="default_circle_indicator_centered">true</bool>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <bool name="default_line_indicator_centered">true</bool>
+    <bool name="default_title_indicator_selected_bold">true</bool>
+    <bool name="default_underline_indicator_fades">true</bool>
+    <bool name="download_process_bar">false</bool>
+    <bool name="download_process_title_txt">false</bool>
+    <bool name="enable_system_alarm_service_default">true</bool>
+    <bool name="enable_system_foreground_service_default">true</bool>
+    <bool name="enable_system_job_service_default">false</bool>
+    <bool name="isLargeScreen">false</bool>
+    <bool name="leak_canary_add_launcher_icon">false</bool>
+    <bool name="leak_canary_watcher_auto_install">false</bool>
+    <bool name="progress_text">false</bool>
+    <bool name="promt">false</bool>
+    <bool name="relativeLayout1">false</bool>
+    <bool name="update_cancel_btn">false</bool>
+    <bool name="workmanager_test_configuration">false</bool>
+</resources>

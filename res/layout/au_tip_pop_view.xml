@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.pop.AUPopTipContainer android:orientation="vertical" android:paddingLeft="@dimen/au_tip_pop_margin" android:paddingRight="@dimen/au_tip_pop_margin" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/au_tip_pop_item_view" />
+</com.alipay.mobile.antui.pop.AUPopTipContainer>

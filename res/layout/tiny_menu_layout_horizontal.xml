@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/default_menu_bg" android:scrollbars="none" android:layout_width="375.0dp" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aui="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/menu_content" android:background="@color/default_menu_bg" android:scrollbars="none" android:layout_width="375.0dp" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="@dimen/tiny_menu_landscape_width" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:id="@id/menu_action_content" android:visibility="gone" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="22.0dp">
+                <TextView android:textSize="12.0dp" android:textColor="@color/tiny_menu_action_text_color" android:id="@id/menu_action_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <RelativeLayout android:paddingTop="15.0dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/tiny_menu_title_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/close_menu" android:layout_alignParentLeft="true">
+                    <TextView android:textSize="17.0dp" android:textStyle="bold" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/menu_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:singleLine="true" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="11.5dp" android:textColor="#747474" android:ellipsize="end" android:id="@id/tiny_app_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="4.0dp" android:singleLine="true" android:layout_below="@id/menu_title" />
+                    <com.alipay.mobile.antui.iconfont.AUIconView android:id="@id/about_icon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="2.0dp" android:layout_marginTop="1.0dp" android:layout_toRightOf="@id/menu_title" />
+                </RelativeLayout>
+                <com.alipay.mobile.antui.iconfont.AUIconView android:id="@id/close_menu" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginRight="15.0dp" android:layout_alignParentRight="true" aui:iconfontColor="#969696" aui:iconfontUnicode="@string/iconfont_cancel" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/menu_area" android:paddingTop="8.0dp" android:paddingBottom="25.0dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/recent_app_area" android:background="@color/recent_use_app_area_bg" android:paddingBottom="10.0dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/recent_use_tiny_app_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="13.0dp">
+                    <TextView android:textSize="13.0dp" android:textColor="@android:color/black" android:id="@id/favorite_and_recent_tiny_app_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recent_use_tiny_app" />
+                    <com.alipay.mobile.antui.iconfont.AUIconView android:id="@id/tiny_menu_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dp" />
+                </LinearLayout>
+                <FrameLayout android:id="@id/favorite_and_recent_tiny_app_layout" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" />
+                <com.alipay.mobile.antui.basic.AUHorizontalListView android:id="@id/favorite_and_recent_tiny_app_list" android:paddingLeft="6.0dp" android:fadingEdge="none" android:fadingEdgeLength="0.0dp" android:layout_width="match_parent" android:layout_height="80.0dp" android:layout_marginTop="5.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

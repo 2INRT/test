@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SeekBar android:id="@id/sb_line_progress" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="1000" android:progressDrawable="@drawable/video_thin_progress" android:thumb="@color/thin_progress_thumb" android:layout_centerInParent="true" />
+</RelativeLayout>

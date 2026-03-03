@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0dp" android:textColor="#e6ff5e33" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/billboard_index_tv" android:background="@drawable/billboard_widget_bus_line_name_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="15.0dp" android:text="" android:lines="1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:layout_weight="1.0">
+            <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="180.0dp" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0dp" android:textColor="#e6ffffff" android:ellipsize="end" android:gravity="left" android:id="@id/billboard_name_tv" android:background="@drawable/billboard_widget_bus_line_name_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="110.0dp" android:text="" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp">
+                <TextView android:textSize="8.0dp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/billboard_name_tag_1_tv" android:background="@drawable/billboard_widget_bus_line_name_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="32.0dp" android:text="" android:lines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/billboard_info_layout" android:layout_width="145.0dp" android:layout_height="wrap_content" android:layout_marginRight="0.0dp">
+            <TextView android:textSize="10.0dp" android:textColor="#19ffffff" android:ellipsize="end" android:gravity="center" android:id="@id/billboard_description_tv" android:background="@drawable/billboard_widget_bus_line_name_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50.0dp" android:text="— —" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

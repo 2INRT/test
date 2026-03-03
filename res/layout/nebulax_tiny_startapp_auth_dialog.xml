@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dp" android:textColor="#333333" android:id="@id/tiny_startapp_auth_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="30.0dp" android:layout_marginBottom="20.0dp" android:lineSpacingExtra="7.0dp" />
+    <com.alipay.mobile.antui.basic.AULinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/buttonContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/AU_SPACE5">
+        <com.alipay.mobile.antui.basic.AUButton android:id="@id/tiny_startapp_auth_cancel" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp" android:layout_weight="1.0" style="@style/subButtonStyle" />
+        <com.alipay.mobile.antui.basic.AUButton android:id="@id/tiny_startapp_auth_ensure" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp" android:layout_weight="1.0" style="@style/mainButtonStyle" />
+    </com.alipay.mobile.antui.basic.AULinearLayout>
+</LinearLayout>

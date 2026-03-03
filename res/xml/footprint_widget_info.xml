@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="@dimen/desktop_widget_min_width" android:minHeight="@dimen/desktop_widget_min_height" android:updatePeriodMillis="43200000" android:initialLayout="@layout/footprint_init_card_layout" android:previewImage="@drawable/footprint_widget_preview" android:resizeMode="none"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

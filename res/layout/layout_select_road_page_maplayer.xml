@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/map_select_center_offset_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivBubbleShadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bubble_shadow" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/ivStartBubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-4.0dp" android:src="@drawable/bubble_start_select" android:layout_above="@id/ivBubbleShadow" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/ivEndBubble" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-4.0dp" android:src="@drawable/bubble_end_select" android:layout_above="@id/ivBubbleShadow" android:layout_centerHorizontal="true" />
+</RelativeLayout>

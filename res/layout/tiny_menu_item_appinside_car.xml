@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aui="http://schemas.android.com/apk/res-auto">
+    <com.alipay.mobile.antui.iconfont.AUIconView android:id="@id/menu_item_font_icon" android:background="@drawable/tiny_menu_item_bg" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_marginTop="8.0dp" android:layout_centerHorizontal="true" aui:iconfontSize="34.0dp" />
+    <ImageView android:id="@id/menu_item_img_icon" android:background="@drawable/tiny_menu_item_bg" android:padding="10.0dp" android:visibility="gone" android:layout_width="88.0dp" android:layout_height="88.0dp" android:layout_marginTop="8.0dp" android:layout_centerHorizontal="true" />
+    <com.alipay.mobile.antui.badge.AUBadgeView android:id="@id/menu_item_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dp" />
+    <com.alipay.mobile.antui.badge.bubble.AUBubbleView android:textSize="9.0dp" android:textColor="#fff" android:id="@id/menu_item_corner_marking" android:paddingLeft="5.0dp" android:paddingTop="2.0dp" android:paddingRight="5.0dp" android:paddingBottom="2.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dp" android:maxLines="1" aui:bubbleColor="#ff3b30" aui:bubblePosition="topRight" />
+    <TextView android:textSize="24.0dp" android:textColor="@color/tiny_menu_item_text_color" android:ellipsize="end" android:id="@id/menu_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:singleLine="true" android:layout_below="@id/menu_item_font_icon" android:layout_centerHorizontal="true" />
+</RelativeLayout>

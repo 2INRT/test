@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/AU_COLOR_UNIVERSAL_BG" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#262a3b" android:layout_width="match_parent" android:layout_height="48.0dp">
+        <com.autonavi.nebulax.lbs.chooselocation.MiniAppSearchBar android:id="@id/search_bar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@id/search_result_list" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/divider" android:dividerHeight="1.0px" android:choiceMode="singleChoice" android:footerDividersEnabled="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/search_no_result" android:layout_width="match_parent" android:layout_height="64.0dp" android:layout_margin="16.0dp">
+            <ProgressBar android:id="@id/search_no_result_progress" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginRight="8.0dp" />
+            <TextView android:textColor="#999999" android:id="@id/search_no_result_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

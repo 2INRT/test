@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="28.0dp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/hot_spot_text" android:paddingLeft="16.0dp" android:paddingTop="4.0dp" android:paddingRight="16.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

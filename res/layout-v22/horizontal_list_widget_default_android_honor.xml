@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@android:id/background" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/card_h_list_parent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp">
+        <include android:id="@id/layout_card_title" layout="@layout/horizontal_list_widget_title_android_honor" />
+        <RelativeLayout android:layout_gravity="center" android:id="@id/desktop_widget_item" android:clickable="true" android:layout_width="132.0dp" android:layout_height="96.0dp" android:layout_below="@id/layout_card_title" android:layout_centerHorizontal="true">
+            <TextView android:textSize="15.0dp" android:textColor="#000000" android:id="@id/card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.0dp" android:text="" android:layout_centerHorizontal="true" android:textFontWeight="650" />
+            <RelativeLayout android:gravity="center" android:id="@id/card_btn" android:clickable="true" android:layout_width="76.0dp" android:layout_height="26.0dp" android:layout_marginTop="10.0dp" android:layout_below="@id/card_title" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/card_btn_title_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/desktop_widget_bus_btn_bg" android:scaleType="fitXY" />
+                <TextView android:textSize="12.0dp" android:textColor="#ffffff" android:id="@id/card_btn_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" android:textFontWeight="650" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

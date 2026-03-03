@@ -1,0 +1,14 @@
+.class interface abstract Lcom/autonavi/minimap/agroup/util/AGroupEventObserver$AGroupEventSubType;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/autonavi/minimap/agroup/util/AGroupEventObserver;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "AGroupEventSubType"
+.end annotation

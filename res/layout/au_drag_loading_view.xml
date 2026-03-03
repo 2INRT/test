@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AULinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/drag_loading_view" android:paddingTop="@dimen/AU_SPACE3" android:paddingBottom="@dimen/AU_SPACE3" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alipay.mobile.antui.lottie.AULottieLayout android:id="@id/progressBar" android:layout_width="@dimen/AU_HEIGHT2" android:layout_height="@dimen/AU_HEIGHT2" />
+    <com.alipay.mobile.antui.basic.AUTextView android:textSize="@dimen/AU_TEXTSIZE2" android:textColor="@color/AU_COLOR_SUB_CONTENT" android:id="@id/progress_right_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/AU_SPACE1" android:text="@string/loading" />
+    <View android:id="@id/left_divide" android:background="@color/drag_loading_divide_grey" android:visibility="gone" android:layout_width="80.0dp" android:layout_height="0.33000004dp" />
+    <com.alipay.mobile.antui.basic.AUTextView android:textSize="@dimen/AU_TEXTSIZE2" android:textColor="@color/AU_COLOR_SUB_CONTENT" android:id="@id/drag_loading_finished_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" android:text="@string/loading_no_more" />
+    <View android:id="@id/right_divide" android:background="@color/drag_loading_divide_grey" android:visibility="gone" android:layout_width="80.0dp" android:layout_height="0.33000004dp" />
+</com.alipay.mobile.antui.basic.AULinearLayout>

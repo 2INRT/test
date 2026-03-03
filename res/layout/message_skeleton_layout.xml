@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout android:id="@id/message_page_splash_bar" android:layout_width="match_parent" android:layout_height="88.0dp" app:dt_backgroundColor="Color_BG_L2" />
+    <include layout="@layout/message_skeleton_layout_cell_item" />
+    <include layout="@layout/message_skeleton_layout_cell_line" />
+    <include layout="@layout/message_skeleton_layout_cell_item" />
+    <include layout="@layout/message_skeleton_layout_cell_line" />
+    <include layout="@layout/message_skeleton_layout_cell_item" />
+    <include layout="@layout/message_skeleton_layout_cell_line" />
+    <include layout="@layout/message_skeleton_layout_cell_item" />
+    <include layout="@layout/message_skeleton_layout_cell_line" />
+    <include layout="@layout/message_skeleton_layout_cell_item" />
+    <include layout="@layout/message_skeleton_layout_cell_line" />
+    <include layout="@layout/message_skeleton_layout_cell_item" />
+    <include layout="@layout/message_skeleton_layout_cell_line" />
+    <include layout="@layout/message_skeleton_layout_cell_item" />
+    <include layout="@layout/message_skeleton_layout_cell_line" />
+    <include layout="@layout/message_skeleton_layout_cell_item" />
+</LinearLayout>

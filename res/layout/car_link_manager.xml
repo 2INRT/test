@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/car_link_parent_group" android:background="#f4f4f4" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.autonavi.widget.ui.TitleBar android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/car_link_manager_title" app:title_style="title_b" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="12.0dp" android:textColor="#686b70" android:gravity="center" android:id="@id/car_link_bluetooth_off_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="20.0dp" android:text="@string/car_link_bluetooth_off" android:layout_above="@id/connect_button_contain" />
+        <LinearLayout android:orientation="vertical" android:id="@id/connect_button_contain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="20.0dp" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true">
+            <Button android:textSize="@dimen/font_30" android:textColor="@color/text_color_white" android:id="@id/connect_button" android:background="@drawable/auto_button_blue_corner_background" android:layout_width="match_parent" android:layout_height="45.0dp" android:text="@string/car_link_start_connection" />
+            <Button android:textSize="@dimen/font_30" android:textColor="@color/text_color_white" android:id="@id/retry_connect_button" android:background="@drawable/auto_button_blue_corner_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45.0dp" android:text="@string/car_link_retry_connection" />
+            <Button android:textSize="@dimen/font_30" android:textColor="@color/text_color_white" android:id="@id/delete_connect_button" android:background="@drawable/auto_button_gray_corner_background" android:visibility="visible" android:layout_width="match_parent" android:layout_height="45.0dp" android:text="@string/car_link_dell_connection" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/connect_button_contain" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/connected" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/start_connection_sub1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dp" android:layout_above="@id/imageView2" android:layout_centerHorizontal="true">
+                <TextView android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/O3711_97" style="@style/ALI_CAR_REMOTE_CONNECTION_STATE" />
+                <TextView android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/O3711_158" style="@style/ALI_CAR_REMOTE_CONNECTION_STATE" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/fail_connection_sub1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50.0dp" android:layout_above="@id/imageView2" android:layout_centerHorizontal="true">
+                <TextView android:id="@id/textView11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/O3711_4" style="@style/ALI_CAR_REMOTE_CONNECTION_STATE" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/delete_connection_sub1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dp" android:layout_above="@id/imageView2" android:layout_centerHorizontal="true">
+                <TextView android:id="@id/textView13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/O3711_189" style="@style/ALI_CAR_REMOTE_CONNECTION_STATE" />
+                <TextView android:id="@id/textView14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/O3711_36" style="@style/ALI_CAR_REMOTE_CONNECTION_STATE" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/fail_connection_sub2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" android:layout_below="@id/imageView2" android:layout_centerHorizontal="true">
+                <TextView android:id="@id/textView31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/O3711_182" style="@style/ALI_CAR_REMOTE_CONNECTION_INSTRUCTION" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/delete_connection_sub2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" android:layout_below="@id/imageView2" android:layout_centerHorizontal="true">
+                <TextView android:id="@id/textView32" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/O3711_60" style="@style/ALI_CAR_REMOTE_CONNECTION_INSTRUCTION" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

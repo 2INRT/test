@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ic_stream_video_shadow2" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/iv_top_back_btn" android:paddingRight="30.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:src="@drawable/ic_video_back" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="17.0dp" android:textColor="#ffffff" android:id="@id/tv_adjust_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dp" android:text="倍速" android:layout_alignParentRight="true" />
+        <TextView android:textSize="17.0dp" android:textColor="#ffffff" android:id="@id/tv_video_definition" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dp" android:text="清晰度" android:layout_toLeftOf="@id/tv_adjust_speed" />
+    </RelativeLayout>
+</RelativeLayout>

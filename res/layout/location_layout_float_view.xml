@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="#887fffaa" android:layout_width="match_parent" android:layout_height="50.0dp">
+            <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textColor="#ff00ff" android:id="@id/signal_code" android:layout_width="250.0dp" android:layout_height="25.0dp" android:text="loading" />
+                <TextView android:textColor="#ff0000" android:id="@id/signal_info" android:layout_width="match_parent" android:layout_height="25.0dp" android:text="" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="right" android:id="@id/iv_close" android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/location_close_icon" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:background="#88888fcc" android:layout_width="match_parent" android:layout_height="30.0dp">
+            <RadioGroup android:orientation="horizontal" android:id="@id/rg_log" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:id="@id/rb_sdk_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="SDK日志" />
+                <RadioButton android:id="@id/rb_engine_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="引擎日志" />
+                <RadioButton android:id="@id/rb_signal_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="历史信号" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:background="#88c43c8d" android:layout_width="match_parent" android:layout_height="30.0dp">
+            <CheckBox android:id="@id/cb_filter_gps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="屏蔽GPS" />
+            <CheckBox android:id="@id/cb_mock_rtk" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="模拟RTK" />
+        </LinearLayout>
+        <ListView android:id="@id/lv_location_log" android:background="#8887cefa" android:layout_width="match_parent" android:layout_height="200.0dp" />
+    </LinearLayout>
+</RelativeLayout>

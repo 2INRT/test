@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="16.0dp" android:paddingTop="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.autonavi.nebulax.ui.pdfviewer.SafeDrawImageView android:id="@id/page" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <TextView android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@id/page_index" android:background="#333333" android:layout_width="match_parent" android:layout_height="15.0dp" android:text="1/16" android:textAlignment="center" />
+</LinearLayout>

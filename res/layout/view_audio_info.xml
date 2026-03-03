@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/v_separate" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="8.299988dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_audio" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="42.299988dp">
+        <ImageView android:id="@id/iv_audio_playing" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="5.299988dp" android:scaleType="fitCenter" />
+        <TextView android:textSize="12.5dp" android:textColor="#888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.299988dp" android:text="@string/str_is_playing" />
+        <TextView android:textSize="12.5dp" android:textColor="#161616" android:ellipsize="end" android:id="@id/tv_audio_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="16.699982dp" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

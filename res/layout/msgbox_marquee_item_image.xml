@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amap.bundle.commonui.designtoken.view.viewgroup.DtFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.amap.bundle.commonui.designtoken.view.DtImageView android:id="@id/msgbox_marque_item_imageview" android:layout_width="240.0dp" android:layout_height="38.0dp" android:scaleType="fitXY" />
+    <com.amap.bundle.commonui.designtoken.view.textview.DtTextView android:textSize="8.0dp" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/msgbox_marque_item_adtag" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="wrap_content" android:layout_marginLeft="244.0dp" android:text="@string/O3542_31" app:dt_textColor="Color_Black(34)" />
+    <com.amap.bundle.commonui.designtoken.view.DtView android:layout_gravity="end|center" android:id="@id/msgbox_marque_item_image_close" android:layout_width="32.0dp" android:layout_height="32.0dp" />
+</com.amap.bundle.commonui.designtoken.view.viewgroup.DtFrameLayout>

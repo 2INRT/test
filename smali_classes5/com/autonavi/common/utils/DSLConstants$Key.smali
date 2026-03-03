@@ -1,0 +1,14 @@
+.class public interface abstract Lcom/autonavi/common/utils/DSLConstants$Key;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/autonavi/common/utils/DSLConstants;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "Key"
+.end annotation

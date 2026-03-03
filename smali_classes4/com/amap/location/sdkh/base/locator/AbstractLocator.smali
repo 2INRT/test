@@ -1,0 +1,558 @@
+.class public abstract Lcom/amap/location/sdkh/base/locator/AbstractLocator;
+.super Lcom/amap/location/sdkh/base/common/workthread/WorkLooper;
+.source "SourceFile"
+
+
+# static fields
+.field private static final LOG_INTERVAL:I = 0x1388
+
+.field private static final TAG:Ljava/lang/String; = "AbstractLocator"
+
+
+# instance fields
+.field private iod:I
+
+.field public mCallback:Lcom/amap/location/sdkh/base/common/listener/AmapLocationListener;
+
+.field private mLastFilterType:I
+
+.field private mLastLogReportTime:J
+
+.field private mPriority:I
+
+.field private mStart:Z
+
+.field private scene:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Lcom/amap/location/sdkh/base/common/workthread/WorkLooper;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    iput-boolean v0, p0, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->mStart:Z
+
+    .line 6
+    .line 7
+    iput v0, p0, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->mLastFilterType:I
+
+    .line 8
+    .line 9
+    return-void
+.end method
+
+
+# virtual methods
+.method public filter(Lcom/amap/location/sdkh/base/type/location/AmapLocation;)Z
+    .locals 10
+
+    .line 1
+    invoke-virtual {p0}, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->needFilterByIod()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    const/4 v1, 0x1
+
+    .line 6
+    const/4 v2, 0x0
+
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    const/4 v0, 0x1
+
+    .line 10
+    goto :goto_0
+
+    .line 11
+    :cond_0
+    invoke-virtual {p0}, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->needFilterByScene()Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    if-eqz v0, :cond_1
+
+    .line 16
+    .line 17
+    const/4 v0, 0x2
+
+    .line 18
+    goto :goto_0
+
+    .line 19
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 20
+    :goto_0
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-wide v3
+
+    .line 24
+    iget v5, p0, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->mLastFilterType:I
+
+    .line 25
+    .line 26
+    if-ne v5, v0, :cond_2
+
+    .line 27
+    .line 28
+    iget-wide v5, p0, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->mLastLogReportTime:J
+
+    .line 29
+    .line 30
+    sub-long v5, v3, v5
+
+    .line 31
+    .line 32
+    const-wide/16 v7, 0x1388
+
+    .line 33
+    .line 34
+    cmp-long v9, v5, v7
+
+    .line 35
+    .line 36
+    if-lez v9, :cond_3
+
+    .line 37
+    .line 38
+    :cond_2
+    iput-wide v3, p0, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->mLastLogReportTime:J
+
+    .line 39
+    .line 40
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    .line 41
+    .line 42
+    const-string/jumbo v4, "get loc:"
+
+    .line 43
+    .line 44
+    .line 45
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 46
+    .line 47
+    .line 48
+    invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v4
+
+    .line 52
+    invoke-static {p1, v4}, Lcom/amap/location/sdkh/base/tools/common/TextUtils;->getLocationSimpleLog(Lcom/amap/location/sdkh/base/type/location/AmapLocation;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object p1
+
+    .line 56
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 57
+    .line 58
+    .line 59
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 60
+    .line 61
+    .line 62
+    move-result-object p1
+
+    .line 63
+    const-string/jumbo v3, "AbstractLocator"
+
+    .line 64
+    .line 65
+    .line 66
+    invoke-static {v3, p1}, Lcom/amap/location/sdkh/base/tools/log/LogUtils;->s(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 67
+    .line 68
+    .line 69
+    :cond_3
+    iput v0, p0, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->mLastFilterType:I
+
+    .line 70
+    .line 71
+    if-eqz v0, :cond_4
+
+    .line 72
+    .line 73
+    goto :goto_1
+
+    .line 74
+    :cond_4
+    const/4 v1, 0x0
+
+    .line 75
+    :goto_1
+    return v1
+.end method
+
+.method public getIod()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->iod:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getPriority()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->mPriority:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getScene()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->scene:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public hasStart()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->mStart:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public abstract isRunning()Z
+.end method
+
+.method public needFilterByIod()Z
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->getIod()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    const/4 v1, -0x2
+
+    .line 6
+    if-eq v0, v1, :cond_0
+
+    .line 7
+    .line 8
+    invoke-virtual {p0}, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->getIod()I
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v0
+
+    .line 12
+    invoke-static {}, Lcom/amap/location/sdkh/base/LocationGlobal;->getIod()I
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v1
+
+    .line 16
+    if-eq v0, v1, :cond_0
+
+    .line 17
+    .line 18
+    const/4 v0, 0x1
+
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 21
+    :goto_0
+    return v0
+.end method
+
+.method public needFilterByScene()Z
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->scene:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    const-string/jumbo v1, "_0_"
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 7
+    .line 8
+    .line 9
+    move-result v0
+
+    .line 10
+    if-nez v0, :cond_0
+
+    .line 11
+    .line 12
+    iget-object v0, p0, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->scene:Ljava/lang/String;
+
+    .line 13
+    .line 14
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 15
+    .line 16
+    const-string/jumbo v2, "_"
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-static {}, Lcom/amap/location/sdkh/base/LocationGlobal;->getScene()I
+
+    .line 23
+    .line 24
+    .line 25
+    move-result v3
+
+    .line 26
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v1
+
+    .line 36
+    invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 37
+    .line 38
+    .line 39
+    move-result v0
+
+    .line 40
+    if-nez v0, :cond_0
+
+    .line 41
+    .line 42
+    const/4 v0, 0x1
+
+    .line 43
+    goto :goto_0
+
+    .line 44
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 45
+    :goto_0
+    return v0
+.end method
+
+.method public needFilterBySceneAndIod()Z
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-virtual {p0, v0}, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->filter(Lcom/amap/location/sdkh/base/type/location/AmapLocation;)Z
+
+    .line 3
+    .line 4
+    .line 5
+    move-result v0
+
+    .line 6
+    return v0
+.end method
+
+.method public report(Lcom/amap/location/sdkh/base/type/location/AmapLocation;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->mCallback:Lcom/amap/location/sdkh/base/common/listener/AmapLocationListener;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {v0, p1}, Lcom/amap/location/sdkh/base/common/listener/AmapLocationListener;->onLocationChanged(Lcom/amap/location/sdkh/base/type/location/AmapLocation;)V
+
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    return-void
+.end method
+
+.method public setCallback(Lcom/amap/location/sdkh/base/common/listener/AmapLocationListener;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->mCallback:Lcom/amap/location/sdkh/base/common/listener/AmapLocationListener;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setIod(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->iod:I
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setPriority(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->mPriority:I
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setScene(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->scene:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public start()V
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->mStart:Z
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->startLocation()V
+
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    const/4 v0, 0x1
+
+    .line 9
+    iput-boolean v0, p0, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->mStart:Z
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public abstract startLocation()V
+.end method
+
+.method public stop()V
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->mStart:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->stopLocation()V
+
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 9
+    iput-boolean v0, p0, Lcom/amap/location/sdkh/base/locator/AbstractLocator;->mStart:Z
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public abstract stopLocation()V
+.end method

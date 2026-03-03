@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/dialogContent" android:background="@drawable/au_notice_bar_bg" android:padding="@dimen/AU_SPACE3" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aui="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.alipay.mobile.antui.basic.AURoundImageView android:id="@id/titleIcon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginRight="8.0dp" android:src="@color/AU_COLOR22" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" aui:roundHeight="2.0dp" aui:roundWidth="2.0dp" />
+        <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="@color/au_button_textcolor_black" android:ellipsize="end" android:gravity="left|center" android:id="@id/title" android:layout_width="282.0dp" android:layout_height="wrap_content" android:lines="1" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:layout_toStartOf="@id/subTitle" android:layout_toEndOf="@id/titleIcon" />
+        <TextView android:textSize="13.0dp" android:textColor="@color/au_button_textcolor_gray" android:id="@id/subTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+        <TextView android:textSize="15.0dp" android:textColor="@color/au_button_textcolor_black" android:ellipsize="end" android:gravity="left|center" android:id="@id/noticeText" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_toLeftOf="@id/noticeIcon" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" />
+        <com.alipay.mobile.antui.basic.AURoundImageView android:id="@id/noticeIcon" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="12.0dp" android:src="@color/AU_COLOR22" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_alignParentEnd="true" aui:roundHeight="4.0dp" aui:roundWidth="4.0dp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AULinearLayout android:paddingLeft="@dimen/AU_MARGIN_UNIVERSAL" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_vertical" android:background="@color/AU_COLOR_LINE" android:layout_width="@dimen/AU_DIVIDER_SPACE2" android:layout_height="@dimen/AU_SPACE5" />
+    <com.alipay.mobile.antui.basic.AUButton android:textSize="@dimen/AU_TEXTSIZE4" android:textColor="@color/textcode_text_color" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/checkCodeSendButton" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL" android:text="@string/sendCheckCode" />
+</com.alipay.mobile.antui.basic.AULinearLayout>

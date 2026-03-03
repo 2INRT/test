@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_center_play_btn" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/video_play" android:contentDescription="@string/str_start_play_video" />
+</RelativeLayout>

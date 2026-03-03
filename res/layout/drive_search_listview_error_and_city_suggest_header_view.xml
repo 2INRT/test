@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/error_info_layout" android:background="@drawable/v4_board_list_content_bg_selector" android:paddingTop="1.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_26" android:textColor="@color/gary" android:id="@id/error_title" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dp" android:layout_marginTop="8.0dp" android:text="@string/another_is_find" />
+        <LinearLayout android:orientation="vertical" android:id="@id/error_info_container" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/city_layout" android:background="@color/gary_frame" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+        <TextView android:textSize="@dimen/font_h19" android:textColor="@color/v6_color_gray" android:gravity="center" android:id="@id/error_city_both_hide" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" android:text="@string/can_not_find_reslut_in_this_area" />
+        <View android:id="@id/divider" android:background="@color/black_percent_6" android:paddingLeft="15.0dp" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <TextView android:textSize="@dimen/font_26" android:textColor="@color/v6_color_gray" android:background="@color/white" android:paddingLeft="15.0dp" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/chose_city_reslut" />
+    </LinearLayout>
+</LinearLayout>

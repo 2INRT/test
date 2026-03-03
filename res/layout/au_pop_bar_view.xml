@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AURelativeLayout android:id="@id/pop_bar_background" android:background="@drawable/au_pop_bar_add_component_bg" android:paddingTop="9.0dp" android:paddingBottom="9.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aui="http://schemas.android.com/apk/res-auto">
+    <com.alipay.mobile.antui.basic.AULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/left_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <com.alipay.mobile.antui.basic.AURelativeLayout android:id="@id/cancel_ly" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="5.0dp" android:contentDescription="关闭">
+            <com.alipay.mobile.antui.iconfont.AUIconView android:id="@id/cancel_im" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_centerInParent="true" aui:iconfontColor="#ffffff" aui:iconfontSize="12.0dp" aui:iconfontUnicode="@string/iconfont_cancel" />
+        </com.alipay.mobile.antui.basic.AURelativeLayout>
+        <com.alipay.mobile.antui.basic.AURoundImageView android:id="@id/left_icon" android:visibility="gone" android:layout_width="36.0dp" android:layout_height="36.0dp" android:layout_marginLeft="5.0dp" android:scaleType="fitXY" />
+    </com.alipay.mobile.antui.basic.AULinearLayout>
+    <com.alipay.mobile.antui.basic.AULinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/tips_text_container" android:paddingLeft="9.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" android:layout_toLeftOf="@id/right_button" android:layout_toRightOf="@id/left_container" android:layout_centerVertical="true">
+        <com.alipay.mobile.antui.basic.AUTextView android:textSize="14.0dp" android:textColor="#ffffff" android:ellipsize="end" android:id="@id/tips_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.alipay.mobile.antui.basic.AUTextView android:textSize="13.0dp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tip_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.alipay.mobile.antui.basic.AULinearLayout>
+    <com.alipay.mobile.antui.basic.AUButton android:textSize="14.0dp" android:textColor="#ffffff" android:gravity="center" android:id="@id/right_button" android:background="@drawable/au_pop_bar_add_button_bg" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="27.0dp" android:layout_marginRight="16.0dp" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</com.alipay.mobile.antui.basic.AURelativeLayout>

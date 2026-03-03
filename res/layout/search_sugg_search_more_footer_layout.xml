@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/search_more_root" android:background="@drawable/search_sugg_history_item_selector" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/bottom_driver" android:background="@drawable/board_line_selector" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <TextView android:textSize="14.0dp" android:textColor="@color/f_c_6" android:gravity="center" android:layout_width="match_parent" android:layout_height="40.0dp" android:text="@string/search_sugg_more" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AURelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alipay.mobile.antui.basic.AUView android:id="@id/card_option_divider_line" android:background="@color/AU_COLOR_LINE" android:layout_width="1.0px" android:layout_height="@dimen/AU_HEIGHT2" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <com.alipay.mobile.antui.basic.AURelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.alipay.mobile.antui.iconfont.AUIconView android:id="@id/card_option_item_icon" android:layout_width="@dimen/AU_HEIGHT4" android:layout_height="@dimen/AU_HEIGHT4" android:scaleType="centerInside" android:layout_centerVertical="true" />
+        <com.alipay.mobile.antui.basic.AUTextView android:textSize="@dimen/AU_TEXTSIZE3" android:textColor="@drawable/card_option_text_color_selector" android:id="@id/card_option_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/AU_SPACE1" android:layout_toRightOf="@id/card_option_item_icon" android:layout_centerVertical="true" />
+    </com.alipay.mobile.antui.basic.AURelativeLayout>
+</com.alipay.mobile.antui.basic.AURelativeLayout>

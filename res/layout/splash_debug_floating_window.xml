@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@android:id/background" android:background="@android:color/transparent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/big_content" android:background="@drawable/splash_debug_window_bg" android:padding="5.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@id/btn_small" android:background="@drawable/splash_tools_close_bg" android:layout_width="50.0dp" android:layout_height="40.0dp" android:text="收起" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@id/clear_log" android:background="@drawable/splash_tools_close_bg" android:layout_width="80.0dp" android:layout_height="40.0dp" android:text="清除日志" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <TextView android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/view_switching_btn" android:background="@drawable/splash_debug_window_btn" android:paddingLeft="15.0dp" android:paddingTop="10.0dp" android:paddingRight="15.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:text="日志/工具切换" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/splash_debug_log_layout" android:background="@drawable/splash_debug_window_items_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/view_switching_btn">
+            <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/f_c_2" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="闪屏日志" android:layout_centerVertical="true" />
+            <View android:background="@color/font_cdg" android:layout_width="match_parent" android:layout_height="@dimen/line_devide" />
+            <ListView android:id="@id/splash_debug_list" android:background="#ffffff" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@drawable/config_layout_drable_selector" android:divider="@color/font_cdg" android:dividerHeight="@dimen/line_devide" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:fadeScrollbars="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/splash_tools_view" android:background="@drawable/splash_debug_window_items_bg" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/view_switching_btn">
+            <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/f_c_2" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:text="闪屏工具" android:layout_centerVertical="true" />
+            <View android:background="@color/font_cdg" android:layout_width="match_parent" android:layout_height="@dimen/line_devide" />
+            <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@color/bg_f4" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/v4_board_list_content_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:orientation="horizontal" android:background="@drawable/v4_list_item_bg_selector" android:paddingLeft="@dimen/left_30" android:paddingRight="8.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0dp" android:textColor="@color/f_c_2" android:paddingTop="11.0dp" android:paddingBottom="11.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="闪屏调试选项(闪屏延时5秒展示)" android:layout_toLeftOf="@id/splash_debug_checkbox" android:layout_centerVertical="true" />
+                            <CheckBox android:layout_gravity="center_vertical" android:id="@id/splash_debug_checkbox" android:background="@drawable/v4_checkbox_bg" android:layout_width="63.0dp" android:layout_height="44.0dp" android:checked="false" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <View android:background="@color/font_cdg" android:layout_width="match_parent" android:layout_height="@dimen/line_devide" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/v4_board_list_content_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:orientation="horizontal" android:id="@id/new_users_config_close_layout" android:background="@drawable/v4_list_item_bg_selector" android:paddingLeft="@dimen/left_30" android:paddingRight="8.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0dp" android:textColor="@color/f_c_2" android:paddingTop="11.0dp" android:paddingBottom="11.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="关闭新用户保护" android:layout_toLeftOf="@id/new_users_config_close_checkbox" android:layout_centerVertical="true" />
+                            <CheckBox android:layout_gravity="center_vertical" android:id="@id/new_users_config_close_checkbox" android:background="@drawable/v4_checkbox_bg" android:layout_width="63.0dp" android:layout_height="44.0dp" android:checked="false" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <View android:background="@color/font_cdg" android:layout_width="match_parent" android:layout_height="@dimen/line_devide" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/v4_board_list_content_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:orientation="horizontal" android:background="@drawable/v4_list_item_bg_selector" android:paddingLeft="15.0dp" android:paddingRight="8.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0dp" android:textColor="@color/f_c_2" android:paddingTop="11.0dp" android:paddingBottom="11.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="禁止实时请求，避免影响预请求" android:layout_toLeftOf="@id/prohibit_realtime_request_checkbox" android:layout_centerVertical="true" />
+                            <CheckBox android:layout_gravity="center_vertical" android:id="@id/prohibit_realtime_request_checkbox" android:background="@drawable/v4_checkbox_bg" android:layout_width="63.0dp" android:layout_height="44.0dp" android:checked="false" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <View android:background="@color/font_cdg" android:layout_width="match_parent" android:layout_height="@dimen/line_devide" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/v4_board_list_content_bg_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:orientation="horizontal" android:background="@drawable/v4_list_item_bg_selector" android:paddingLeft="@dimen/left_30" android:paddingRight="8.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0dp" android:textColor="@color/f_c_2" android:paddingTop="11.0dp" android:paddingBottom="11.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="lottie区域展示边框，红色为点击区域（未实现）" android:layout_toLeftOf="@id/lottie_display_border_checkbox" android:layout_centerVertical="true" />
+                            <CheckBox android:layout_gravity="center_vertical" android:id="@id/lottie_display_border_checkbox" android:background="@drawable/v4_checkbox_bg" android:layout_width="63.0dp" android:layout_height="44.0dp" android:checked="false" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <View android:background="@color/font_cdg" android:layout_width="match_parent" android:layout_height="@dimen/line_devide" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/v4_board_list_content_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:orientation="horizontal" android:id="@id/scheme_frequency_control_clear_layout" android:background="@drawable/v4_list_item_bg_selector" android:paddingLeft="@dimen/left_30" android:paddingRight="8.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0dp" android:textColor="@color/f_c_2" android:paddingTop="11.0dp" android:paddingBottom="11.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="scheme频控数据清空" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <View android:background="@color/font_cdg" android:layout_width="match_parent" android:layout_height="@dimen/line_devide" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/v4_board_list_content_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:orientation="horizontal" android:id="@id/background_frequency_control_clear_layout" android:background="@drawable/v4_list_item_bg_selector" android:paddingLeft="@dimen/left_30" android:paddingRight="8.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0dp" android:textColor="@color/f_c_2" android:paddingTop="11.0dp" android:paddingBottom="11.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="前后台频空数据清空" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <View android:background="@color/font_cdg" android:layout_width="match_parent" android:layout_height="@dimen/line_devide" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/v4_board_list_content_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:orientation="horizontal" android:id="@id/cold_frequency_control_clear_layout" android:background="@drawable/v4_list_item_bg_selector" android:paddingLeft="@dimen/left_30" android:paddingRight="8.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0dp" android:textColor="@color/f_c_2" android:paddingTop="11.0dp" android:paddingBottom="11.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="单次冷启动频控数据清空（不清空场景频控数据）" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <View android:background="@color/font_cdg" android:layout_width="match_parent" android:layout_height="@dimen/line_devide" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/v4_board_list_content_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:orientation="horizontal" android:id="@id/all_frequency_control_clear_layout" android:background="@drawable/v4_list_item_bg_selector" android:paddingLeft="@dimen/left_30" android:paddingRight="8.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0dp" android:textColor="@color/f_c_2" android:paddingTop="11.0dp" android:paddingBottom="11.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="全局频控数据清空（不清空场景频控数据）" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <View android:background="@color/font_cdg" android:layout_width="match_parent" android:layout_height="@dimen/line_devide" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/v4_board_list_content_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:orientation="horizontal" android:id="@id/clear_splash_data_layout" android:background="@drawable/v4_list_item_bg_selector" android:paddingLeft="@dimen/left_30" android:paddingRight="8.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0dp" android:textColor="@color/f_c_2" android:paddingTop="11.0dp" android:paddingBottom="11.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="清空闪屏数据" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <View android:background="@color/font_cdg" android:layout_width="match_parent" android:layout_height="@dimen/line_devide" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/v4_board_list_content_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:orientation="horizontal" android:id="@id/refresh_view_layout" android:background="@drawable/v4_list_item_bg_selector" android:paddingLeft="@dimen/left_30" android:paddingRight="8.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0dp" android:textColor="@color/f_c_2" android:paddingTop="11.0dp" android:paddingBottom="11.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="刷新界面（暂不支持）" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <View android:background="@color/font_cdg" android:layout_width="match_parent" android:layout_height="@dimen/line_devide" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/v4_board_list_content_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:orientation="horizontal" android:id="@id/backend_refresh_layout" android:background="@drawable/v4_list_item_bg_selector" android:paddingLeft="@dimen/left_30" android:paddingRight="8.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0dp" android:textColor="@color/f_c_2" android:paddingTop="11.0dp" android:paddingBottom="11.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="触发一次后台刷新（暂不支持）" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <View android:background="@color/font_cdg" android:layout_width="match_parent" android:layout_height="@dimen/line_devide" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/v4_board_list_content_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:orientation="horizontal" android:id="@id/speed_mock_layout" android:background="@drawable/v4_list_item_bg_selector" android:paddingLeft="@dimen/left_30" android:paddingRight="8.0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0dp" android:textColor="@color/f_c_2" android:paddingTop="11.0dp" android:paddingBottom="11.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="速度模拟(暂不支持)" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <View android:background="@color/font_cdg" android:layout_width="match_parent" android:layout_height="@dimen/line_devide" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/small_content" android:background="@drawable/splash_floating_btn_bg" android:padding="5.0dp" android:layout_width="66.0dp" android:layout_height="66.0dp">
+        <TextView android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/splash_debug_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="闪屏" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/drawable_action_sheet_head_bg" android:paddingLeft="15.0dp" android:paddingTop="18.0dp" android:paddingRight="15.0dp" android:paddingBottom="18.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alipay.mobile.antui.basic.AUEmptyGoneTextView android:textSize="@dimen/AU_TEXTSIZE5" android:textColor="@color/AU_COLOR_TITLE" android:gravity="center" android:id="@id/action_head_title" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.alipay.mobile.antui.basic.AUEmptyGoneTextView android:textSize="15.0dp" android:textColor="@color/AU_COLOR_SUB_CONTENT" android:gravity="center" android:id="@id/action_head_message" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

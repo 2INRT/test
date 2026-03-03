@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<host-apdu-service android:description="@string/tiny_nfc_service_name" android:requireDeviceUnlock="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

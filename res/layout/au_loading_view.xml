@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AURelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alipay.mobile.antui.basic.AURelativeLayout android:gravity="center" android:id="@id/progress_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.alipay.mobile.antui.basic.AUProgressBar android:id="@id/progressBar" android:layout_width="@dimen/AU_ICONSIZE5" android:layout_height="@dimen/AU_ICONSIZE5" android:indeterminateDrawable="@drawable/au_pullrefresh_progress" android:layout_centerInParent="true" />
+        <com.alipay.mobile.antui.basic.AUTextView android:textSize="@dimen/AU_TEXTSIZE2" android:textColor="@color/AU_COLOR16" android:id="@id/progress_current_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </com.alipay.mobile.antui.basic.AURelativeLayout>
+    <com.alipay.mobile.antui.basic.AUEmptyGoneTextView android:textSize="@dimen/AU_TEXTSIZE4" android:textColor="@color/AU_COLOR_SUB_CONTENT" android:gravity="center" android:id="@id/progress_loading_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/AU_SPACE3" android:text="@string/loadingview_loadingText" android:layout_below="@id/progress_layout" />
+</com.alipay.mobile.antui.basic.AURelativeLayout>

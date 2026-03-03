@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:id="@id/selected" android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_0" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_1" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_2" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_3" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_4" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_5" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_6" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_7" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_8" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_9" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_10" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_11" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_12" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_13" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_14" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_15" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_16" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_17" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_18" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_19" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_20" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_21" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_22" />
+    <item android:duration="42" android:drawable="@drawable/ic_play_anim_23" />
+</animation-list>

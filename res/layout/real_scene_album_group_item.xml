@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/select_all_checkbox" android:paddingLeft="5.0dp" android:paddingTop="8.0dp" android:paddingRight="2.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableLeft="@drawable/real_scene_album_selector" />
+    <TextView android:textSize="13.0dp" android:textColor="@color/f_c_2" android:id="@id/image_taken_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:layout_toRightOf="@id/select_all_checkbox" android:layout_centerVertical="true" />
+</RelativeLayout>

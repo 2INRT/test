@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbarSize="3.0dp" android:scrollbarThumbVertical="@drawable/dypay_scroll_thumb" android:background="@color/dypay_white" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:fadeScrollbars="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:visibility="gone" layout="@layout/dypay_view_standard_titlebar_layout" />
+        <ImageView android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginTop="48.0dp" android:src="@drawable/dypay_icon_aweme" android:scaleType="centerCrop" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/dypay_black_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/dypay_guide_title" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/dypay_black_161823" android:gravity="center" android:id="@id/tv_guide_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="48.0dp" android:text="@string/dypay_guide_content" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/dypay_white" android:gravity="center" android:id="@id/tv_goto_download" android:background="@drawable/dypay_bg_round_corner_btn" android:layout_width="327.0dp" android:layout_height="44.0dp" android:layout_marginLeft="24.0dp" android:layout_marginTop="24.0dp" android:layout_marginRight="24.0dp" android:text="@string/dypay_guide_btn" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/dypay_black_222222" android:gravity="center" android:id="@id/tv_goto_dypay" android:background="@drawable/dypay_bg_stroke_corner_btn" android:layout_width="327.0dp" android:layout_height="44.0dp" android:layout_marginLeft="24.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="24.0dp" android:text="@string/dypay_guide_btn_done" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/dypay_black_222222" android:gravity="center" android:id="@id/tv_dypay_back" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="24.0dp" android:text="@string/dypay_guide_btn_back" />
+    </LinearLayout>
+</ScrollView>

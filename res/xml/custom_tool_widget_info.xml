@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="110.0dp" android:minHeight="110.0dp" android:updatePeriodMillis="43200000" android:initialLayout="@layout/card_layout_searchbar_toolbox2" android:previewImage="@drawable/custom_tool_preview" android:resizeMode="none"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

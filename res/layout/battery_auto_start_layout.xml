@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#80000000" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/dg_background" android:background="@drawable/battery_auto_start_background" android:layout_width="280.0dp" android:layout_height="305.0dp" android:layout_centerInParent="true">
+        <TextView android:textSize="20.0dp" android:textColor="#de000000" android:id="@id/scene_permission_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0dp" android:layout_marginTop="24.0dp" android:layout_marginRight="28.0dp" android:text="@string/title_h1" android:layout_alignParentTop="true" />
+        <TextView android:textSize="14.0dp" android:textColor="#8a000000" android:id="@id/scene_permission_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="26.0dp" android:text="@string/title_h2" android:maxLines="2" android:layout_below="@id/scene_permission_title" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/scene_permission_desc" android:layout_centerHorizontal="true">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/battery_permission_item" android:background="@drawable/battery_auto_start_item_bg" android:layout_width="256.0dp" android:layout_height="68.0dp" android:layout_marginTop="12.0dp">
+                <ImageView android:id="@id/battery_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/batter_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="75.0dp" android:layout_toRightOf="@id/battery_icon" android:layout_centerVertical="true">
+                    <TextView android:textSize="14.0dp" android:textColor="#de000000" android:id="@id/item0_title_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/battery_item_title_h1" />
+                </RelativeLayout>
+                <ImageView android:id="@id/battery_checkbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dp" android:src="@drawable/checkbox_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="13.0dp" android:textColor="#ff907c" android:id="@id/batter_to_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dp" android:text="@string/battery_to_set_button_des" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/auto_start_permission_item" android:background="@drawable/battery_auto_start_item_bg" android:visibility="visible" android:layout_width="256.0dp" android:layout_height="68.0dp" android:layout_marginTop="12.0dp">
+                <ImageView android:id="@id/auto_start_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/auto_start_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="75.0dp" android:layout_toRightOf="@id/auto_start_icon" android:layout_centerVertical="true">
+                    <TextView android:textSize="14.0dp" android:textColor="#de000000" android:id="@id/item1_title_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_start_title_h1" />
+                </RelativeLayout>
+                <ImageView android:id="@id/auto_start_checkbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dp" android:src="@drawable/checkbox_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="13.0dp" android:textColor="#ff907c" android:id="@id/auto_start_to_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dp" android:text="@string/auto_start_to_open_btn_des" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:id="@id/cut_line" android:background="#1a000000" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_above="@id/bottom_btn_layout" />
+        <LinearLayout android:id="@id/bottom_btn_layout" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_alignParentBottom="true">
+            <TextView android:textSize="16.0dp" android:textColor="#8f000000" android:gravity="center" android:id="@id/later_set_permission" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/later_set_text" android:layout_weight="1.0" />
+            <View android:background="#1a000000" android:layout_width="1.0px" android:layout_height="match_parent" />
+            <TextView android:textSize="16.0dp" android:textColor="#547eff" android:gravity="center" android:id="@id/me_has_seted" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/me_has_seted" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="13.0dp" android:textColor="#61000000" android:gravity="center" android:id="@id/only_later_set_permission" android:paddingTop="19.0dp" android:paddingBottom="23.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/later_set_text" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

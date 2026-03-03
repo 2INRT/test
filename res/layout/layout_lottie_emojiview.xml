@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.bundle.vui.common.emojiview.VuiAmapLottieView android:id="@id/lottie_view" android:layout_width="32.0dp" android:layout_height="32.0dp" android:contentDescription="@string/talkback_emojiview_hint" app:loop="false" app:path_merge="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alipay.mobile.accountopenauth.ui.widget.LottieView android:id="@id/lottieLeft" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+    <com.alipay.mobile.accountopenauth.ui.widget.LottieView android:id="@id/lottieMid" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="2.0dp" android:layout_weight="1.0" />
+    <com.alipay.mobile.accountopenauth.ui.widget.LottieView android:id="@id/lottieRight" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="2.0dp" android:layout_weight="1.0" />
+</LinearLayout>

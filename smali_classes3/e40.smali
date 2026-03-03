@@ -1,0 +1,26 @@
+.class public final Le40;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/autonavi/widget/ui/AlertViewInterface$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Li40;->doDownloadApp(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# virtual methods
+.method public final onClick(Lcom/autonavi/widget/ui/AlertView;I)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method

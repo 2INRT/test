@@ -1,0 +1,181 @@
+.class final Lcom/alibaba/ariver/apt/com_alipay_mobile_nebulax_integration_base_ExtOpt$31;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/alibaba/ariver/kernel/api/extension/ExtensionOpt$MethodInvokeOptimizer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/alibaba/ariver/apt/com_alipay_mobile_nebulax_integration_base_ExtOpt;->opt2()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = null
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final doMethodInvoke(Ljava/lang/String;Lcom/alibaba/ariver/kernel/api/extension/Extension;[Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
+
+    .line 1
+    const-string/jumbo v0, "preRender"
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 5
+    .line 6
+    .line 7
+    move-result v0
+
+    .line 8
+    if-eqz v0, :cond_0
+
+    .line 9
+    .line 10
+    array-length v0, p3
+
+    .line 11
+    if-nez v0, :cond_0
+
+    .line 12
+    .line 13
+    check-cast p2, Lcom/alipay/mobile/nebulax/integration/base/jsapi/SessionExtension;
+
+    .line 14
+    .line 15
+    invoke-virtual {p2}, Lcom/alipay/mobile/nebulax/integration/base/jsapi/SessionExtension;->preRender()Lcom/alibaba/ariver/engine/api/bridge/extension/BridgeResponse;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p1
+
+    .line 19
+    return-object p1
+
+    .line 20
+    :cond_0
+    const-string/jumbo v0, "getSessionData"
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v0
+
+    .line 27
+    const/4 v1, 0x0
+
+    .line 28
+    const/4 v2, 0x1
+
+    .line 29
+    if-eqz v0, :cond_1
+
+    .line 30
+    .line 31
+    array-length v0, p3
+
+    .line 32
+    if-ne v0, v2, :cond_1
+
+    .line 33
+    .line 34
+    check-cast p2, Lcom/alipay/mobile/nebulax/integration/base/jsapi/SessionExtension;
+
+    .line 35
+    .line 36
+    aget-object p1, p3, v1
+
+    .line 37
+    .line 38
+    check-cast p1, Lcom/alibaba/fastjson/JSONArray;
+
+    .line 39
+    .line 40
+    invoke-virtual {p2, p1}, Lcom/alipay/mobile/nebulax/integration/base/jsapi/SessionExtension;->getSessionData(Lcom/alibaba/fastjson/JSONArray;)Lcom/alibaba/ariver/engine/api/bridge/extension/BridgeResponse;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object p1
+
+    .line 44
+    return-object p1
+
+    .line 45
+    :cond_1
+    const-string/jumbo v0, "setSessionData"
+
+    .line 46
+    .line 47
+    .line 48
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 49
+    .line 50
+    .line 51
+    move-result p1
+
+    .line 52
+    if-eqz p1, :cond_2
+
+    .line 53
+    .line 54
+    array-length p1, p3
+
+    .line 55
+    if-ne p1, v2, :cond_2
+
+    .line 56
+    .line 57
+    check-cast p2, Lcom/alipay/mobile/nebulax/integration/base/jsapi/SessionExtension;
+
+    .line 58
+    .line 59
+    aget-object p1, p3, v1
+
+    .line 60
+    .line 61
+    check-cast p1, Lcom/alibaba/fastjson/JSONObject;
+
+    .line 62
+    .line 63
+    invoke-virtual {p2, p1}, Lcom/alipay/mobile/nebulax/integration/base/jsapi/SessionExtension;->setSessionData(Lcom/alibaba/fastjson/JSONObject;)Lcom/alibaba/ariver/engine/api/bridge/extension/BridgeResponse;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object p1
+
+    .line 67
+    return-object p1
+
+    .line 68
+    :cond_2
+    const/4 p1, 0x0
+
+    .line 69
+    return-object p1
+.end method

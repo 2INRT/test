@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/app_back_root_container" android:background="@drawable/bg_app_back_floating_view" android:paddingLeft="4.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="28.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="14.0dp" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_left" />
+    <TextView android:textSize="@dimen/f_s_12" android:textColor="@color/f_c_1" android:ellipsize="none" android:layout_gravity="center" android:id="@id/app_back_text_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="10" />
+    <RelativeLayout android:layout_gravity="center" android:id="@id/app_back_icon_container" android:background="@drawable/bg_app_back_icon_round_back" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="8.0dp">
+        <com.autonavi.minimap.drive.navi.navitts.widget.RoundCornerImageView android:id="@id/app_back_icon_iv" android:layout_width="17.0dp" android:layout_height="17.0dp" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/app_back_close_iv" android:visibility="gone" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginLeft="8.0dp" android:src="@drawable/ic_back_button_close" />
+</LinearLayout>

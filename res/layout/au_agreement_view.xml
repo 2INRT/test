@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aui="http://schemas.android.com/apk/res-auto">
+    <com.alipay.mobile.antui.common.AUCheckIcon android:layout_gravity="top" android:id="@id/agree_check" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="7.0dp" aui:scaleAuto="true" />
+    <com.alipay.mobile.antui.basic.AUTextView android:textSize="@dimen/AU_TEXTSIZE3" android:textColor="@color/AU_COLOR_MAIN_CONTENT" android:id="@id/agree_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.2" />
+</merge>

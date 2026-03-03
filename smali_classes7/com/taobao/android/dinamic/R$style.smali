@@ -1,0 +1,44 @@
+.class public final Lcom/taobao/android/dinamic/R$style;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/taobao/android/dinamic/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "style"
+.end annotation
+
+
+# static fields
+.field public static final Dialog_Status_Container:I = 0x7f0f001d
+
+.field public static final Homepage_TextView_Base_Timer_Text:I = 0x7f0f0029
+
+.field public static final TextAppearance_Compat_Notification:I = 0x7f0f0054
+
+.field public static final TextAppearance_Compat_Notification_Info:I = 0x7f0f0055
+
+.field public static final TextAppearance_Compat_Notification_Line2:I = 0x7f0f0056
+
+.field public static final TextAppearance_Compat_Notification_Time:I = 0x7f0f0057
+
+.field public static final TextAppearance_Compat_Notification_Title:I = 0x7f0f0058
+
+.field public static final Widget_Compat_NotificationActionContainer:I = 0x7f0f007e
+
+.field public static final Widget_Compat_NotificationActionText:I = 0x7f0f007f
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

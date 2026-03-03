@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AURelativeLayout android:id="@id/permission_protocol_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="384.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aui="http://schemas.android.com/apk/res-auto">
+    <com.alipay.mobile.antui.iconfont.AUIconView android:id="@id/permission_protocol_back" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginLeft="-4.0dp" android:contentDescription="@string/back" aui:iconfontColor="@color/COLOR_TEXT_PRIMARY" aui:iconfontSize="@dimen/AU_ICONSIZE2" aui:iconfontUnicode="@string/iconfont_back" />
+    <com.alipay.mobile.antui.basic.AUTextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="@color/COLOR_TEXT_PRIMARY" android:ellipsize="end" android:gravity="center" android:id="@id/permission_protocol_title" android:paddingLeft="48.0dp" android:paddingRight="48.0dp" android:layout_width="match_parent" android:layout_height="48.0dp" android:maxLines="1" />
+    <com.alipay.mobile.antui.basic.AUView android:id="@id/permission_protocol_border" android:background="@color/COLOR_BORDER" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_below="@id/permission_protocol_title" />
+    <com.alipay.mobile.antui.basic.AUScrollView android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/permission_protocol_border">
+        <com.alipay.mobile.antui.basic.AUTextView android:textSize="15.0dp" android:textColor="@color/COLOR_TEXT_PRIMARY" android:id="@id/permission_protocol_text" android:paddingBottom="@dimen/AU_SPACE8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="12.0dp" android:lineSpacingMultiplier="1.2" />
+    </com.alipay.mobile.antui.basic.AUScrollView>
+</com.alipay.mobile.antui.basic.AURelativeLayout>

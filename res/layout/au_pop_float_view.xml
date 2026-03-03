@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aui="http://schemas.android.com/apk/res-auto">
+    <com.alipay.mobile.antui.iconfont.AUIconView android:id="@id/back_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/back" aui:iconfontColor="#dbffffff" aui:iconfontSize="@dimen/AU_TEXTSIZE2" aui:iconfontUnicode="@string/iconfont_ad_left" />
+    <com.alipay.mobile.antui.basic.AUTextView android:textSize="@dimen/AU_TEXTSIZE2" android:textColor="#dbffffff" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" />
+    <com.alipay.mobile.antui.basic.AUFrameLayout android:id="@id/frame_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.5dp" android:layout_marginTop="1.5dp">
+        <ImageView android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/shadow_logo_image" />
+        <com.alipay.mobile.antui.basic.AUCircleImageView android:layout_gravity="center" android:id="@id/logo" android:layout_width="26.0dp" android:layout_height="26.0dp" android:layout_marginBottom="1.5dp" />
+    </com.alipay.mobile.antui.basic.AUFrameLayout>
+</merge>

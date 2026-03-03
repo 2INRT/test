@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/number_keyboard_digital_press_v2" />
+        </shape>
+    </item>
+    <item android:state_enabled="true" android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/AU_COLOR_LINK_PRESSED_V2" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/AU_COLOR_LINK_V2" />
+        </shape>
+    </item>
+</selector>

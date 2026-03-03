@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/id_touchable_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/id_reach_end_bg" android:background="#293959" android:layout_width="match_parent" android:layout_height="100.0dp" android:layout_marginBottom="-100.0dp" android:layout_alignParentBottom="true" />
+    <com.amap.bundle.immersiverender.ui.components.recyclerview.IROverScrollLayout android:id="@id/id_oversroll_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.amap.bundle.immersiverender.ui.components.recyclerview.TouchFilterRecyclerView android:id="@id/id_rv" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="always" />
+    </com.amap.bundle.immersiverender.ui.components.recyclerview.IROverScrollLayout>
+    <com.amap.bundle.immersiverender.ui.IRGuideView android:id="@id/id_guide_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

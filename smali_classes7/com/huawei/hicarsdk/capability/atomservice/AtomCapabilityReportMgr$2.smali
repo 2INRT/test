@@ -1,0 +1,58 @@
+.class public Lcom/huawei/hicarsdk/capability/atomservice/AtomCapabilityReportMgr$2;
+.super Lcom/huawei/hicarsdk/event/AbstractEventCallback;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/huawei/hicarsdk/capability/atomservice/AtomCapabilityReportMgr;->reportAtomCapability(Landroid/content/Context;ILandroid/os/Bundle;Lcom/huawei/hicarsdk/capability/response/RequestCallBack;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/huawei/hicarsdk/event/AbstractEventCallback<",
+        "Landroid/os/Bundle;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic this$0:Lcom/huawei/hicarsdk/capability/atomservice/AtomCapabilityReportMgr;
+
+
+# direct methods
+.method public constructor <init>(Lcom/huawei/hicarsdk/capability/atomservice/AtomCapabilityReportMgr;Lcom/huawei/hicarsdk/capability/response/RequestCallBack;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/huawei/hicarsdk/capability/atomservice/AtomCapabilityReportMgr$2;->this$0:Lcom/huawei/hicarsdk/capability/atomservice/AtomCapabilityReportMgr;
+
+    invoke-direct {p0, p2}, Lcom/huawei/hicarsdk/event/AbstractEventCallback;-><init>(Lcom/huawei/hicarsdk/capability/response/RequestCallBack;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public conversionResponse(Landroid/os/Bundle;)Landroid/os/Bundle;
+    .locals 0
+
+    .line 1
+    return-object p1
+.end method
+
+.method public bridge synthetic conversionResponse(Landroid/os/Bundle;)Ljava/lang/Object;
+    .locals 0
+
+    .line 2
+    invoke-virtual {p0, p1}, Lcom/huawei/hicarsdk/capability/atomservice/AtomCapabilityReportMgr$2;->conversionResponse(Landroid/os/Bundle;)Landroid/os/Bundle;
+
+    move-result-object p1
+
+    return-object p1
+.end method

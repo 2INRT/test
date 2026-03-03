@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#1a000000" />
+            <corners android:topLeftRadius="@dimen/AUT_CORNER_RADIUS_LG" android:topRightRadius="@dimen/AUT_CORNER_RADIUS_LG" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="#66ffffff" />
+            <corners android:topLeftRadius="@dimen/AUT_CORNER_RADIUS_LG" android:topRightRadius="@dimen/AUT_CORNER_RADIUS_LG" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#33ffffff" />
+            <corners android:topLeftRadius="@dimen/AUT_CORNER_RADIUS_LG" android:topRightRadius="@dimen/AUT_CORNER_RADIUS_LG" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parentPanel" android:background="@drawable/bg_alert" android:paddingTop="20.0dp" android:clickable="true" android:layout_width="270.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/topPanel" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/title_template" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:layout_marginBottom="10.0dp">
+            <TextView android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_2" android:ellipsize="end" android:gravity="center|top" android:id="@id/alertTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="4.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/contentPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp">
+        <ScrollView android:gravity="center" android:id="@id/scrollView" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="false" android:overScrollMode="ifContentScrolls">
+            <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_2" android:gravity="center|top" android:layout_gravity="center" android:id="@id/message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:lineSpacingExtra="4.0dp" />
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/checkbox_layout" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/checkbox" android:background="@drawable/v4_common_checkbox_selector" android:layout_width="19.0dp" android:layout_height="19.0dp" android:button="@null" />
+            <TextView android:textSize="@dimen/font_28" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/checkbox_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:gravity="fill_horizontal" android:id="@id/messageDivider" android:layout_width="match_parent" android:layout_height="1.0px" android:src="@color/c_2" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:id="@id/buttonPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="44.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/button_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:measureWithLargestChild="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/leftSpacer" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.25" />
+            <Button android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_2" android:gravity="center" android:id="@id/button1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minHeight="44.0dp" android:text="@string/O3320_30" android:maxLines="2" android:layout_weight="1.0" />
+            <View android:id="@id/divide_right" android:background="@color/c_2" android:layout_width="1.0px" android:layout_height="match_parent" />
+            <Button android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_6" android:gravity="center" android:id="@id/button2" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minHeight="44.0dp" android:text="@string/O3320_6" android:maxLines="2" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/rightSpacer" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.25" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

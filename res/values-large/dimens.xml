@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_thumbnail_spacing">5.0dp</dimen>
+    <dimen name="search_dialog_hot_words">16.0dp</dimen>
+</resources>

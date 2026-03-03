@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amap.bundle.commonui.designtoken.view.textview.DtTextView android:textSize="12.0dp" android:ellipsize="end" android:id="@id/message_tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/widget_message_tip_content_left_margin" android:layout_marginRight="@dimen/widget_message_tip_content_right_margin" android:maxLines="1" />
+    <com.amap.bundle.commonui.designtoken.view.textview.DtTextView android:textSize="12.0dp" android:ellipsize="end" android:gravity="center" android:id="@id/message_tip_setting_btn" android:paddingLeft="@dimen/widget_message_tip_setting_left_padding" android:paddingRight="@dimen/widget_message_tip_setting_right_padding" android:layout_width="wrap_content" android:layout_height="21.0dp" android:layout_marginLeft="@dimen/widget_message_tip_setting_left_margin" android:layout_marginRight="@dimen/widget_message_tip_setting_right_margin" android:maxLines="1" />
+</merge>

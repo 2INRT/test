@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/default_tab_holder" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.alipay.mobile.antui.basic.AUTextView android:textSize="17.0dp" android:textColor="#333333" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/first_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        <ImageView android:layout_gravity="center" android:id="@id/first_title_img" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" />
+    </FrameLayout>
+    <com.alipay.mobile.antui.ptcontainer.recycle.CustomRoundTextView android:textSize="13.0dp" android:textColor="#999999" android:ellipsize="end" android:gravity="center" android:id="@id/second_title" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:paddingBottom="1.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:maxLines="1" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AURelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alipay.mobile.antui.basic.AUCornerListView android:id="@id/pop_menu_list" android:background="@drawable/pop_window_border_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@null" android:layout_below="@id/pop_down_icon" />
+    <com.alipay.mobile.antui.basic.AUImageView android:id="@id/pop_down_icon" android:layout_width="@dimen/pop_menu_arrow_width" android:layout_height="@dimen/pop_menu_arrow_height" android:layout_marginBottom="-1.0px" android:src="@drawable/corner_arrow_border" android:scaleType="fitXY" android:layout_alignParentTop="true" />
+    <com.alipay.mobile.antui.basic.AUImageView android:id="@id/pop_up_icon" android:layout_width="@dimen/pop_menu_arrow_width" android:layout_height="@dimen/pop_menu_arrow_height" android:layout_marginTop="-1.0px" android:src="@drawable/corner_arrow_border" android:scaleType="fitXY" android:layout_below="@id/pop_menu_list" android:rotation="180.0" />
+</com.alipay.mobile.antui.basic.AURelativeLayout>

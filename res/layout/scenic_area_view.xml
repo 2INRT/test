@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amap.bundle.commonui.designtoken.view.viewgroup.DtRelativeLayout android:paddingLeft="2.0dp" android:paddingTop="2.0dp" android:paddingRight="2.0dp" android:paddingBottom="3.0dp" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.amap.bundle.commonui.designtoken.view.viewgroup.DtRelativeLayout android:id="@id/scenic_area_root" android:background="@drawable/scenic_map_guide_view_center_bg" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="wrap_content" android:layout_height="@dimen/map_guide_center_height" android:elevation="2.0dp" app:dt_backgroundDrawable="scenic_map_guide_view_center_bg">
+        <com.amap.bundle.commonui.designtoken.view.textview.DtTextView android:textSize="14.0dp" android:id="@id/scenic_area_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scenic_area_text" android:maxLines="1" android:layout_centerInParent="true" app:dt_textColor="Color_Text_Brand" />
+    </com.amap.bundle.commonui.designtoken.view.viewgroup.DtRelativeLayout>
+</com.amap.bundle.commonui.designtoken.view.viewgroup.DtRelativeLayout>

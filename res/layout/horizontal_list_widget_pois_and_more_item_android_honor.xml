@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:id="@id/card_list" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dp" android:textColor="#000000" android:ellipsize="end" android:id="@id/card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="中石化加油站" android:maxLines="2" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/second_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_below="@id/card_title">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/message_icon_0" android:layout_width="14.0dp" android:layout_height="14.0dp" android:src="@drawable/charge_station_chao_icon" />
+        <TextView android:textSize="11.0dp" android:textColor="#ff4b4b" android:ellipsize="end" android:id="@id/message_title_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:text="空2/4" android:maxLines="1" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/message_icon_1" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginLeft="6.0dp" android:src="@drawable/charge_station_man_icon" />
+        <TextView android:textSize="11.0dp" android:textColor="#00bd9d" android:ellipsize="end" android:id="@id/message_title_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:text="空2/4" android:maxLines="1" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/message_icon_2" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginLeft="6.0dp" android:src="@drawable/charge_station_man_icon" />
+        <TextView android:textSize="11.0dp" android:textColor="#00bd9d" android:ellipsize="end" android:id="@id/message_title_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:text="空2/4" android:maxLines="1" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/third_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_below="@id/second_layout">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/sub_title_icon" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginTop="1.0dp" android:src="@drawable/charge_station_youhui_icon" />
+        <TextView android:textSize="16.0dp" android:textColor="#ff5e33" android:ellipsize="end" android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="¥1.56" android:maxLines="1" />
+        <TextView android:textSize="11.0dp" android:textColor="#ff5e33" android:id="@id/sub_title_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:layout_marginBottom="1.0dp" android:text="/度" />
+    </LinearLayout>
+</RelativeLayout>

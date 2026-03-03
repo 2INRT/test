@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="318.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/lv_main" android:background="@color/c_1" android:layout_width="0.0dp" android:layout_height="match_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@color/c_2" android:dividerHeight="1.0px" android:choiceMode="singleChoice" android:layout_weight="7.0" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="9.0">
+        <View android:background="@color/c_3" android:layout_width="15.0dp" android:layout_height="match_parent" />
+        <ListView android:id="@id/lv_sub" android:background="@color/c_3" android:layout_width="0.0dp" android:layout_height="match_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@color/c_2" android:dividerHeight="1.0px" android:choiceMode="singleChoice" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

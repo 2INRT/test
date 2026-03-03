@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/dialog_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/basemap_dialog_background" android:layout_width="270.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/font_34" android:textColor="@color/f_c_2" android:gravity="center|top" android:id="@id/txt_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:text="@string/comment_publishing" android:lineSpacingExtra="4.0dp" />
+        <ProgressBar android:id="@id/progress_bar" android:paddingLeft="30.0dp" android:paddingTop="20.0dp" android:paddingRight="30.0dp" android:paddingBottom="25.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="20.0dp" android:max="100" android:progress="0" android:indeterminate="false" android:indeterminateOnly="false" android:progressDrawable="@drawable/comment_publish_progress" android:minHeight="20.0dp" />
+        <View android:id="@id/line" android:background="@color/comment_line" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" />
+        <TextView android:textSize="@dimen/font_34" android:textColor="@color/comment_highlight_bule" android:gravity="center" android:id="@id/btn_cancle" android:layout_width="match_parent" android:layout_height="44.0dp" android:text="@string/cancel" />
+    </LinearLayout>
+</RelativeLayout>

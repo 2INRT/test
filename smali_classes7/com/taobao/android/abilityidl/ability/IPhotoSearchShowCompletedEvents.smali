@@ -1,0 +1,26 @@
+.class public interface abstract Lcom/taobao/android/abilityidl/ability/IPhotoSearchShowCompletedEvents;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/taobao/android/abilityidl/callback/IAbilityCallback;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/taobao/android/abilityidl/ability/IPhotoSearchShowCompletedEvents$DefaultImpls;
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract onClose()V
+.end method
+
+.method public abstract onSuccess(Lcom/taobao/android/abilityidl/ability/PhotoSearchSuccessResult;)V
+    .param p1    # Lcom/taobao/android/abilityidl/ability/PhotoSearchSuccessResult;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+.end method

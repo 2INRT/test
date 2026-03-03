@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/gary_frame" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_navi" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/title_view_layout" />
+    <com.autonavi.widget.ui.TitleBar android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/ali_auto_declare" app:title_style="title_b" />
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/bottom_btn_layout" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.amap.bundle.utils.language.view.AmapLocaleTextView android:textSize="16.0dp" android:textColor="@color/white" android:gravity="center" android:id="@id/confirm" android:background="@drawable/auto_button_blue_corner_background" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginTop="30.0dp" android:layout_marginBottom="10.0dp" android:text="@string/agree" android:layout_weight="1.0" />
+            <com.amap.bundle.utils.language.view.AmapLocaleTextView android:textSize="16.0dp" android:textColor="@color/white" android:gravity="center" android:id="@id/cancel" android:background="@drawable/bottom_round_corners_gray_auto" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="44.0dp" android:layout_marginBottom="12.0dp" android:text="@string/cancel" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@id/bottom_btn_layout" android:layout_below="@id/title_navi">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="28.0dp" android:layout_marginRight="20.0dp">
+                    <com.amap.bundle.utils.language.view.AmapLocaleTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ali_connection_declare_01" style="@style/confirm_dialog_text_style" />
+                </RelativeLayout>
+                <com.amap.bundle.utils.language.view.AmapLocaleTextView android:id="@id/navi_declare_tv2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="20.0dp" android:text="@string/ali_connection_declare_02" style="@style/confirm_dialog_text_style" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

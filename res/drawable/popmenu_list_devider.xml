@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <item android:left="@dimen/AU_SPACE3" android:top="0.0px" android:right="@dimen/AU_SPACE3" android:bottom="0.0px">
+        <shape>
+            <solid android:color="@color/AU_COLOR_DIALOG_DIVIDER_COLOR" />
+        </shape>
+    </item>
+</layer-list>

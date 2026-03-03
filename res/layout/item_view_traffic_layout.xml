@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/bg_item_traffic_button_selector" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="36.0dp" android:layout_marginRight="12.0dp">
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_2" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/item_view_traffic_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+    </FrameLayout>
+</FrameLayout>

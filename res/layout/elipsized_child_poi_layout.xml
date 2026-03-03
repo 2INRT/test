@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.amap.bundle.commonui.designtoken.view.textview.DtTextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:ellipsize="middle" android:id="@id/child_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:dt_textColor="Color_Text_L2" />
+    <com.amap.bundle.commonui.designtoken.view.textview.DtTextView android:textSize="@dimen/f_s_10" android:textColor="@color/f_c_6" android:ellipsize="end" android:id="@id/child_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:singleLine="true" app:dt_textColor="Color_Text_Brand" />
+</com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout>

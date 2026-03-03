@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.alipay.mobile.antui.basic.AUTextView android:textSize="13.0dp" android:textColor="#888888" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/groupname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="15.0dp" android:singleLine="true" />
+        <ImageView android:id="@id/pop_close_img" android:paddingLeft="10.0dp" android:paddingTop="5.0dp" android:paddingRight="10.0dp" android:paddingBottom="5.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_marginRight="10.0dp" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.alipay.mobile.antui.filter.AUFilterTabContainerView android:id="@id/filterSubMenuTabContainer" android:paddingLeft="15.0dp" android:paddingTop="15.0dp" android:paddingRight="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dp" />
+    <View android:id="@id/filter_splitter" android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" />
+</LinearLayout>

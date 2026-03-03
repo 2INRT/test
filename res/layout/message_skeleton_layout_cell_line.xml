@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amap.bundle.commonui.designtoken.view.viewgroup.DtLinearLayout android:id="@id/message_page_splash_cell_line" android:layout_width="72.0dp" android:layout_height="1.0dp" app:dt_backgroundColor="Color_BG_L2"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@android:id/background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/rc_widget_parent" android:background="@drawable/vivo_desktop_widget_bg" android:paddingLeft="@dimen/desktop_widget_padding" android:paddingTop="@dimen/desktop_widget_padding" android:paddingRight="@dimen/desktop_widget_padding" android:paddingBottom="14.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/vivo_widget_common_header_layout" />
+        <RelativeLayout android:id="@id/rc_layout" android:background="@drawable/vivo_desktop_widget_search_bar_bg_default" android:padding="14.0dp" android:layout_width="match_parent" android:layout_height="70.0dp" android:layout_marginTop="10.0dp" android:layout_below="@id/search_bar_layout">
+            <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/vivo_widget_primary_text" android:ellipsize="end" android:id="@id/rc_main_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/rc_bus_line_list" android:layout_width="match_parent" android:layout_height="49.0dp" android:layout_marginTop="2.0dp" android:layout_below="@id/rc_main_text" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

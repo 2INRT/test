@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.autonavi.minimap.widget.AmapTextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:gravity="center" android:id="@id/clean_history" android:background="@drawable/route_drive_item_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="44.0dp" android:text="@string/route_fragment_clean_history" />
+    <View android:background="@color/c_26" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginLeft="1.0px" android:layout_marginRight="1.0px" />
+    <Button android:id="@id/blank_view" android:background="@drawable/transparent" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="102.0dp" />
+</LinearLayout>

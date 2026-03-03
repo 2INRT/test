@@ -1,0 +1,360 @@
+.class public Lcom/amap/network/api/accs/model/ACCSResponse;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation build Lproguard/annotation/Keep;
+.end annotation
+
+.annotation build Lproguard/annotation/KeepClassMembers;
+.end annotation
+
+
+# static fields
+.field public static final CODE_BIND_APP_ERROR:I = 0x12c
+
+.field public static final CODE_DISCONNECTED:I = 0x190
+
+.field public static final CODE_OTHER_ERROR:I = 0x1f4
+
+.field public static final CODE_PARAMS_ERROR:I = 0x64
+
+.field public static final CODE_SUCCESS:I = 0xc8
+
+.field public static final CODE_UNKNOWN_ERROR:I = 0x0
+
+.field public static final EVENT_TYPE_DISCONNECTED:I = 0x7
+
+.field public static final EVENT_TYPE_DOWNLINK:I = 0x5
+
+.field public static final EVENT_TYPE_ONCONNECTED:I = 0x6
+
+.field public static final EVENT_TYPE_REGISTER:I = 0x1
+
+.field public static final EVENT_TYPE_UN_REGISTER:I = 0x2
+
+.field public static final EVENT_TYPE_UPLINK_DATA:I = 0x3
+
+.field public static final EVENT_TYPE_UPLINK_REQUEST:I = 0x4
+
+
+# instance fields
+.field private data:[B
+
+.field private dataID:Ljava/lang/String;
+
+.field private errorCode:I
+
+.field private mainType:Ljava/lang/String;
+
+.field private subType:Ljava/lang/String;
+
+.field private userId:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+    .locals 7
+
+    const/4 v3, 0x0
+
+    const/4 v5, 0x0
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-object v4, p3
+
+    move v6, p4
+
+    .line 1
+    invoke-direct/range {v0 .. v6}, Lcom/amap/network/api/accs/model/ACCSResponse;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[BI)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[B)V
+    .locals 7
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-object v3, p3
+
+    move-object v4, p4
+
+    move-object v5, p5
+
+    .line 3
+    invoke-direct/range {v0 .. v6}, Lcom/amap/network/api/accs/model/ACCSResponse;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[BI)V
+
+    return-void
+.end method
+
+.method private constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[BI)V
+    .locals 0
+
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    iput-object p1, p0, Lcom/amap/network/api/accs/model/ACCSResponse;->mainType:Ljava/lang/String;
+
+    .line 6
+    iput-object p2, p0, Lcom/amap/network/api/accs/model/ACCSResponse;->subType:Ljava/lang/String;
+
+    .line 7
+    iput-object p4, p0, Lcom/amap/network/api/accs/model/ACCSResponse;->dataID:Ljava/lang/String;
+
+    .line 8
+    iput-object p5, p0, Lcom/amap/network/api/accs/model/ACCSResponse;->data:[B
+
+    .line 9
+    iput p6, p0, Lcom/amap/network/api/accs/model/ACCSResponse;->errorCode:I
+
+    .line 10
+    iput-object p3, p0, Lcom/amap/network/api/accs/model/ACCSResponse;->userId:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[BI)V
+    .locals 7
+
+    const/4 v3, 0x0
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-object v4, p3
+
+    move-object v5, p4
+
+    move v6, p5
+
+    .line 2
+    invoke-direct/range {v0 .. v6}, Lcom/amap/network/api/accs/model/ACCSResponse;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[BI)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getData()[B
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/amap/network/api/accs/model/ACCSResponse;->data:[B
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getDataID()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/amap/network/api/accs/model/ACCSResponse;->dataID:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getErrorCode()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/amap/network/api/accs/model/ACCSResponse;->errorCode:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getMainType()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/amap/network/api/accs/model/ACCSResponse;->mainType:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getSubType()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/amap/network/api/accs/model/ACCSResponse;->subType:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getUserId()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/amap/network/api/accs/model/ACCSResponse;->userId:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string/jumbo v1, "ACCSResponse{mainType=\'"
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 7
+    .line 8
+    .line 9
+    iget-object v1, p0, Lcom/amap/network/api/accs/model/ACCSResponse;->mainType:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 12
+    .line 13
+    .line 14
+    const-string/jumbo v1, "\', subType=\'"
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 18
+    .line 19
+    .line 20
+    iget-object v1, p0, Lcom/amap/network/api/accs/model/ACCSResponse;->subType:Ljava/lang/String;
+
+    .line 21
+    .line 22
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 23
+    .line 24
+    .line 25
+    const-string/jumbo v1, "\', dataID=\'"
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 29
+    .line 30
+    .line 31
+    iget-object v1, p0, Lcom/amap/network/api/accs/model/ACCSResponse;->dataID:Ljava/lang/String;
+
+    .line 32
+    .line 33
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 34
+    .line 35
+    .line 36
+    const-string/jumbo v1, "\', data="
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 40
+    .line 41
+    .line 42
+    iget-object v1, p0, Lcom/amap/network/api/accs/model/ACCSResponse;->data:[B
+
+    .line 43
+    .line 44
+    invoke-static {v1}, Ljava/util/Arrays;->toString([B)Ljava/lang/String;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v1
+
+    .line 48
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 49
+    .line 50
+    .line 51
+    const-string/jumbo v1, ", errorCode="
+
+    .line 52
+    .line 53
+    .line 54
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 55
+    .line 56
+    .line 57
+    iget v1, p0, Lcom/amap/network/api/accs/model/ACCSResponse;->errorCode:I
+
+    .line 58
+    .line 59
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 60
+    .line 61
+    .line 62
+    const-string/jumbo v1, ", userId=\'"
+
+    .line 63
+    .line 64
+    .line 65
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 66
+    .line 67
+    .line 68
+    iget-object v1, p0, Lcom/amap/network/api/accs/model/ACCSResponse;->userId:Ljava/lang/String;
+
+    .line 69
+    .line 70
+    const-string/jumbo v2, "\'}"
+
+    .line 71
+    .line 72
+    .line 73
+    invoke-static {v0, v1, v2}, Lj80;->c(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 74
+    .line 75
+    .line 76
+    move-result-object v0
+
+    .line 77
+    return-object v0
+.end method

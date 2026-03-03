@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amap.bundle.commonui.designtoken.view.viewgroup.DtFrameLayout android:background="@drawable/bg_notification_statusbar" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:dt_backgroundDrawable="bg_notification_statusbar"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.amap.bundle.commonui.designtoken.view.viewgroup.DtRelativeLayout android:layout_width="match_parent" android:layout_height="48.0dp">
+        <com.airbnb.lottie.lite.LottieAnimationView android:id="@id/animation_view" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_centerVertical="true" android:layout_marginStart="-5.0dp" />
+        <com.amap.bundle.commonui.designtoken.view.DtImageView android:id="@id/mainmap_status_bar_agroup_ic" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/mainmap_status_bar_agroup_ic" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" />
+        <com.amap.bundle.commonui.designtoken.view.textview.DtTextView android:textSize="14.0dp" android:textColor="#ff1a66ff" android:ellipsize="middle" android:id="@id/mainmap_status_bar_agroup_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/O3109_3" android:singleLine="true" android:layout_centerVertical="true" android:layout_toStartOf="@id/mainmap_status_bar_arrow_ic" android:layout_toEndOf="@id/mainmap_status_bar_agroup_ic" app:dt_textColor="Color_Text_Brand" />
+        <com.amap.bundle.commonui.designtoken.view.DtImageView android:id="@id/mainmap_status_bar_arrow_ic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mainmap_status_bar_arrow_ic" android:layout_centerVertical="true" android:layout_marginEnd="14.0dp" android:layout_alignParentEnd="true" app:dt_src="mainmap_status_bar_arrow_ic" />
+    </com.amap.bundle.commonui.designtoken.view.viewgroup.DtRelativeLayout>
+</com.amap.bundle.commonui.designtoken.view.viewgroup.DtFrameLayout>

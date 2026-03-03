@@ -1,0 +1,171 @@
+.class public Lcom/taobao/android/dinamicx_v4/expr/fuction/map/DXPutFunction;
+.super Lcom/taobao/android/dxv4common/v4protocol/AbsDXV4Function;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/taobao/android/dxv4common/v4protocol/AbsDXV4Function;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public execute(Lcom/taobao/android/dinamicx/DXRuntimeContext;Lcom/taobao/android/dxv4common/model/variable/DXExpressionVar;I[Lcom/taobao/android/dxv4common/model/variable/DXExpressionVar;Ljava/util/Map;)Lcom/taobao/android/dxv4common/model/variable/DXExpressionVar;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/taobao/android/dinamicx/expression/expr_v2/DXExprFunctionError;
+        }
+    .end annotation
+
+    .line 1
+    if-eqz p4, :cond_2
+
+    .line 2
+    .line 3
+    array-length p1, p4
+
+    .line 4
+    const/4 p3, 0x2
+
+    .line 5
+    if-ne p1, p3, :cond_2
+
+    .line 6
+    .line 7
+    if-nez p2, :cond_0
+
+    .line 8
+    .line 9
+    goto :goto_1
+
+    .line 10
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 11
+    :try_start_0
+    aget-object p1, p4, p1
+
+    .line 12
+    .line 13
+    const/4 p3, 0x1
+
+    .line 14
+    aget-object p3, p4, p3
+
+    .line 15
+    .line 16
+    invoke-virtual {p2}, Lcom/taobao/android/dxv4common/model/variable/DXExpressionVar;->getMap()Lcom/alibaba/fastjson/JSONObject;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p2
+
+    .line 20
+    invoke-virtual {p1}, Lcom/taobao/android/dxv4common/model/variable/DXExpressionVar;->getString()Ljava/lang/String;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    invoke-virtual {p3}, Lcom/taobao/android/dxv4common/model/variable/DXExpressionVar;->getValue()Ljava/lang/Object;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p3
+
+    .line 28
+    invoke-virtual {p2, p1, p3}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object p1
+
+    .line 32
+    if-nez p1, :cond_1
+
+    .line 33
+    .line 34
+    invoke-static {}, Lcom/taobao/android/dxv4common/model/variable/DXExpressionVar;->ofNull()Lcom/taobao/android/dxv4common/model/variable/DXExpressionVar;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object p1
+
+    .line 38
+    return-object p1
+
+    .line 39
+    :catch_0
+    move-exception p1
+
+    .line 40
+    goto :goto_0
+
+    .line 41
+    :cond_1
+    invoke-static {p1}, Lcom/taobao/android/dxv4common/model/variable/DXExpressionVar;->ofJavaObject(Ljava/lang/Object;)Lcom/taobao/android/dxv4common/model/variable/DXExpressionVar;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object p1
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 45
+    return-object p1
+
+    .line 46
+    :goto_0
+    new-instance p2, Lcom/taobao/android/dinamicx/expression/expr_v2/DXExprFunctionError;
+
+    .line 47
+    .line 48
+    invoke-direct {p2, p1}, Lcom/taobao/android/dinamicx/expression/expr_v2/DXExprFunctionError;-><init>(Ljava/lang/Throwable;)V
+
+    .line 49
+    .line 50
+    .line 51
+    throw p2
+
+    .line 52
+    :cond_2
+    :goto_1
+    invoke-static {}, Lcom/taobao/android/dxv4common/model/variable/DXExpressionVar;->ofNull()Lcom/taobao/android/dxv4common/model/variable/DXExpressionVar;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object p1
+
+    .line 56
+    return-object p1
+.end method
+
+.method public getDxFunctionName()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "put"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/bottom_tool_bar" android:background="@color/gary_frame" android:layout_width="match_parent" android:layout_height="50.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/direction_tag_shadow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:contentDescription="@null" />
+    <ImageButton android:id="@id/page_last" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:src="@drawable/v4_channel_btn_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+    <ImageButton android:id="@id/page_next" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="56.0dp" android:src="@drawable/v4_channel_btn_pre" android:layout_centerVertical="true" android:contentDescription="@null" />
+    <ImageButton android:id="@id/page_reload" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dp" android:src="@drawable/v4_channel_btn_refresh" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+</RelativeLayout>

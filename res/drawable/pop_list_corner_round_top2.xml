@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/AU_COLOR_LINK" />
+            <corners android:topLeftRadius="@dimen/AU_CORNER1" android:topRightRadius="@dimen/AU_CORNER1" />
+        </shape>
+    </item>
+    <item android:drawable="@android:color/transparent" />
+</selector>

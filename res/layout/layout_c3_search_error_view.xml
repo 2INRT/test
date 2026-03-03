@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/container_view" android:background="@drawable/bg_error_view_white_container" android:paddingLeft="40.0dp" android:paddingRight="40.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:src="@drawable/default_failed_small" android:scaleType="centerInside" />
+    <TextView android:textSize="14.0sp" android:textColor="#999999" android:gravity="center" android:id="@id/message_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="喔唷~这次好像没搜到,稍后再试试吧" />
+</LinearLayout>

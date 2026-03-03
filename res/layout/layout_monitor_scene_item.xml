@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dp" android:textColor="#333333" android:id="@id/tv_scene" android:background="#dddddd" android:paddingLeft="10.0dp" android:paddingTop="14.0dp" android:paddingRight="10.0dp" android:paddingBottom="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="111111" />
+    <View android:background="#666666" android:layout_width="match_parent" android:layout_height="0.5dp" />
+</LinearLayout>

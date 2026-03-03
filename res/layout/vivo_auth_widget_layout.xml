@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@android:id/background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/widget_parent" android:background="@drawable/vivo_desktop_widget_bg" android:padding="14.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/vivo_widget_auth_icon" android:layout_width="14.0dp" android:layout_height="14.0dp" android:layout_marginTop="2.0dp" android:src="@drawable/vivo_widget_logo" />
+        <TextView android:textSize="12.0dp" android:textColor="@color/vivo_auth_widget_title" android:gravity="center" android:layout_width="wrap_content" android:layout_height="17.0dp" android:text="@string/vivo_auth_widget_title" android:layout_alignBaseline="@id/vivo_widget_auth_icon" android:layout_marginStart="4.0dp" android:layout_toEndOf="@id/vivo_widget_auth_icon" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/vivo_auth_widget_primary_text" android:id="@id/vivo_auth_widget_primary_text" android:layout_width="wrap_content" android:layout_height="20.0dp" android:layout_marginTop="38.0dp" android:text="@string/vivo_auth_widget_primary_text" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="@color/vivo_widget_button_text" android:gravity="center" android:id="@id/vivo_auth_widget_button" android:background="@drawable/vivo_widget_button_bg" android:layout_width="66.0dp" android:layout_height="32.0dp" android:layout_marginTop="11.0dp" android:text="@string/vivo_auth_widget_button_text" android:layout_below="@id/vivo_auth_widget_primary_text" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>
